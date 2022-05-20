@@ -4,26 +4,26 @@ This directory contains the exercise files for part 0.
 
 ## Hours
 
-- Hours spent: `2`
+- Hours spent: `3`
 - [Work hour tracking](hours.md)
 
 ## Exercises
 
-Exercises completed: `3/6`
+Exercises completed: `4/6`
 
-### 0.1
-
-Tutorial reviewed on 19 May 2022.
-
-### 0.2
+### Exercise 0.1
 
 Tutorial reviewed on 19 May 2022.
 
-### 0.3
+### Exercise 0.2
 
 Tutorial reviewed on 19 May 2022.
 
-### 0.4
+### Exercise 0.3
+
+Tutorial reviewed on 19 May 2022.
+
+### Exercise 0.4
 
 ```mermaid
 sequenceDiagram
@@ -45,10 +45,10 @@ sequenceDiagram
     note over browser: the browser executes the event handler that renders the notes on the screen
 ```
 
-### 0.5
+### Exercise 0.5
 
 To be added.
 
-### 0.6
+### Exercise 0.6
 
 To be added.

@@ -4,7 +4,7 @@ My submissions for the course [Full stack open](https://fullstackopen.com/en/).
 
 ## Exercises
 
-|                       part |   completed |
-| -------------------------: | ----------: |
-|    [0](submissions/part00) |       3 / 6 |
-|                            |           6 |
+|                          part |   completed |
+| ----------------------------: | ----------: |
+|    [part 0](exercises/part00) |       4 / 6 |
+|                               |           6 |

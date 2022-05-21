@@ -1,6 +1,8 @@
 # Work hour tracking
 
-This document is used to keep track of hours that I have spent working on part0.
+This document is used to keep track of hours that I have spent working on the course.
+
+## Part 0
 
 | date       | hours  | description                                                                |
 | ---------: | -----: | :--------------------------------------------------------------------------|

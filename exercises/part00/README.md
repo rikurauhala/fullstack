@@ -4,11 +4,11 @@ This directory contains the exercise files for part 0.
 
 ## Hours
 
-- Time spent: `3 hours`
+- Time spent: `4 hours`
 
 ## Exercises
 
-Exercises completed: `4 / 6`
+Exercises completed: `6 / 6`
 
 ### Exercise 0.1
 

@@ -64,4 +64,12 @@ sequenceDiagram
 
 ### Exercise 0.6
 
-To be added.
+```mermaid
+sequenceDiagram
+    participant browser
+    participant server
+    browser->>server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+    note over browser: the browser sends the contents of the form to the server
+    server-->>browser: HTTP status code 201 (Created)
+    note over browser: the browser displays the new note without reloading the page
+```

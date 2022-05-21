@@ -5,7 +5,6 @@ This directory contains the exercise files for part 0.
 ## Hours
 
 - Hours spent: `3`
-- [Work hour tracking](hours.md)
 
 ## Exercises
 

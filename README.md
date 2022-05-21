@@ -6,5 +6,5 @@ My submissions for the course [Full stack open](https://fullstackopen.com/en/).
 
 |                       part |                hours | completed |
 | -------------------------: | -------------------: | --------: |
-| [part 0](exercises/part00) | [3](hours.md#part-0) |     4 / 6 |
+| [part 0](exercises/part00) | [4](hours.md#part-0) |     6 / 6 |
 |                            |                    3 |         6 |

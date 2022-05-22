@@ -17,3 +17,15 @@ See the relevant state of the application [here](https://github.com/rikurauhala/
 ### Exercise 1.2
 
 See the relevant state of the application [here](https://github.com/rikurauhala/fullstack/tree/83cd44933f35a140f8adb3124e6bdd5c04eceec3/exercises/part01/course-information).
+
+### Exercise 1.3
+
+See the relevant state of the application [here](https://github.com/rikurauhala/fullstack/tree/8bd95696b35cc6431e83cf9982ad8bb7a34793df/exercises/part01/course-information).
+
+### Exercise 1.4
+
+See the relevant state of the application [here](https://github.com/rikurauhala/fullstack/tree/86c01f1ee1546031a88c5c5a62f5d1a8198181d1/exercises/part01/course-information).
+
+### Exercise 1.5
+
+See the relevant state of the application [here](https://github.com/rikurauhala/fullstack/tree/a23eeafc5b5441bcabc8d8b736d11362ec33ac26/exercises/part01/course-information).

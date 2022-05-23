@@ -4,11 +4,11 @@ This directory contains the exercise files for part 1.
 
 ## Hours
 
-Time spent: `3 hours`
+Time spent: `7 hours`
 
 ## Exercises
 
-Exercises completed: `5 / 14`
+Exercises completed: `6 / 14`
 
 ### Exercise 1.1
 
@@ -29,3 +29,7 @@ See the relevant state of the application [here](https://github.com/rikurauhala/
 ### Exercise 1.5
 
 See the relevant state of the application [here](https://github.com/rikurauhala/fullstack/tree/a23eeafc5b5441bcabc8d8b736d11362ec33ac26/exercises/part01/course-information).
+
+### Exercise 1.6
+
+See the relevant state of the application [here](https://github.com/rikurauhala/fullstack/tree/6caa1c82d4ec268d8742a07555ccb3f3f8c37943/exercises/part01/unicafe).

@@ -8,7 +8,7 @@ Time spent: `7 hours`
 
 ## Exercises
 
-Exercises completed: `6 / 14`
+Exercises completed: `7 / 14`
 
 ### Exercise 1.1
 
@@ -33,3 +33,7 @@ See the relevant state of the application [here](https://github.com/rikurauhala/
 ### Exercise 1.6
 
 See the relevant state of the application [here](https://github.com/rikurauhala/fullstack/tree/6caa1c82d4ec268d8742a07555ccb3f3f8c37943/exercises/part01/unicafe).
+
+### Exercise 1.7
+
+See the relevant state of the application [here](https://github.com/rikurauhala/fullstack/tree/c3ba1a65aea67ac9642fe0d013476f12b35c9570/exercises/part01/unicafe).

@@ -25,5 +25,5 @@ This document is used to keep track of hours that I have spent working on the co
 
 | date       | hours  | description                                                 |
 | ---------: | -----: | :---------------------------------------------------------- |
-| 2022-05-25 |      3 | reading the material, completing exercises 2.1 to 2.5       |
-|      total |      3 |                                                             |
+| 2022-05-25 |      4 | reading the material, completing exercises 2.1 to 2.5       |
+|      total |      4 |                                                             |

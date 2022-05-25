@@ -20,3 +20,10 @@ This document is used to keep track of hours that I have spent working on the co
 | 2022-05-23 |      3 | reading the material, completing exercises 1.6 to 1.7       |
 | 2022-05-24 |      4 | completing exercises 1.8 to 1.14                            |
 |      total |     11 |                                                             |
+
+## Part 2
+
+| date       | hours  | description                                                 |
+| ---------: | -----: | :---------------------------------------------------------- |
+| 2022-05-25 |      3 | reading the material, completing exercises 2.1 to 2.5       |
+|      total |      3 |                                                             |

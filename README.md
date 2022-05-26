@@ -8,5 +8,5 @@ My submissions for the course [Full stack open](https://fullstackopen.com/en/).
 | -------------------------: | --------------------: | --------: |
 | [part 0](exercises/part00) |  [4](hours.md#part-0) |    6 /  6 |
 | [part 1](exercises/part01) | [11](hours.md#part-1) |   14 / 14 |
-| [part 2](exercises/part02) |  [6](hours.md#part-2) |    7 / 20 |
-|                      total |                    21 |   27 / 40 |
+| [part 2](exercises/part02) |  [8](hours.md#part-2) |    8 / 20 |
+|                      total |                    23 |   28 / 40 |

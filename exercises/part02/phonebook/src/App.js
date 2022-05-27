@@ -1,13 +1,7 @@
 import { useState } from 'react'
 
-const Person = ({ name, number }) => {
-  return (
-    <tr>
-      <td>{name}</td>
-      <td>{number}</td>
-    </tr>
-  )
-}
+import Persons from './components/Persons'
+import PersonForm from './components/PersonForm'
 
 const App = () => {
   const [newName, setNewName] = useState('')
@@ -48,62 +42,22 @@ const App = () => {
   return (
     <div>
       <h2>Phonebook</h2>
+
       <h3>Add new person</h3>
-      <form onSubmit={addPerson}>
-        <table>
-          <tbody>
-            <tr>
-              <td>
-                Name
-              </td>
-              <td>
-                <input value={newName} onChange={handleNameChange} />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                Number
-              </td>
-              <td>
-                <input value={newNumber} onChange={handleNumberChange} />
-              </td>
-              <td>
-                <button type="submit">+ Add</button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </form>
+      <PersonForm 
+        addPerson={addPerson}
+        newName={newName}
+        handleNameChange={handleNameChange}
+        newNumber={newNumber}
+        handleNumberChange={handleNumberChange}
+      />
+
       <h3>Numbers</h3>
-      <table>
-        <tbody>
-          <tr>
-            <td>
-              Search
-            </td>
-            <td>
-              <input value={searchTerm} onChange={handleSearchChange} />
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <table>
-        <thead>
-          <tr>
-            <th>
-              Name
-            </th>
-            <th>
-              Number
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          {searchResults.map(person => 
-            <Person key={person.name} name={person.name} number={person.number} />
-          )}
-        </tbody>
-      </table>
+      <Persons
+        searchTerm={searchTerm}
+        handleSearchChange={handleSearchChange}
+        searchResults={searchResults}
+      />
     </div>
   )
 }

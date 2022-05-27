@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import axios from 'axios'
 
 import Persons from './components/Persons'
 import PersonForm from './components/PersonForm'
@@ -6,12 +7,16 @@ import PersonForm from './components/PersonForm'
 const App = () => {
   const [newName, setNewName] = useState('')
   const [newNumber, setNewNumber] = useState('')
-  const [persons, setPersons] = useState([
-    { name: 'Mickey Mouse', number: "123-456789" },
-    { name: 'Donald Duck', number: "313-313313" },
-    { name: 'Scrooge McDuck', number: "999-999999" },
-  ])
+  const [persons, setPersons] = useState([])
   const [searchTerm, setSearchTerm] = useState('')
+
+  useEffect(() => {
+    axios
+      .get('http://localhost:3001/persons')
+      .then(response => {
+        setPersons(response.data)
+      })
+  }, [])
 
   const searchResults = searchTerm.length > 0
     ? persons.filter(person => person.name.toLowerCase().includes(searchTerm.toLowerCase()))

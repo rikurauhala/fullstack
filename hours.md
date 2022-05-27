@@ -27,5 +27,5 @@ This document is used to keep track of hours that I have spent working on the co
 | ---------: | -----: | :------------------------------------------------------------------------------ |
 | 2022-05-25 |      4 | reading the material, completing exercises 2.1 to 2.5                           |
 | 2022-05-26 |      6 | reading the material, completing exercises 2.6 to 2.8, working on exercise 2.9* |
-| 2022-05-27 |      5 | reading the material, completing exercises 2.9* to 2.11                         |
-|      total |     15 |                                                                                 |
+| 2022-05-27 |      6 | reading the material, completing exercises 2.9* to 2.12*                        |
+|      total |     16 |                                                                                 |

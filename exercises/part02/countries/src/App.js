@@ -19,6 +19,10 @@ const App = () => {
     setSearchTerm(event.target.value)
   }
 
+  const handleSelectedCountry = (event, country) => {
+    setSearchTerm(country)
+  }
+
   const searchResults = searchTerm.length > 0
     ? countries.filter(country => 
         country.name.common
@@ -32,7 +36,7 @@ const App = () => {
   return (
     <div>
       Find countries <input onChange={handleSearchChange} placeholder='Type here' />
-      <CountryList countries={searchResults} />
+      <CountryList countries={searchResults} handleSelectedCountry={handleSelectedCountry} />
     </div>
   )
 }

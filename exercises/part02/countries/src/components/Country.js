@@ -7,13 +7,14 @@ const Country = ({ country }) => {
       <p><b>Area:</b> {country.area} m²</p>
       <b>Languages:</b>
       <ul>
-        {Object.values(country.languages).map((language) =>
+        {Object.values(country.languages).map(language =>
           <li key={language}>
             {language}
           </li>
         )}
       </ul>
-      <img src={country.flags.png} />
+      <p><b>Flag:</b></p>
+      <img src={country.flags.png} alt='' />
     </div>
   )
 }

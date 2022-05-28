@@ -4,11 +4,11 @@ This directory contains the exercise files for part 2.
 
 ## Hours
 
-Time spent: `16 hours`
+Time spent: `19 hours`
 
 ## Exercises
 
-Exercises completed: `12 / 20`
+Exercises completed: `14 / 20`
 
 ### Exercise 2.1
 
@@ -57,3 +57,11 @@ See the relevant state of the application [here](https://github.com/rikurauhala/
 ### Exercise 2.12*
 
 See the relevant state of the application [here](https://github.com/rikurauhala/fullstack/tree/ea6a432a5187256b18200bf6a5bb14465e520353/exercises/part02/countries).
+
+### Exercise 2.13*
+
+See the relevant state of the application [here](https://github.com/rikurauhala/fullstack/tree/e61ee6686dca77090e7f1146a355b11f02d6f82c/exercises/part02/countries).
+
+### Exercise 2.14*
+
+See the relevant state of the application [here](https://github.com/rikurauhala/fullstack/tree/70672c520e6fe58a65a7ba8ff43538a01662a5a4/exercises/part02/countries).

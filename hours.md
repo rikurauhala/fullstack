@@ -2,7 +2,7 @@
 
 This document is used to keep track of hours that I have spent working on the course.
 
-## Part 0
+## Part 0 - Fundamentals of Web apps
 
 | date       | hours  | description                                                                     |
 | ---------: | -----: | :------------------------------------------------------------------------------ |
@@ -12,7 +12,7 @@ This document is used to keep track of hours that I have spent working on the co
 | 2022-05-21 |      1 | completing exercises 0.5 and 0.6                                                |
 |      total |      4 |                                                                                 |
 
-## Part 1
+## Part 1 - Introduction to React
 
 | date       | hours  | description                                                                     |
 | ---------: | -----: | :------------------------------------------------------------------------------ |
@@ -21,7 +21,7 @@ This document is used to keep track of hours that I have spent working on the co
 | 2022-05-24 |      4 | completing exercises 1.8 to 1.14                                                |
 |      total |     11 |                                                                                 |
 
-## Part 2
+## Part 2 - Communicating with server
 
 | date       | hours  | description                                                                     |
 | ---------: | -----: | :------------------------------------------------------------------------------ |
@@ -32,7 +32,7 @@ This document is used to keep track of hours that I have spent working on the co
 | 2022-05-29 |      5 | completing exercises 2.17 to 2.20*                                              |
 |      total |     26 |                                                                                 |
 
-## Part 3
+## Part 3 - Programming a server with NodeJS and Express
 
 | date       | hours  | description                                                                     |
 | ---------: | -----: | :------------------------------------------------------------------------------ |

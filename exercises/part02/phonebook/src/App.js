@@ -86,6 +86,12 @@ const App = () => {
             `Person ${person.name} was deleted successfully!`
           )
         })
+        .catch(error => { 
+          setMessage(
+            'error',
+            `${person.name} has already been deleted!`
+          )
+        })
     }
   }
 

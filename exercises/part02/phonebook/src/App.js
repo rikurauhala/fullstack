@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react'
 
-import Persons from './components/Persons'
+import Notification from './components/Notification'
 import PersonForm from './components/PersonForm'
+import Persons from './components/Persons'
 
 import personService from './services/Persons'
 
@@ -10,6 +11,8 @@ const App = () => {
   const [newNumber, setNewNumber] = useState('')
   const [persons, setPersons] = useState([])
   const [searchTerm, setSearchTerm] = useState('')
+  const [notificationMessage, setNotificationMessage] = useState(null)
+  const [notificationStatus, setNotificationStatus] = useState(null)
 
   useEffect(() => {
     personService
@@ -28,6 +31,14 @@ const App = () => {
     setNewNumber('')
   }
 
+  const setMessage = (status, message) => {
+    setNotificationStatus(status)
+    setNotificationMessage(message)
+    setTimeout(() => {
+      setNotificationMessage(null)
+    }, 5000)
+  }
+
   const addPerson = (event) => {
     event.preventDefault()
     const person = {
@@ -36,12 +47,18 @@ const App = () => {
     }
     const newPerson = persons.find(person => person.name === newName)
     if (newPerson !== undefined) {
-      if (window.confirm(`${newName} already added! Replace the old number with a new one?`)) {
+      const question = `${newName} is already added! Replace the old number with a new one?`
+      const answer = window.confirm(question)
+      if (answer) {
         personService
           .update(newPerson.id, person)
           .then(returnedPerson => {
             setPersons(persons.map(p => p.id !== newPerson.id ? p : returnedPerson))
             resetForms()
+            setMessage(
+              'success',
+              `Number of ${returnedPerson.name} was updated successfully!`
+            )
           })
       }
     } else {
@@ -50,6 +67,10 @@ const App = () => {
         .then(returnedPerson => {
           setPersons(persons.concat(returnedPerson))
           resetForms()
+          setMessage(
+            'success',
+            `${newName} has been added successfully!`
+          )
         })
     }
   }
@@ -60,6 +81,10 @@ const App = () => {
         .deletePerson(person.id)
         .then(returnedPerson => {
           setPersons(persons.filter(p => p.id !== person.id))
+          setMessage(
+            'success',
+            `Person ${person.name} was deleted successfully!`
+          )
         })
     }
   }
@@ -73,6 +98,8 @@ const App = () => {
   return (
     <div>
       <h2>Phonebook</h2>
+
+      <Notification message={notificationMessage} status={notificationStatus} />
 
       <h3>Add new person</h3>
       <PersonForm 

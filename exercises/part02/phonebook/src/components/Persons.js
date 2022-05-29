@@ -8,7 +8,7 @@ const Persons = (props) => {
         <tbody>
           <tr>
             <td>
-              Search
+              Search:
             </td>
             <td>
               <input value={searchTerm} onChange={handleSearchChange} />

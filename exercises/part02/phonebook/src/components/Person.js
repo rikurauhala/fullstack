@@ -9,7 +9,7 @@ const Person = ({ person, deletePerson }) => {
       </td>
       <td>
         <button onClick={event => deletePerson(event, person)}>
-          Delete
+          [x] Delete
         </button>
       </td>
     </tr>

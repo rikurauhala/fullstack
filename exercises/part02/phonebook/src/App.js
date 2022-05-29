@@ -23,22 +23,33 @@ const App = () => {
     ? persons.filter(person => person.name.toLowerCase().includes(searchTerm.toLowerCase()))
     : persons
 
+  const resetForms = () => {
+    setNewName('')
+    setNewNumber('')
+  }
+
   const addPerson = (event) => {
     event.preventDefault()
-    const contains = persons.findIndex(person => person.name === newName)
-    if (contains !== -1) {
-      alert(`${newName} is already added to phonebook`)
-    } else {
-      const person = {
-        name: newName,
-        number: newNumber
+    const person = {
+      name: newName,
+      number: newNumber
+    }
+    const newPerson = persons.find(person => person.name === newName)
+    if (newPerson !== undefined) {
+      if (window.confirm(`${newName} already added! Replace the old number with a new one?`)) {
+        personService
+          .update(newPerson.id, person)
+          .then(returnedPerson => {
+            setPersons(persons.map(p => p.id !== newPerson.id ? p : returnedPerson))
+            resetForms()
+          })
       }
+    } else {
       personService
         .create(person)
         .then(returnedPerson => {
           setPersons(persons.concat(returnedPerson))
-          setNewName('')
-          setNewNumber('')
+          resetForms()
         })
     }
   }

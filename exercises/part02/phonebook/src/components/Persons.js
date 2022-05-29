@@ -1,7 +1,7 @@
 import Person from './Person'
 
 const Persons = (props) => {
-  const { searchTerm, handleSearchChange, searchResults } = props
+  const { searchTerm, handleSearchChange, searchResults, deletePerson } = props
   return (
     <div>
       <table>
@@ -29,7 +29,11 @@ const Persons = (props) => {
         </thead>
         <tbody>
           {searchResults.map(person => 
-            <Person key={person.name} name={person.name} number={person.number} />
+            <Person
+              key={person.id}
+              person={person}
+              deletePerson={deletePerson}
+            />
           )}
         </tbody>
       </table>

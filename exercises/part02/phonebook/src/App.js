@@ -43,6 +43,16 @@ const App = () => {
     }
   }
 
+  const deletePerson = (event, person) => {
+    if (window.confirm(`Delete ${person.name}?`)) {
+      personService
+        .deletePerson(person.id)
+        .then(returnedPerson => {
+          setPersons(persons.filter(p => p.id !== person.id))
+        })
+    }
+  }
+
   const handleSearchChange = (event) => {setSearchTerm(event.target.value)}
 
   const handleNameChange = (event) => setNewName(event.target.value)
@@ -67,6 +77,7 @@ const App = () => {
         searchTerm={searchTerm}
         handleSearchChange={handleSearchChange}
         searchResults={searchResults}
+        deletePerson={deletePerson}
       />
     </div>
   )

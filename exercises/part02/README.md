@@ -4,11 +4,11 @@ This directory contains the exercise files for part 2.
 
 ## Hours
 
-Time spent: `21 hours`
+Time spent: `26 hours`
 
 ## Exercises
 
-Exercises completed: `16 / 20`
+Exercises completed: `20 / 20`
 
 ### Exercise 2.1
 
@@ -64,7 +64,7 @@ See the relevant state of the application [here](https://github.com/rikurauhala/
 
 ### Exercise 2.14*
 
-See the relevant state of the application [here](https://github.com/rikurauhala/fullstack/tree/70672c520e6fe58a65a7ba8ff43538a01662a5a4/exercises/part02/countries).
+See the final state of the application [here](https://github.com/rikurauhala/fullstack/tree/main/exercises/part02/countries).
 
 ### Exercise 2.15
 
@@ -73,3 +73,19 @@ See the relevant state of the application [here](https://github.com/rikurauhala/
 ### Exercise 2.16
 
 See the relevant state of the application [here](https://github.com/rikurauhala/fullstack/tree/48db709b3d44c2dbd538f1d4358e97c767b81985/exercises/part02/phonebook).
+
+### Exercise 2.17
+
+See the relevant state of the application [here](https://github.com/rikurauhala/fullstack/tree/47a61d6a92d8cb7ad8af4f7fbeee16e4f8907c73/exercises/part02/phonebook).
+
+### Exercise 2.18*
+
+See the relevant state of the application [here](https://github.com/rikurauhala/fullstack/tree/70b532a314a2cae6fb2aa20441984bfc353239f2/exercises/part02/phonebook).
+
+### Exercise 2.19
+
+See the relevant state of the application [here](https://github.com/rikurauhala/fullstack/tree/0284cc20a428c92cbdf6726094141f9f29706e8f/exercises/part02/phonebook).
+
+### Exercise 2.20*
+
+See the final state of the application [here](https://github.com/rikurauhala/fullstack/tree/main/exercises/part02/phonebook).

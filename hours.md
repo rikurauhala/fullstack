@@ -46,4 +46,5 @@ Programming a server with NodeJS and Express
 | ---------: | -----: | :------------------------------------------------------------------------------ |
 | 2022-05-29 |      1 | reading the material                                                            |
 | 2022-05-30 |      2 | reading the material, completing exercises 3.1 to 3.2                           |
-|      total |      3 |                                                                                 |
+| 2022-05-30 |      4 | completing exercises 3.3 to 3.8*                                                |
+|      total |      7 |                                                                                 |

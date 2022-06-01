@@ -4,11 +4,11 @@ This directory contains the exercise files for part 3.
 
 ## Hours
 
-Time spent: `7 hours`
+Time spent: `9 hours`
 
 ## Exercises
 
-Exercises completed: `8 / 22`
+Exercises completed: `9 / 22`
 
 :warning: Please note that the files for part 3 are stored in [another repository](https://github.com/rikurauhala/fullstack-part3).
 
@@ -43,3 +43,8 @@ See the relevant state of the application [here](https://github.com/rikurauhala/
 ### Exercise 3.8*
 
 See the relevant state of the application [here](https://github.com/rikurauhala/fullstack-part3/tree/eb1b5432e51ad373e8856be020e8fd48470d6e97).
+
+### Exercise 3.9
+
+See the relevant state of the frontend [here](https://github.com/rikurauhala/fullstack/tree/bf2ad359a5c3632c2b6be13983a51cb56af4d57a/exercises/part03/phonebook/frontend).  
+See the relevant state of the backend [here](https://github.com/rikurauhala/fullstack-part3/tree/c5aab37841743a9286e8d0f7578fc3ce9649544c).

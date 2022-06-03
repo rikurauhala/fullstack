@@ -4,11 +4,11 @@ This directory contains the exercise files for part 3.
 
 ## Hours
 
-Time spent: `13 hours`
+Time spent: `17 hours`
 
 ## Exercises
 
-Exercises completed: `12 / 22`
+Exercises completed: `18 / 22`
 
 :warning: Please note that the files for part 3 are stored in [another repository](https://github.com/rikurauhala/fullstack-part3).
 
@@ -64,3 +64,27 @@ You can find a live version of the application deployed on [Heroku](https://phon
 ### Exercise 3.12
 
 See the relevant state of the application [here](https://github.com/rikurauhala/fullstack-part3/tree/f006f5bd1309dfc7afaaa6c5c0e4f78d6a7fbbac).
+
+### Exercise 3.13
+
+See the relevant state of the application [here](https://github.com/rikurauhala/fullstack-part3/tree/783434709ed1b66e2cbf0ca0ac4ec4a26a5ba297).
+
+### Exercise 3.14
+
+See the relevant state of the application [here](https://github.com/rikurauhala/fullstack-part3/tree/c2cf4ecdb83a3e0ddf8215a79b26dd975dee9474).
+
+### Exercise 3.15
+
+See the relevant state of the application [here](https://github.com/rikurauhala/fullstack-part3/tree/37f387120a560517131dcf7f856c38e750795882).
+
+### Exercise 3.16
+
+See the relevant state of the application [here](https://github.com/rikurauhala/fullstack-part3/tree/7b0fb7330a9e6a726290b209bddff624ae5bc101).
+
+### Exercise 3.17*
+
+See the relevant state of the application [here](https://github.com/rikurauhala/fullstack-part3/tree/b500082d0fc0a555b82e8fddfb86e8b01658b4ea).
+
+### Exercise 3.18*
+
+See the relevant state of the application [here](https://github.com/rikurauhala/fullstack-part3/tree/50ed3d98c2f0e96423030be3f125400fa329e11c).

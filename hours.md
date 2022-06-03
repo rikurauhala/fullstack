@@ -49,4 +49,5 @@ Programming a server with NodeJS and Express
 | 2022-05-31 |      4 | completing exercises 3.3 to 3.8*                                                |
 | 2022-06-01 |      3 | reading the material, completing exercises 3.9 to 3.11                          |
 | 2022-06-02 |      3 | reading the material, experimenting with mongodb, completing exercise 3.12      |
-|      total |     13 |                                                                                 |
+| 2022-06-03 |      4 | completing exercises 3.13 to 3.18*                                              |
+|      total |     17 |                                                                                 |

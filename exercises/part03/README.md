@@ -100,11 +100,11 @@ See the relevant state of the backend [here](https://github.com/rikurauhala/full
 ### Exercise 3.21
 
 See the relevant state of the frontend [here](https://github.com/rikurauhala/fullstack/tree/a15ef1824223ad2b354ee0f01347c95d5eb22410/exercises/part03/phonebook/frontend).  
-See the relevant state of the backend [here](https://github.com/rikurauhala/fullstack-part3/tree/27996ca41050afa7663cf34c23e6560f8b7810fe).
+See the relevant state of the backend [here](https://github.com/rikurauhala/fullstack-part3/tree/27996ca41050afa7663cf34c23e6560f8b7810fe).  
 You can find a live version of the application deployed on [Heroku](https://phonebook-rauhala.herokuapp.com).
 
 ### Exercise 3.22
 
 See the final state of the frontend [here](https://github.com/rikurauhala/fullstack/tree/main/exercises/part03/phonebook/frontend).  
-See the final state of the backend [here](https://github.com/rikurauhala/fullstack-part3).
+See the final state of the backend [here](https://github.com/rikurauhala/fullstack-part3).  
 You can find a live version of the application deployed on [Heroku](https://phonebook-rauhala.herokuapp.com).

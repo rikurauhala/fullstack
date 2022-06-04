@@ -4,11 +4,11 @@ This directory contains the exercise files for part 3.
 
 ## Hours
 
-Time spent: `17 hours`
+Time spent: `19 hours`
 
 ## Exercises
 
-Exercises completed: `18 / 22`
+Exercises completed: `22 / 22`
 
 :warning: Please note that the files for part 3 are stored in [another repository](https://github.com/rikurauhala/fullstack-part3).
 
@@ -88,3 +88,25 @@ See the relevant state of the application [here](https://github.com/rikurauhala/
 ### Exercise 3.18*
 
 See the relevant state of the application [here](https://github.com/rikurauhala/fullstack-part3/tree/50ed3d98c2f0e96423030be3f125400fa329e11c).
+
+### Exercise 3.19*
+
+See the relevant state of the frontend [here](https://github.com/rikurauhala/fullstack/tree/9ed935c03726853e6163e204e1196b46c5b36528/exercises/part03/phonebook/frontend).  
+See the relevant state of the backend [here](https://github.com/rikurauhala/fullstack-part3/tree/823c54263262d784f5d1de9b66123df49ce9024b).
+
+### Exercise 3.20*
+
+See the relevant state of the frontend [here](https://github.com/rikurauhala/fullstack/tree/a15ef1824223ad2b354ee0f01347c95d5eb22410/exercises/part03/phonebook/frontend).  
+See the relevant state of the backend [here](https://github.com/rikurauhala/fullstack-part3/tree/27996ca41050afa7663cf34c23e6560f8b7810fe).
+
+### Exercise 3.21
+
+See the relevant state of the frontend [here](https://github.com/rikurauhala/fullstack/tree/a15ef1824223ad2b354ee0f01347c95d5eb22410/exercises/part03/phonebook/frontend).  
+See the relevant state of the backend [here](https://github.com/rikurauhala/fullstack-part3/tree/27996ca41050afa7663cf34c23e6560f8b7810fe).
+You can find a live version of the application deployed on [Heroku](https://phonebook-rauhala.herokuapp.com).
+
+### Exercise 3.22
+
+See the final state of the frontend [here](https://github.com/rikurauhala/fullstack/tree/main/exercises/part03/phonebook/frontend).  
+See the final state of the backend [here](https://github.com/rikurauhala/fullstack-part3).
+You can find a live version of the application deployed on [Heroku](https://phonebook-rauhala.herokuapp.com).

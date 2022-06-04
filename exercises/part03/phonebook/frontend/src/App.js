@@ -11,8 +11,8 @@ const App = () => {
   const [newNumber, setNewNumber] = useState('')
   const [persons, setPersons] = useState([])
   const [searchTerm, setSearchTerm] = useState('')
-  const [notificationMessage, setNotificationMessage] = useState(null)
   const [notificationStatus, setNotificationStatus] = useState(null)
+  const [notificationMessage, setNotificationMessage] = useState(null)
 
   useEffect(() => {
     personService
@@ -31,7 +31,7 @@ const App = () => {
     setNewNumber('')
   }
 
-  const setMessage = (status, message) => {
+  const setNotification = (status, message) => {
     setNotificationStatus(status)
     setNotificationMessage(message)
     setTimeout(() => {
@@ -55,7 +55,7 @@ const App = () => {
           .then(returnedPerson => {
             setPersons(persons.map(p => p.id !== newPerson.id ? p : returnedPerson))
             resetForms()
-            setMessage(
+            setNotification(
               'success',
               `Number of ${returnedPerson.name} was updated successfully!`
             )
@@ -67,9 +67,15 @@ const App = () => {
         .then(returnedPerson => {
           setPersons(persons.concat(returnedPerson))
           resetForms()
-          setMessage(
+          setNotification(
             'success',
             `${newName} has been added successfully!`
+          )
+        })
+        .catch(error => {
+          setNotification(
+            'error',
+            `${error.response.data.error}`
           )
         })
     }
@@ -81,13 +87,13 @@ const App = () => {
         .deletePerson(person.id)
         .then(returnedPerson => {
           setPersons(persons.filter(p => p.id !== person.id))
-          setMessage(
+          setNotification(
             'success',
             `Person ${person.name} was deleted successfully!`
           )
         })
         .catch(error => { 
-          setMessage(
+          setNotification(
             'error',
             `${person.name} has already been deleted!`
           )

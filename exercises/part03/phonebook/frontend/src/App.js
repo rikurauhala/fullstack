@@ -60,6 +60,12 @@ const App = () => {
               `Number of ${returnedPerson.name} was updated successfully!`
             )
           })
+          .catch(error => {
+            setNotification(
+              'error',
+              `${error.response.data.error}`
+            )
+          })
       }
     } else {
       personService

@@ -10,8 +10,6 @@ Time spent: `19 hours`
 
 Exercises completed: `22 / 22`
 
-:warning: Please note that the files for part 3 are stored in [another repository](https://github.com/rikurauhala/fullstack-part3).
-
 ### Exercise 3.1
 
 See the relevant state of the application [here](https://github.com/rikurauhala/fullstack-part3/tree/aef0ebcb2aafc14ff9d195fc718e5f477dbe2ac4).

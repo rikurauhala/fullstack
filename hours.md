@@ -52,3 +52,12 @@ Programming a server with NodeJS and Express
 | 2022-06-03 |      4 | completing exercises 3.13 to 3.18*                                              |
 | 2022-06-04 |      2 | completing exercises 3.19* to 3.22                                              |
 |      total |     19 |                                                                                 |
+
+## Part 4
+
+Testing Express servers, user administration
+
+| date       | hours  | description                                                                     |
+| ---------: | -----: | :------------------------------------------------------------------------------ |
+| 2022-06-05 |      1 | reading the material                                                            |
+|      total |      1 |                                                                                 |

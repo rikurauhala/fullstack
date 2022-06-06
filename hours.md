@@ -60,4 +60,5 @@ Testing Express servers, user administration
 | date       | hours  | description                                                                     |
 | ---------: | -----: | :------------------------------------------------------------------------------ |
 | 2022-06-05 |      1 | reading the material                                                            |
-|      total |      1 |                                                                                 |
+| 2022-06-06 |      1 | reading the material, completing exercise 4.1                                   |
+|      total |      2 |                                                                                 |

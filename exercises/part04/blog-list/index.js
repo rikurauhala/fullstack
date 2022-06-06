@@ -1,4 +1,5 @@
-const http = require('http')
+require('dotenv').config()
+require('http')
 const express = require('express')
 const app = express()
 const cors = require('cors')
@@ -13,8 +14,14 @@ const blogSchema = new mongoose.Schema({
 
 const Blog = mongoose.model('Blog', blogSchema)
 
-const mongoUrl = 'mongodb://localhost/bloglist'
-mongoose.connect(mongoUrl)
+const url = process.env.MONGODB_URI
+mongoose.connect(url)
+  .then(() => {
+    console.log('Connected to MongoDB')
+  })
+  .catch((error) => {
+    console.log('Error connecting to MongoDB:', error.message)
+  })
 
 app.use(cors())
 app.use(express.json())
@@ -29,7 +36,6 @@ app.get('/api/blogs', (request, response) => {
 
 app.post('/api/blogs', (request, response) => {
   const blog = new Blog(request.body)
-
   blog
     .save()
     .then(result => {

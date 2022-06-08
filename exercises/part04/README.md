@@ -8,7 +8,7 @@ Time spent: `3 hours`
 
 ## Exercises
 
-Exercises completed: `2 / 23`
+Exercises completed: `3 / 23`
 
 ### Exercise 4.1
 
@@ -17,3 +17,7 @@ See the relevant state of the application [here](https://github.com/rikurauhala/
 ### Exercise 4.2
 
 See the relevant state of the application [here](https://github.com/rikurauhala/fullstack/tree/049c7dd1c2c7e5a869f1bbc8d90d5930ad929a80/exercises/part04/blog-list).
+
+### Exercise 4.3
+
+See the relevant state of the application [here](https://github.com/rikurauhala/fullstack/commit/7931f643a551c19ff4cc55a6c9b02b49f2e755ad).

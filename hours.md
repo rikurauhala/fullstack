@@ -6,6 +6,8 @@ This document is used to keep track of hours that I have spent working on the co
 
 Fundamentals of Web apps
 
+[Material](https://fullstackopen.com/en/part0)
+
 | date       | hours  | description                                                                     |
 | ---------: | -----: | :------------------------------------------------------------------------------ |
 | 2022-05-18 |      1 | reading the material                                                            |
@@ -18,6 +20,8 @@ Fundamentals of Web apps
 
 Introduction to React
 
+[Material](https://fullstackopen.com/en/part1)
+
 | date       | hours  | description                                                                     |
 | ---------: | -----: | :------------------------------------------------------------------------------ |
 | 2022-05-22 |      4 | reading the material, completing exercises 1.1 to 1.5                           |
@@ -28,6 +32,8 @@ Introduction to React
 ## Part 2
 
 Communicating with server
+
+[Material](https://fullstackopen.com/en/part2)
 
 | date       | hours  | description                                                                     |
 | ---------: | -----: | :------------------------------------------------------------------------------ |
@@ -41,6 +47,8 @@ Communicating with server
 ## Part 3
 
 Programming a server with NodeJS and Express
+
+[Material](https://fullstackopen.com/en/part3)
 
 | date       | hours  | description                                                                     |
 | ---------: | -----: | :------------------------------------------------------------------------------ |
@@ -56,6 +64,8 @@ Programming a server with NodeJS and Express
 ## Part 4
 
 Testing Express servers, user administration
+
+[Material](https://fullstackopen.com/en/part4)
 
 | date       | hours  | description                                                                     |
 | ---------: | -----: | :------------------------------------------------------------------------------ |

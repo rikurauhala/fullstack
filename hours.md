@@ -64,4 +64,5 @@ Testing Express servers, user administration
 | 2022-06-07 |      1 | completing exercise 4.2                                                         |
 | 2022-06-08 |      1 | completing exercises 4.3 to 4.4                                                 |
 | 2022-06-09 |      1 | reading the material, completing exercise 4.5*                                  |
-|      total |      5 |                                                                                 |
+| 2022-06-11 |      1 | working on exercise 4.6*                                                        |
+|      total |      6 |                                                                                 |

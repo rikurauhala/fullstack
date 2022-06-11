@@ -69,6 +69,18 @@ describe('dummy', () => {
   })
 })
 
+describe('favorite blog', () => {
+  test('is the only option', () => {
+    const result = listHelper.favoriteBlog(blog)
+    expect(result).toEqual(blog[0])
+  })
+
+  test('is the correct one out of all blogs', () => {
+    const result = listHelper.favoriteBlog(blogs)
+    expect(result).toEqual(blogs[0])
+  })
+})
+
 describe('total likes', () => {
   test('of an empty list is zero', () => {
     const result = listHelper.totalLikes([])
@@ -83,17 +95,5 @@ describe('total likes', () => {
   test('of a bigger list is calculated right', () => {
     const result = listHelper.totalLikes(blogs)
     expect(result).toBe(36)
-  })
-})
-
-describe('favorite blog', () => {
-  test('is the only option', () => {
-    const result = listHelper.favoriteBlog(blog)
-    expect(result).toEqual(blog[0])
-  })
-
-  test('is the correct one out of all blogs', () => {
-    const result = listHelper.favoriteBlog(blogs)
-    expect(result).toEqual(blogs[0])
   })
 })

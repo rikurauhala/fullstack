@@ -6,7 +6,7 @@ This document is used to keep track of hours that I have spent working on the co
 
 Fundamentals of Web apps
 
-[Material](https://fullstackopen.com/en/part0)
+[Material](https://fullstackopen.com/en/part0) | [Submissions](https://github.com/rikurauhala/fullstack/tree/main/exercises/part00)
 
 | date       | hours  | description                                                                     |
 | ---------: | -----: | :------------------------------------------------------------------------------ |
@@ -20,7 +20,7 @@ Fundamentals of Web apps
 
 Introduction to React
 
-[Material](https://fullstackopen.com/en/part1)
+[Material](https://fullstackopen.com/en/part1) | [Submissions](https://github.com/rikurauhala/fullstack/tree/main/exercises/part01)
 
 | date       | hours  | description                                                                     |
 | ---------: | -----: | :------------------------------------------------------------------------------ |
@@ -33,7 +33,7 @@ Introduction to React
 
 Communicating with server
 
-[Material](https://fullstackopen.com/en/part2)
+[Material](https://fullstackopen.com/en/part2) | [Submissions](https://github.com/rikurauhala/fullstack/tree/main/exercises/part02)
 
 | date       | hours  | description                                                                     |
 | ---------: | -----: | :------------------------------------------------------------------------------ |
@@ -48,7 +48,7 @@ Communicating with server
 
 Programming a server with NodeJS and Express
 
-[Material](https://fullstackopen.com/en/part3)
+[Material](https://fullstackopen.com/en/part3) | [Submissions](https://github.com/rikurauhala/fullstack/tree/main/exercises/part03)
 
 | date       | hours  | description                                                                     |
 | ---------: | -----: | :------------------------------------------------------------------------------ |
@@ -65,7 +65,7 @@ Programming a server with NodeJS and Express
 
 Testing Express servers, user administration
 
-[Material](https://fullstackopen.com/en/part4)
+[Material](https://fullstackopen.com/en/part4) | [Submissions](https://github.com/rikurauhala/fullstack/tree/main/exercises/part04)
 
 | date       | hours  | description                                                                     |
 | ---------: | -----: | :------------------------------------------------------------------------------ |

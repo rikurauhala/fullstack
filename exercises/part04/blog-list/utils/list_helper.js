@@ -6,7 +6,8 @@ const dummy = (blogs) => {
 
 const favoriteBlog = (blogs) => {
   const compare = (a, b) => a.likes - b.likes
-  return blogs.sort(compare)[0]
+  const result = blogs.sort(compare)[0]
+  return result
 }
 
 const mostBlogs = (blogs) => {
@@ -24,7 +25,8 @@ const totalLikes = (blogs) => {
   }
 
   const reducer = (sum, blog) => sum + blog.likes
-  return blogs.reduce(reducer, 0)
+  const result = blogs.reduce(reducer, 0)
+  return result
 }
 
 module.exports = {

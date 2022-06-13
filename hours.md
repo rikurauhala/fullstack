@@ -25,7 +25,7 @@ Introduction to React
 | date       | hours  | description                                                                     |
 | ---------: | -----: | :------------------------------------------------------------------------------ |
 | 2022-05-22 |      4 | reading the material, completing exercises 1.1 to 1.5                           |
-| 2022-05-23 |      3 | reading the material, completing exercises 1.6 to 1.7                           |
+| 2022-05-23 |      3 | reading the material, completing exercises 1.6 and 1.7                          |
 | 2022-05-24 |      4 | completing exercises 1.8 to 1.14                                                |
 |      total |     11 |                                                                                 |
 
@@ -53,7 +53,7 @@ Programming a server with NodeJS and Express
 | date       | hours  | description                                                                     |
 | ---------: | -----: | :------------------------------------------------------------------------------ |
 | 2022-05-29 |      1 | reading the material                                                            |
-| 2022-05-30 |      2 | reading the material, completing exercises 3.1 to 3.2                           |
+| 2022-05-30 |      2 | reading the material, completing exercises 3.1 and 3.2                          |
 | 2022-05-31 |      4 | completing exercises 3.3 to 3.8*                                                |
 | 2022-06-01 |      3 | reading the material, completing exercises 3.9 to 3.11                          |
 | 2022-06-02 |      3 | reading the material, experimenting with mongodb, completing exercise 3.12      |
@@ -72,7 +72,7 @@ Testing Express servers, user administration
 | 2022-06-05 |      1 | reading the material                                                            |
 | 2022-06-06 |      1 | reading the material, completing exercise 4.1                                   |
 | 2022-06-07 |      1 | completing exercise 4.2                                                         |
-| 2022-06-08 |      1 | completing exercises 4.3 to 4.4                                                 |
+| 2022-06-08 |      1 | completing exercises 4.3 and 4.4                                                |
 | 2022-06-09 |      1 | reading the material, completing exercise 4.5*                                  |
 | 2022-06-11 |      1 | working on exercise 4.6*                                                        |
 | 2022-06-13 |      2 | completing exercises 4.6* and 4.7*                                              |

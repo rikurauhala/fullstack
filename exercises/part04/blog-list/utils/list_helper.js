@@ -10,7 +10,12 @@ const favoriteBlog = (blogs) => {
 }
 
 const mostBlogs = (blogs) => {
-  return _(blogs).countBy('author')
+  const details = _(blogs).countBy('author').entries().maxBy(_.last)
+  const result = {
+    author: details[0],
+    blogs: details[1]
+  }
+  return result
 }
 
 const totalLikes = (blogs) => {

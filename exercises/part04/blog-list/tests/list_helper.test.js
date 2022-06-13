@@ -81,6 +81,16 @@ describe('favorite blog', () => {
   })
 })
 
+describe('most blogs', () => {
+  test('returns the correct option', () => {
+    const result = listHelper.mostBlogs(blogs)
+    expect(result).toEqual({
+      author: 'Robert C. Martin',
+      blogs: 3
+    })
+  })
+})
+
 describe('total likes', () => {
   test('of an empty list is zero', () => {
     const result = listHelper.totalLikes([])

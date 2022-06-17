@@ -6,6 +6,8 @@ const app = express()
 const cors = require('cors')
 const mongoose = require('mongoose')
 
+require('express-async-errors')
+
 const url = config.MONGODB_URI
 logger.info('Connecting to', url)
 mongoose.connect(url)

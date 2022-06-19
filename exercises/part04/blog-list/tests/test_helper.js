@@ -7,11 +7,25 @@ const blog = {
   __v: 0
 }
 
-const blogWithoutLikesProperty = {
-  _id: '5a422a851b54a676234d17f2',
+const blogWithoutLikes = {
+  _id: '5a422a851b54a676234d17f1',
   title: 'No likes',
   author: 'Anonymous',
   url: 'https://thisurlprobablydoesntexist.com/',
+  __v: 0
+}
+
+const blogWithoutTitle = {
+  _id: '5a422a851b54a676234d17f2',
+  author: 'Anonymous',
+  url: 'https://thisurlprobablydoesntexist.com/',
+  __v: 0
+}
+
+const blogWithoutUrl = {
+  _id: '5a422a851b54a676234d17f3',
+  title: 'No likes',
+  author: 'Anonymous',
   __v: 0
 }
 
@@ -60,6 +74,8 @@ const initialBlogs = [
 
 module.exports = {
   blog,
-  blogWithoutLikesProperty,
+  blogWithoutLikes,
+  blogWithoutTitle,
+  blogWithoutUrl,
   initialBlogs
 }

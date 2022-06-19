@@ -50,7 +50,7 @@ test('id is defined', async () => {
 test('missing likes property returns 0', async () => {
   await api
     .post(url)
-    .send(helper.blogWithoutLikesProperty)
+    .send(helper.blogWithoutLikes)
     .expect(201)
     .expect('Content-Type', /application\/json/)
 
@@ -58,6 +58,24 @@ test('missing likes property returns 0', async () => {
 
   const likes = response.body[response.body.length-1].likes
   expect(likes).toBe(0)
+})
+
+test('missing title or url return status code 400', async () => {
+  const responseTitle = await api
+    .post(url)
+    .send(helper.blogWithoutTitle)
+    .expect(400)
+
+  const errorMessageTitle = responseTitle.body.error
+  expect(errorMessageTitle).toBe('Title is missing!')
+
+  const responseUrl = await api
+    .post(url)
+    .send(helper.blogWithoutUrl)
+    .expect(400)
+
+  const errorMessageUrl = responseUrl.body.error
+  expect(errorMessageUrl).toBe('Url is missing!')
 })
 
 test('there is a correct number of blogs', async () => {

@@ -7,6 +7,14 @@ const blog = {
   __v: 0
 }
 
+const blogWithoutLikesProperty = {
+  _id: '5a422a851b54a676234d17f2',
+  title: 'No likes',
+  author: 'Anonymous',
+  url: 'https://thisurlprobablydoesntexist.com/',
+  __v: 0
+}
+
 const initialBlogs = [
   {
     _id: '5a422aa71b54a676234d17f8',
@@ -52,5 +60,6 @@ const initialBlogs = [
 
 module.exports = {
   blog,
+  blogWithoutLikesProperty,
   initialBlogs
 }

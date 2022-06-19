@@ -47,6 +47,19 @@ test('id is defined', async () => {
   expect(id).toBeDefined()
 }, 100000)
 
+test('missing likes property returns 0', async () => {
+  await api
+    .post(url)
+    .send(helper.blogWithoutLikesProperty)
+    .expect(201)
+    .expect('Content-Type', /application\/json/)
+
+  const response = await api.get(url)
+
+  const likes = response.body[response.body.length-1].likes
+  expect(likes).toBe(0)
+})
+
 test('there is a correct number of blogs', async () => {
   const response = await api.get(url)
   expect(response.body).toHaveLength(helper.initialBlogs.length)

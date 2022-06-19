@@ -19,7 +19,7 @@ test('blogs are returned as json', async () => {
     .get(url)
     .expect(200)
     .expect('Content-Type', /application\/json/)
-}, 100000)
+})
 
 test('creating a new blog succeeds', async () => {
   await api
@@ -39,13 +39,13 @@ test('creating a new blog succeeds', async () => {
   expect(response.body[created].likes).toBe(helper.blog.likes)
   expect(response.body[created].title).toBe(helper.blog.title)
   expect(response.body[created].url).toBe(helper.blog.url)
-}, 100000)
+})
 
 test('id is defined', async () => {
   const response = await api.get(url)
   const id = response.body[0].id
   expect(id).toBeDefined()
-}, 100000)
+})
 
 test('missing likes property returns 0', async () => {
   await api
@@ -81,7 +81,7 @@ test('missing title or url return status code 400', async () => {
 test('there is a correct number of blogs', async () => {
   const response = await api.get(url)
   expect(response.body).toHaveLength(helper.initialBlogs.length)
-}, 100000)
+})
 
 afterAll(() => {
   mongoose.connection.close()

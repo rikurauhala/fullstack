@@ -1,6 +1,16 @@
 const blogsRouter = require('express').Router()
 const Blog = require('../models/blog')
 
+const createBlogObject = (body) => {
+  const blog = new Blog({
+    title: body.title,
+    author: body.author,
+    url: body.url,
+    likes: body.likes || 0,
+  })
+  return blog
+}
+
 blogsRouter.delete('/:id', async (request, response) => {
   const id = request.params.id
   await Blog.findByIdAndRemove(id)
@@ -13,22 +23,16 @@ blogsRouter.get('/', async (request, response) => {
 })
 
 blogsRouter.post('/', async (request, response) => {
-  const newBlog = request.body
+  const blog = createBlogObject(request.body)
 
-  if (!newBlog.title) {
+  if (!blog.title) {
     return response.status(400).json({ error: 'Title is missing!' })
   }
 
-  if (!newBlog.url) {
+  if (!blog.url) {
     return response.status(400).json({ error: 'Url is missing!' })
   }
 
-  const blog = new Blog({
-    title: newBlog.title,
-    author: newBlog.author,
-    url: newBlog.url,
-    likes: newBlog.likes || 0,
-  })
   const result = await blog.save()
   response.status(201).json(result)
 })

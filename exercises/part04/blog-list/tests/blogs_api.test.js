@@ -41,6 +41,20 @@ test('creating a new blog succeeds', async () => {
   expect(response.body[created].url).toBe(helper.blog.url)
 })
 
+test('deleting a blog succeeds', async () => {
+  const response = await api.get(url)
+  const id = response.body[0].id
+
+  await api
+    .delete(`${url}/${id}`)
+    .expect(204)
+
+  const response2 = await api.get(url)
+  const numberOfBlogs = response2.body.length
+  const initialNumberOfBlogs = helper.initialBlogs.length
+  expect(numberOfBlogs).toBe(initialNumberOfBlogs-1)
+})
+
 test('id is defined', async () => {
   const response = await api.get(url)
   const id = response.body[0].id

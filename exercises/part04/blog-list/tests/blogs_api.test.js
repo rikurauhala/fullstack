@@ -55,6 +55,21 @@ test('deleting a blog succeeds', async () => {
   expect(numberOfBlogs).toBe(initialNumberOfBlogs-1)
 })
 
+test('updating a blog succeeds', async () => {
+  const blogsBefore = await helper.blogsInDb()
+  const blogToUpdate = blogsBefore[0]
+
+  await api
+    .put(`${url}/${blogToUpdate.id}`)
+    .send(blogToUpdate)
+    .expect('Content-Type', /application\/json/)
+
+  const blogsAfter = await helper.blogsInDb()
+  const likesBefore = blogToUpdate.likes
+  const likesAfter = blogsAfter[0].likes
+  expect(likesAfter).toBe(likesBefore + 1)
+})
+
 test('id is defined', async () => {
   const response = await api.get(url)
   const id = response.body[0].id

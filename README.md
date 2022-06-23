@@ -12,5 +12,5 @@ This table is used to keep track of my progress.
 | [part 1](exercises/part01) | [11](hours.md#part-1) |   14 / 14 |
 | [part 2](exercises/part02) | [26](hours.md#part-2) |   20 / 20 |
 | [part 3](exercises/part03) | [19](hours.md#part-3) |   22 / 22 |
-| [part 4](exercises/part04) | [18](hours.md#part-4) |   14 / 23 |
-|                      total |                    78 |   76 / 85 |
+| [part 4](exercises/part04) | [19](hours.md#part-4) |   14 / 23 |
+|                      total |                    79 |   76 / 85 |

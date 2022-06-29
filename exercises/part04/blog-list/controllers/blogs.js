@@ -5,8 +5,23 @@ const jwt = require('jsonwebtoken')
 
 blogsRouter.delete('/:id', async (request, response) => {
   const id = request.params.id
-  await Blog.findByIdAndRemove(id)
-  response.status(204).end()
+  const decodedToken = jwt.verify(request.token, process.env.SECRET)
+
+  if (!decodedToken.id) {
+    return response.status(401).json({ error: 'Token missing or invalid!' })
+  }
+
+  const user = await User.findById(decodedToken.id)
+  const blog = await Blog.findById(id)
+
+  if (!blog) {
+    response.status(400).json({ error: 'No blog found!' })
+  } else if (blog.user.toString() === user._id.toString()) {
+    await Blog.findByIdAndRemove(id)
+    response.status(204).end()
+  } else {
+    response.status(401).json({ error: 'Invalid user!' })
+  }
 })
 
 blogsRouter.get('/', async (request, response) => {

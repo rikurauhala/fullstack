@@ -4,8 +4,6 @@ My submissions for the course [Full stack open](https://fullstackopen.com/en/).
 
 ## Exercises
 
-This table is used to keep track of my progress.
-
 |                       part |                 hours | completed |
 | -------------------------: | --------------------: | --------: |
 | [part 0](exercises/part00) |  [4](hours.md#part-0) |    6 /  6 |

@@ -2,7 +2,6 @@ const logger = require('./logger')
 
 const errorHandler = (error, request, response, next) => {
   logger.error(error.message)
-
   if (error.name === 'CastError') {
     return response
       .status(400)
@@ -17,8 +16,17 @@ const errorHandler = (error, request, response, next) => {
         error: 'Invalid token'
       })
   }
-
   next(error)
+}
+
+const tokenExtractor = (request, response, next) => {
+  const authorization = request.get('authorization')
+  if (authorization && authorization.toLowerCase().startsWith('bearer ')) {
+    request.token = authorization.substring(7)
+  } else {
+    request.token = null
+  }
+  next()
 }
 
 const unknownEndpoint = (request, response) => {
@@ -27,5 +35,6 @@ const unknownEndpoint = (request, response) => {
 
 module.exports = {
   errorHandler,
+  tokenExtractor,
   unknownEndpoint
 }

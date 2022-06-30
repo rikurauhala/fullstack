@@ -89,5 +89,5 @@ Testing Express servers, user administration
 | 2022-06-27 |      2 | completing exercises 4.16* and 4.17                                             |
 | 2022-06-28 |      1 | completing exercise 4.18                                                        |
 | 2022-06-29 |      2 | completing exercises 4.19 to 4.21*                                              |
-| 2022-06-30 |      1 | completing exercise 4.22*                                                       |
-|      total |     26 |                                                                                 |
+| 2022-06-30 |      2 | completing exercise 4.22*, working on exercise 4.23*                            |
+|      total |     27 |                                                                                 |

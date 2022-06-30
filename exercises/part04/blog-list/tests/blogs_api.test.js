@@ -5,111 +5,124 @@ const api = supertest(app)
 const helper = require('./test_helper')
 const Blog = require('../models/blog')
 
-const url = '/api/blogs'
+const urlBlogs = '/api/blogs'
+const urlLogin = '/api/login'
+const urlUsers = '/api/users'
 
-beforeEach(async () => {
-  await Blog.deleteMany({})
-  const blogObjects = helper.initialBlogs.map(blog => new Blog(blog))
-  const promiseArray = blogObjects.map(blog => blog.save())
-  await Promise.all(promiseArray)
-})
+describe('Tests', () => {
+  beforeEach(async () => {
+    await Blog.deleteMany({})
+    const blogObjects = helper.initialBlogs.map(blog => new Blog(blog))
+    const promiseArray = blogObjects.map(blog => blog.save())
+    await Promise.all(promiseArray)
+    await api.post(urlUsers).send(helper.user)
+  })
 
-test('blogs are returned as json', async () => {
-  await api
-    .get(url)
-    .expect(200)
-    .expect('Content-Type', /application\/json/)
-})
+  test('blogs are returned as json', async () => {
+    await api
+      .get(urlBlogs)
+      .expect(200)
+      .expect('Content-Type', /application\/json/)
+  })
 
-test('creating a new blog succeeds', async () => {
-  await api
-    .post(url)
-    .send(helper.blog)
-    .expect(201)
-    .expect('Content-Type', /application\/json/)
+  test('creating a new blog succeeds', async () => {
+    const user = await api
+      .post(urlLogin)
+      .send(helper.user)
+    const token = user.body.token
+    console.log(user.body)
+    const header = { 'Authorization': `bearer ${token}` }
 
-  const response = await api.get(url)
+    await api
+      .post(urlBlogs)
+      .send(helper.blog)
+      .set(header)
+      .expect(201)
+      .expect('Content-Type', /application\/json/)
 
-  const numberOfBlogs = response.body.length
-  const initialNumberOfBlogs = helper.initialBlogs.length
-  expect(numberOfBlogs).toBe(initialNumberOfBlogs+1)
+    const response = await api.get(urlBlogs)
 
-  const created = numberOfBlogs-1
-  expect(response.body[created].author).toBe(helper.blog.author)
-  expect(response.body[created].likes).toBe(helper.blog.likes)
-  expect(response.body[created].title).toBe(helper.blog.title)
-  expect(response.body[created].url).toBe(helper.blog.url)
-})
+    const numberOfBlogs = response.body.length
+    const initialNumberOfBlogs = helper.initialBlogs.length
+    expect(numberOfBlogs).toBe(initialNumberOfBlogs+1)
 
-test('deleting a blog succeeds', async () => {
-  const response = await api.get(url)
-  const id = response.body[0].id
+    const created = numberOfBlogs-1
+    expect(response.body[created].author).toBe(helper.blog.author)
+    expect(response.body[created].likes).toBe(helper.blog.likes)
+    expect(response.body[created].title).toBe(helper.blog.title)
+    expect(response.body[created].url).toBe(helper.blog.url)
+  })
 
-  await api
-    .delete(`${url}/${id}`)
-    .expect(204)
+  test('deleting a blog succeeds', async () => {
+    const response = await api.get(urlBlogs)
+    const id = response.body[0].id
 
-  const response2 = await api.get(url)
-  const numberOfBlogs = response2.body.length
-  const initialNumberOfBlogs = helper.initialBlogs.length
-  expect(numberOfBlogs).toBe(initialNumberOfBlogs-1)
-})
+    await api
+      .delete(`${urlBlogs}/${id}`)
+      .expect(204)
 
-test('updating a blog succeeds', async () => {
-  const blogsBefore = await helper.blogsInDb()
-  const blogToUpdate = blogsBefore[0]
+    const response2 = await api.get(urlBlogs)
+    const numberOfBlogs = response2.body.length
+    const initialNumberOfBlogs = helper.initialBlogs.length
+    expect(numberOfBlogs).toBe(initialNumberOfBlogs-1)
+  })
 
-  await api
-    .put(`${url}/${blogToUpdate.id}`)
-    .send(blogToUpdate)
-    .expect('Content-Type', /application\/json/)
+  test('updating a blog succeeds', async () => {
+    const blogsBefore = await helper.blogsInDb()
+    const blogToUpdate = blogsBefore[0]
 
-  const blogsAfter = await helper.blogsInDb()
-  const likesBefore = blogToUpdate.likes
-  const likesAfter = blogsAfter[0].likes
-  expect(likesAfter).toBe(likesBefore + 1)
-})
+    await api
+      .put(`${urlBlogs}/${blogToUpdate.id}`)
+      .send(blogToUpdate)
+      .expect('Content-Type', /application\/json/)
 
-test('id is defined', async () => {
-  const response = await api.get(url)
-  const id = response.body[0].id
-  expect(id).toBeDefined()
-})
+    const blogsAfter = await helper.blogsInDb()
+    const likesBefore = blogToUpdate.likes
+    const likesAfter = blogsAfter[0].likes
+    expect(likesAfter).toBe(likesBefore + 1)
+  })
 
-test('missing likes property returns 0', async () => {
-  await api
-    .post(url)
-    .send(helper.blogWithoutLikes)
-    .expect(201)
-    .expect('Content-Type', /application\/json/)
+  test('id is defined', async () => {
+    const response = await api.get(urlBlogs)
+    const id = response.body[0].id
+    expect(id).toBeDefined()
+  })
 
-  const response = await api.get(url)
+  test('missing likes property returns 0', async () => {
+    await api
+      .post(urlBlogs)
+      .send(helper.blogWithoutLikes)
+      .expect(201)
+      .expect('Content-Type', /application\/json/)
 
-  const likes = response.body[response.body.length-1].likes
-  expect(likes).toBe(0)
-})
+    const response = await api.get(urlBlogs)
 
-test('missing title or url return status code 400', async () => {
-  const responseTitle = await api
-    .post(url)
-    .send(helper.blogWithoutTitle)
-    .expect(400)
+    const likes = response.body[response.body.length-1].likes
+    expect(likes).toBe(0)
+  })
 
-  const errorMessageTitle = responseTitle.body.error
-  expect(errorMessageTitle).toBe('Title is missing!')
+  test('missing title or url return status code 400', async () => {
+    const responseTitle = await api
+      .post(urlBlogs)
+      .send(helper.blogWithoutTitle)
+      .expect(400)
 
-  const responseUrl = await api
-    .post(url)
-    .send(helper.blogWithoutUrl)
-    .expect(400)
+    const errorMessageTitle = responseTitle.body.error
+    expect(errorMessageTitle).toBe('Title is missing!')
 
-  const errorMessageUrl = responseUrl.body.error
-  expect(errorMessageUrl).toBe('Url is missing!')
-})
+    const responseUrl = await api
+      .post(urlBlogs)
+      .send(helper.blogWithoutUrl)
+      .expect(400)
 
-test('there is a correct number of blogs', async () => {
-  const response = await api.get(url)
-  expect(response.body).toHaveLength(helper.initialBlogs.length)
+    const errorMessageUrl = responseUrl.body.error
+    expect(errorMessageUrl).toBe('Url is missing!')
+  })
+
+  test('there is a correct number of blogs', async () => {
+    const response = await api.get(urlBlogs)
+    expect(response.body).toHaveLength(helper.initialBlogs.length)
+  })
 })
 
 afterAll(() => {

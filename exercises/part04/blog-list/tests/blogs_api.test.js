@@ -2,20 +2,58 @@ const mongoose = require('mongoose')
 const supertest = require('supertest')
 const app = require('../app')
 const api = supertest(app)
+const bcrypt = require('bcrypt')
 const helper = require('./test_helper')
+
 const Blog = require('../models/blog')
+const User = require('../models/user')
 
 const urlBlogs = '/api/blogs'
 const urlLogin = '/api/login'
-const urlUsers = '/api/users'
+
+beforeEach(async () => {
+  await User.deleteMany({})
+  const password = 'password'
+  const saltRounds = 10
+  const passwordHash = await bcrypt.hash(password, saltRounds)
+  const user = new User({
+    username: 'username',
+    name: 'name',
+    passwordHash: passwordHash
+  })
+  await user.save()
+})
+
+let header = ''
 
 describe('Tests', () => {
   beforeEach(async () => {
     await Blog.deleteMany({})
-    const blogObjects = helper.initialBlogs.map(blog => new Blog(blog))
-    const promiseArray = blogObjects.map(blog => blog.save())
+    const users = await User.find({})
+    const user = users[0]
+    const id = users[0]._id.toString()
+    const blogObjects = helper.initialBlogs
+      .map(blog => new Blog({
+        title: blog.title,
+        author: blog.author,
+        url: blog.url,
+        likes: blog.likes,
+        user: id
+      }))
+    const promiseArray = blogObjects.map(blog => {
+      blog.save()
+      user.blogs = user.blogs.concat(blog._id)
+    })
     await Promise.all(promiseArray)
-    await api.post(urlUsers).send(helper.user)
+    await user.save()
+    const loginDetails = {
+      'username': 'username',
+      'password': 'password'
+    }
+    const login = await api
+      .post(urlLogin)
+      .send(loginDetails)
+    header = { 'Authorization': `bearer ${login.body.token}` }
   })
 
   test('blogs are returned as json', async () => {
@@ -26,13 +64,6 @@ describe('Tests', () => {
   })
 
   test('creating a new blog succeeds', async () => {
-    const user = await api
-      .post(urlLogin)
-      .send(helper.user)
-    const token = user.body.token
-    console.log(user.body)
-    const header = { 'Authorization': `bearer ${token}` }
-
     await api
       .post(urlBlogs)
       .send(helper.blog)
@@ -59,6 +90,7 @@ describe('Tests', () => {
 
     await api
       .delete(`${urlBlogs}/${id}`)
+      .set(header)
       .expect(204)
 
     const response2 = await api.get(urlBlogs)
@@ -92,6 +124,7 @@ describe('Tests', () => {
     await api
       .post(urlBlogs)
       .send(helper.blogWithoutLikes)
+      .set(header)
       .expect(201)
       .expect('Content-Type', /application\/json/)
 
@@ -105,6 +138,7 @@ describe('Tests', () => {
     const responseTitle = await api
       .post(urlBlogs)
       .send(helper.blogWithoutTitle)
+      .set(header)
       .expect(400)
 
     const errorMessageTitle = responseTitle.body.error

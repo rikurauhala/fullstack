@@ -154,6 +154,19 @@ describe('Tests', () => {
     expect(errorMessageUrl).toBe('Url is missing!')
   })
 
+  test('missing token return status code 401', async () => {
+    await api
+      .post(urlBlogs)
+      .send(helper.blog)
+      .expect(401)
+      .expect('Content-Type', /application\/json/)
+
+    const response = await api.get(urlBlogs)
+    const numberOfBlogs = response.body.length
+    const initialNumberOfBlogs = helper.initialBlogs.length
+    expect(numberOfBlogs).toBe(initialNumberOfBlogs)
+  })
+
   test('there is a correct number of blogs', async () => {
     const response = await api.get(urlBlogs)
     expect(response.body).toHaveLength(helper.initialBlogs.length)

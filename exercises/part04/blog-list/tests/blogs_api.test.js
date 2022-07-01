@@ -147,6 +147,7 @@ describe('Tests', () => {
     const responseUrl = await api
       .post(urlBlogs)
       .send(helper.blogWithoutUrl)
+      .set(header)
       .expect(400)
 
     const errorMessageUrl = responseUrl.body.error

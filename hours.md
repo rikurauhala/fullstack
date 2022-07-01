@@ -92,3 +92,13 @@ Testing Express servers, user administration
 | 2022-06-30 |      2 | completing exercise 4.22*, working on exercise 4.23*                            |
 | 2022-07-01 |      1 | completing exercise 4.23*                                                       |
 |      total |     28 |                                                                                 |
+
+## Part 5
+
+Testing React apps
+
+[Material](https://fullstackopen.com/en/part5) | [Submissions](https://github.com/rikurauhala/fullstack/tree/main/exercises/part05)
+
+| date       | hours  | description                                                                     |
+| 2022-07-01 |      0 |                                                                                 |
+|      total |      0 |                                                                                 |

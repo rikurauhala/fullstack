@@ -4,11 +4,11 @@ This directory contains the exercise files for part 4.
 
 ## Hours
 
-Time spent: `27 hours`
+Time spent: `28 hours`
 
 ## Exercises
 
-Exercises completed: `22 / 23`
+Exercises completed: `23 / 23`
 
 ### Exercise 4.1
 
@@ -97,3 +97,7 @@ See the relevant state of the application [here](https://github.com/rikurauhala/
 ### Exercise 4.22*
 
 See the relevant state of the application [here](https://github.com/rikurauhala/fullstack/tree/29c59fb9b60327ce7c57c9091a43fffe98edb33d/exercises/part04/blog-list).
+
+### Exercise 4.23*
+
+See the relevant state of the application [here](https://github.com/rikurauhala/fullstack/tree/main/exercises/part04/blog-list).

@@ -100,4 +100,4 @@ See the relevant state of the application [here](https://github.com/rikurauhala/
 
 ### Exercise 4.23*
 
-See the relevant state of the application [here](https://github.com/rikurauhala/fullstack/tree/main/exercises/part04/blog-list).
+See the final state of the application [here](https://github.com/rikurauhala/fullstack/tree/main/exercises/part04/blog-list).

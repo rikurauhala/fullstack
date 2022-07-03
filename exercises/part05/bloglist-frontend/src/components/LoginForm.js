@@ -1,4 +1,4 @@
-const PersonForm = ({ handleLogin, username, setUsername, password, setPassword }) => {
+const LoginForm = ({ handleLogin, username, setUsername, password, setPassword }) => {
   return (
     <form onSubmit={handleLogin}>
       <table>
@@ -31,7 +31,7 @@ const PersonForm = ({ handleLogin, username, setUsername, password, setPassword 
               />
             </td>
             <td>
-              <button type="submit">Login</button>
+              <button type="submit">Log in</button>
             </td>
           </tr>
         </tbody>
@@ -40,4 +40,4 @@ const PersonForm = ({ handleLogin, username, setUsername, password, setPassword 
   )
 }
   
-export default PersonForm
+export default LoginForm

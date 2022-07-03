@@ -108,5 +108,5 @@ Testing React apps
 | date       | hours  | description                                                                |
 | ---------: | -----: | :------------------------------------------------------------------------- |
 | 2022-07-02 |      1 | reading the material, working on exercise 5.1                              |
-| 2022-07-03 |      2 | scripting, completing exercise 5.1                                         |
-|      total |      3 |                                                                            |
+| 2022-07-03 |      3 | scripting, completing exercises 5.1 and 5.2                                |
+|      total |      4 |                                                                            |

@@ -11,5 +11,5 @@ My submissions for the course [Full stack open](https://fullstackopen.com/en/).
 | [part 2](exercises/part02) | [26](hours.md#part-2) |   20 / 20 |
 | [part 3](exercises/part03) | [19](hours.md#part-3) |   22 / 22 |
 | [part 4](exercises/part04) | [28](hours.md#part-4) |   23 / 23 |
-| [part 5](exercises/part05) |  [3](hours.md#part-5) |    1 / 22 |
-|                      total |                    91 |  86 / 107 |
+| [part 5](exercises/part05) |  [4](hours.md#part-5) |    2 / 22 |
+|                      total |                    92 |  87 / 107 |

@@ -11,11 +11,19 @@
 # So, just to make my life little bit easier. :)
 #
 
+# Define colors
+COLOR="\e[32m"
+ENDCOLOR="\e[0m"
+
 # Clear the terminal
 clear
 
+# Save working directory to a variable
+DIR=`pwd`
+
 # Print working directory
-pwd
+echo -e "${COLOR}> ${DIR}${ENDCOLOR}"
+echo ""
 
 # Open the hour tracking document
 code hours.md
@@ -28,6 +36,8 @@ code exercises/part05/README.md
 
 # List the contents of the directory
 ls -l --color=always
+echo ""
 
 # Display Git status
+echo -e "${COLOR}> Git status${ENDCOLOR}"
 git status

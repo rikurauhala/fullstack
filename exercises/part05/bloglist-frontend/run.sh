@@ -6,7 +6,7 @@ clear
 # Launch backend
 echo "Starting backend..."
 cd ../bloglist-backend
-npm run dev &
+gnome-terminal -- npm run dev
 echo "Backend started"
 
 # Launch frontend

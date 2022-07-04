@@ -6,6 +6,9 @@ const Blog = ({ blog }) => (
     <td>
       {blog.author}
     </td>
+    <td>
+      {blog.url}
+    </td>
   </tr>  
 )
 

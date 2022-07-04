@@ -14,6 +14,11 @@ const Blogs = ({ blogs }) => (
             Author
           </b>
         </td>
+        <td>
+          <b>
+            URL
+          </b>
+        </td>
       </tr>
     </thead>
     <tbody>
@@ -23,6 +28,5 @@ const Blogs = ({ blogs }) => (
     </tbody>
   </table>
 )
-  
+
 export default Blogs
-  

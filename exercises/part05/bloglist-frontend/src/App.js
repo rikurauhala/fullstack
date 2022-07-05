@@ -15,9 +15,6 @@ const App = () => {
   const [password, setPassword] = useState('')
   const [user, setUser] = useState(null)
   const [username, setUsername] = useState('')
-  const [title, setTitle] = useState('')
-  const [author, setAuthor] = useState('')
-  const [url, setUrl] = useState('')
   const [notificationMessage, setNotificationMessage] = useState(null)
   const [notificationStatus, setNotificationStatus] = useState(null)
 
@@ -87,18 +84,9 @@ const App = () => {
     }
   }
 
-  const handleNewBlogCreation = async (event) => {
-    event.preventDefault() 
+  const createBlog = async (newBlog) => { 
     try {
-      await blogService.create({
-        title: title,
-        author: author,
-        url: url,
-        likes: 0
-      })
-      setTitle('')
-      setAuthor('')
-      setUrl('')
+      await blogService.create(newBlog)
       setMessage(
         'success',
         `New blog created!`
@@ -136,13 +124,7 @@ const App = () => {
           <h3>Create a new blog</h3>
           <Togglable buttonLabel='Create'>
             <NewBlogForm
-              handleNewBlogCreation={handleNewBlogCreation}
-              title={title}
-              setTitle={setTitle}
-              author={author}
-              setAuthor={setAuthor}
-              url={url}
-              setUrl={setUrl}
+              createBlog={createBlog}
             />
           </Togglable>
           <h3>Blogs</h3>

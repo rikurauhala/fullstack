@@ -1,7 +1,37 @@
-const NewBlogForm = (props) => {
-  const { handleNewBlogCreation, title, setTitle, author, setAuthor, url, setUrl } = props
+import { useState } from 'react'
+
+const NewBlogForm = ({ createBlog }) => {
+  const [title, setTitle] = useState('')
+  const [author, setAuthor] = useState('')
+  const [url, setUrl] = useState('')
+
+  const handleTitleChange = (event) => {
+    setTitle(event.target.value)
+  }
+
+  const handleAuthorChange = (event) => {
+    setAuthor(event.target.value)
+  }
+
+  const handleUrlChange = (event) => {
+    setUrl(event.target.value)
+  }
+
+  const addBlog = (event) => {
+    event.preventDefault()
+    createBlog({
+      title: title,
+      author: author,
+      url: url,
+      likes: 0
+    })
+    setTitle('')
+    setAuthor('')
+    setUrl('')
+  }
+
   return (
-    <form onSubmit={handleNewBlogCreation}>
+    <form onSubmit={addBlog}>
       <table>
         <tbody>
           <tr>
@@ -11,7 +41,7 @@ const NewBlogForm = (props) => {
             <td>
               <input
                 name="Title"
-                onChange={({ target }) => setTitle(target.value)}
+                onChange={handleTitleChange}
                 placeholder='Title'
                 type="text"
                 value={title}
@@ -25,7 +55,7 @@ const NewBlogForm = (props) => {
             <td>
               <input
                 name="Author"
-                onChange={({ target }) => setAuthor(target.value)}
+                onChange={handleAuthorChange}
                 placeholder='Author'
                 type="text"
                 value={author}
@@ -39,7 +69,7 @@ const NewBlogForm = (props) => {
             <td>
               <input
                 name="URL"
-                onChange={({ target }) => setUrl(target.value)}
+                onChange={handleUrlChange}
                 placeholder='URL'
                 type="text"
                 value={url}
@@ -52,5 +82,5 @@ const NewBlogForm = (props) => {
     </form>
   )
 }
-  
+
 export default NewBlogForm

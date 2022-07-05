@@ -1,4 +1,5 @@
-const NewBlogForm = ({ handleNewBlogCreation, title, setTitle, author, setAuthor, url, setUrl }) => {
+const NewBlogForm = (props) => {
+  const { handleNewBlogCreation, title, setTitle, author, setAuthor, url, setUrl } = props
   return (
     <form onSubmit={handleNewBlogCreation}>
       <table>
@@ -44,12 +45,10 @@ const NewBlogForm = ({ handleNewBlogCreation, title, setTitle, author, setAuthor
                 value={url}
               />
             </td>
-            <td>
-              <button type="submit">Create</button>
-            </td>
           </tr>
         </tbody>
       </table>
+      <button type="submit">Create</button>
     </form>
   )
 }

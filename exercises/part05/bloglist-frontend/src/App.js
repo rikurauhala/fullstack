@@ -5,6 +5,7 @@ import LoggedInView from './components/LoggedInView'
 import LoginForm from './components/LoginForm'
 import Notification from './components/Notification'
 import NewBlogForm from './components/NewBlogForm'
+import Togglable from './components/Togglable'
 
 import blogService from './services/blogs'
 import loginService from './services/login'
@@ -133,15 +134,17 @@ const App = () => {
             handleLogout={handleLogout}
           />
           <h3>Create a new blog</h3>
-          <NewBlogForm
-            handleNewBlogCreation={handleNewBlogCreation}
-            title={title}
-            setTitle={setTitle}
-            author={author}
-            setAuthor={setAuthor}
-            url={url}
-            setUrl={setUrl}
-          />
+          <Togglable buttonLabel='Create'>
+            <NewBlogForm
+              handleNewBlogCreation={handleNewBlogCreation}
+              title={title}
+              setTitle={setTitle}
+              author={author}
+              setAuthor={setAuthor}
+              url={url}
+              setUrl={setUrl}
+            />
+          </Togglable>
           <h3>Blogs</h3>
           <Blogs blogs={blogs} />
         </div>

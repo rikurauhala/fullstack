@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import Blogs from './components/Blogs'
 import LoggedInView from './components/LoggedInView'
 import LoginForm from './components/LoginForm'
+import Notification from './components/Notification'
 import NewBlogForm from './components/NewBlogForm'
 
 import blogService from './services/blogs'
@@ -16,6 +17,8 @@ const App = () => {
   const [title, setTitle] = useState('')
   const [author, setAuthor] = useState('')
   const [url, setUrl] = useState('')
+  const [notificationMessage, setNotificationMessage] = useState(null)
+  const [notificationStatus, setNotificationStatus] = useState(null)
 
   useEffect(() => {
     blogService.getAll().then(blogs =>
@@ -32,6 +35,14 @@ const App = () => {
     }
   }, [])
 
+  const setMessage = (status, message) => {
+    setNotificationMessage(message)
+    setNotificationStatus(status)
+    setTimeout(() => {
+      setNotificationMessage(null)
+    }, 5000)
+  }
+
   const handleLogin = async (event) => {
     event.preventDefault()
     try {
@@ -44,8 +55,16 @@ const App = () => {
       setPassword('')
       setUser(user)
       setUsername('')
+      setMessage(
+        'success',
+        `Welcome to Bloglist!`
+      )
     } catch (exception) {
       console.error(exception)
+      setMessage(
+        'error',
+        `Failed to log in!`
+      )
     }
   }
 
@@ -54,8 +73,16 @@ const App = () => {
     try {
       window.localStorage.removeItem('user')
       setUser(null)
+      setMessage(
+        'success',
+        `See you!`
+      )
     } catch (exception) {
       console.error(exception)
+      setMessage(
+        'error',
+        `Failed to log out!`
+      )
     }
   }
 
@@ -71,15 +98,23 @@ const App = () => {
       setTitle('')
       setAuthor('')
       setUrl('')
+      setMessage(
+        'success',
+        `New blog created!`
+      )
     } catch (exception) {
       console.error(exception)
+      setMessage(
+        'error',
+        `Failed to create a new blog!`
+      )
     }
   }
 
   return (
     <div>
       <h2>Bloglist</h2>
-      
+      <Notification message={notificationMessage} status={notificationStatus} />
       {
         user === null ?
         <div>

@@ -9,3 +9,13 @@ body {
 td {
   padding: 4px;
 }
+
+.error {
+  color: #fd2020;
+  font-size: 20px;
+}
+
+.success {
+  color: #20fd20;
+  font-size: 20px;
+}

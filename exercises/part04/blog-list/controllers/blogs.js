@@ -63,6 +63,16 @@ blogsRouter.post('/', async (request, response) => {
 })
 
 blogsRouter.put('/:id', async (request, response) => {
+  const user = request.user
+  if (!user) {
+    return response.status(401).json({ error: 'Token missing or invalid!' })
+  }
+
+  const decodedToken = jwt.verify(request.token, process.env.SECRET)
+  if (!decodedToken.id) {
+    return response.status(401).json({ error: 'Token missing or invalid!' })
+  }
+
   const id = request.params.id
   const likes = request.body.likes
   const blog = { likes: likes + 1 }

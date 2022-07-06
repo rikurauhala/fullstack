@@ -21,10 +21,10 @@ const Blog = ({ blog }) => {
   return (
     <tr>
       <td>
-          <button onClick={() => setVisible(false)}>
-            Hide
-          </button>
-        </td>
+        <button onClick={() => setVisible(false)}>
+          Hide
+        </button>
+      </td>
       <td>
         {blog.title}
       </td>

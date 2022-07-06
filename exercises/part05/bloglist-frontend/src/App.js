@@ -101,6 +101,22 @@ const App = () => {
     }
   }
 
+  const handleLike = async (blog) => {
+    try {
+      await blogService.update(blog.id, blog)
+      setMessage(
+        'success',
+        `Like added to blog ${blog.title}!`
+      )
+    } catch (exception) {
+      console.error(exception)
+      setMessage(
+        'error',
+        `Failed to like blog ${blog.title}!`
+      )
+    }
+  }
+
   const blogFormRef = useRef()
 
   return (
@@ -131,7 +147,10 @@ const App = () => {
             />
           </Togglable>
           <h3>Blogs</h3>
-          <Blogs blogs={blogs} />
+          <Blogs
+            blogs={blogs}
+            handleLike={handleLike}
+          />
         </div>
       }
     </div>

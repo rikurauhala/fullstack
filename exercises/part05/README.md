@@ -8,7 +8,7 @@ Time spent: `10 hours`
 
 ## Exercises
 
-Exercises completed: `9 / 22`
+Exercises completed: `10 / 22`
 
 ### Exercise 5.1
 
@@ -45,3 +45,7 @@ See the relevant state of the application [here](https://github.com/rikurauhala/
 ### Exercise 5.9
 
 See the relevant state of the application [here](https://github.com/rikurauhala/fullstack/tree/4629ceecddfe653f38fba35ef82cebf30153c83e/exercises/part05/bloglist-frontend).
+
+### Exercise 5.10
+
+See the relevant state of the application [here](https://github.com/rikurauhala/fullstack/tree/3c6b5e63d674979621d4efab94b003ce6d0a35dd/exercises/part05/bloglist-frontend).

@@ -49,5 +49,5 @@ LoginForm.propTypes = {
   password: PropTypes.string.isRequired,
   setPassword: PropTypes.func.isRequired
 }
-  
+
 export default LoginForm

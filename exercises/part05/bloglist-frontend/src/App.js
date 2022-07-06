@@ -49,19 +49,19 @@ const App = () => {
       })
       window.localStorage.setItem(
         'user', JSON.stringify(user)
-      ) 
+      )
       setPassword('')
       setUser(user)
       setUsername('')
       setMessage(
         'success',
-        `Welcome to Bloglist!`
+        'Welcome to Bloglist!'
       )
     } catch (exception) {
       console.error(exception)
       setMessage(
         'error',
-        `Failed to log in!`
+        'Failed to log in!'
       )
     }
   }
@@ -73,13 +73,13 @@ const App = () => {
       setUser(null)
       setMessage(
         'success',
-        `See you!`
+        'See you!'
       )
     } catch (exception) {
       console.error(exception)
       setMessage(
         'error',
-        `Failed to log out!`
+        'Failed to log out!'
       )
     }
   }
@@ -90,13 +90,13 @@ const App = () => {
       await blogService.create(newBlog)
       setMessage(
         'success',
-        `New blog created!`
+        'New blog created!'
       )
     } catch (exception) {
       console.error(exception)
       setMessage(
         'error',
-        `Failed to create a new blog!`
+        'Failed to create a new blog!'
       )
     }
   }
@@ -144,34 +144,34 @@ const App = () => {
       <Notification message={notificationMessage} status={notificationStatus} />
       {
         user === null ?
-        <div>
-          <h3>Login</h3>
-          <LoginForm 
-            handleLogin={handleLogin}
-            username={username}
-            setUsername={setUsername}
-            password={password}
-            setPassword={setPassword}
-          />
-        </div> :
-        <div>
-          <LoggedInView
-            user={user}
-            handleLogout={handleLogout}
-          />
-          <h3>Create a new blog</h3>
-          <Togglable buttonLabel='Create' ref={blogFormRef} >
-            <NewBlogForm
-              createBlog={createBlog}
+          <div>
+            <h3>Login</h3>
+            <LoginForm
+              handleLogin={handleLogin}
+              username={username}
+              setUsername={setUsername}
+              password={password}
+              setPassword={setPassword}
             />
-          </Togglable>
-          <h3>Blogs</h3>
-          <Blogs
-            blogs={blogs.sort((a, b) => b.likes - a.likes)}
-            handleDelete={handleDelete}
-            handleLike={handleLike}
-          />
-        </div>
+          </div> :
+          <div>
+            <LoggedInView
+              user={user}
+              handleLogout={handleLogout}
+            />
+            <h3>Create a new blog</h3>
+            <Togglable buttonLabel='Create' ref={blogFormRef} >
+              <NewBlogForm
+                createBlog={createBlog}
+              />
+            </Togglable>
+            <h3>Blogs</h3>
+            <Blogs
+              blogs={blogs.sort((a, b) => b.likes - a.likes)}
+              handleDelete={handleDelete}
+              handleLike={handleLike}
+            />
+          </div>
       }
     </div>
   )

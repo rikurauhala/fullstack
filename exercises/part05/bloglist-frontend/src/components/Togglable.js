@@ -1,3 +1,5 @@
+/* eslint-disable react/display-name */
+
 import { forwardRef, useImperativeHandle, useState } from 'react'
 import PropTypes from 'prop-types'
 

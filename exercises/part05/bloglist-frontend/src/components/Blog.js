@@ -35,7 +35,7 @@ const Blog = ({ blog, handleDelete, handleLike }) => {
         {blog.url}
       </td>
       <td>
-        {blog.likes} {blog.likes === 1 ? "like" : "likes"}
+        {blog.likes} {blog.likes === 1 ? 'like' : 'likes'}
       </td>
       <td>
         <button onClick={handleLike}>

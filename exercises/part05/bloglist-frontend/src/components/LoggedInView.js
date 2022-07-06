@@ -16,5 +16,5 @@ const LoggedInView = ({ handleLogout, user }) => {
     </table>
   )
 }
-  
+
 export default LoggedInView

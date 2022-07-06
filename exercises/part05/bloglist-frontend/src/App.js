@@ -101,6 +101,25 @@ const App = () => {
     }
   }
 
+  const handleDelete = async (blog) => {
+    try {
+      const answer = window.confirm(`Are you sure you want to delete blog "${blog.title}"?`)
+      if (answer) {
+        await blogService.remove(blog.id)
+        setMessage(
+          'success',
+          `Deleted blog ${blog.title}!`
+        )
+      }
+    } catch (exception) {
+      console.error(exception)
+      setMessage(
+        'error',
+        `Failed to delete blog ${blog.title}!`
+      )
+    }
+  }
+
   const handleLike = async (blog) => {
     try {
       await blogService.update(blog.id, blog)
@@ -149,6 +168,7 @@ const App = () => {
           <h3>Blogs</h3>
           <Blogs
             blogs={blogs.sort((a, b) => b.likes - a.likes)}
+            handleDelete={handleDelete}
             handleLike={handleLike}
           />
         </div>

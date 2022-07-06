@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-const Blog = ({ blog, handleLike }) => {
+const Blog = ({ blog, handleDelete, handleLike }) => {
   const [visible, setVisible] = useState(false)
 
   if (!visible) {
@@ -8,7 +8,7 @@ const Blog = ({ blog, handleLike }) => {
       <tr>
         <td>
           <button onClick={() => setVisible(true)}>
-            View
+            + View
           </button>
         </td>
         <td>
@@ -22,7 +22,7 @@ const Blog = ({ blog, handleLike }) => {
     <tr>
       <td>
         <button onClick={() => setVisible(false)}>
-          Hide
+          - Hide
         </button>
       </td>
       <td>
@@ -39,7 +39,10 @@ const Blog = ({ blog, handleLike }) => {
       </td>
       <td>
         <button onClick={handleLike}>
-          +
+          Like
+        </button>
+        <button onClick={handleDelete}>
+          Delete
         </button>
       </td>
     </tr>

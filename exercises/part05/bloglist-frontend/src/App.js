@@ -148,7 +148,7 @@ const App = () => {
           </Togglable>
           <h3>Blogs</h3>
           <Blogs
-            blogs={blogs}
+            blogs={blogs.sort((a, b) => b.likes - a.likes)}
             handleLike={handleLike}
           />
         </div>

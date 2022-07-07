@@ -111,5 +111,6 @@ Testing React apps
 | 2022-07-03 |     3 | scripting, completing exercises 5.1 and 5.2                                |
 | 2022-07-04 |     2 | improving the frontend, completing exercise 5.3                            |
 | 2022-07-05 |     2 | reading the material, completing exercises 5.4 to 5.6                      |
-| 2022-07-07 |     3 | scripting, completing exercises 5.7* to 5.12                               |
-|      total |    11 |                                                                            |
+| 2022-07-06 |     3 | scripting, completing exercises 5.7* to 5.12                               |
+| 2022-07-07 |     1 | reading the material, working on exercise 5.13                             |
+|      total |    12 |                                                                            |

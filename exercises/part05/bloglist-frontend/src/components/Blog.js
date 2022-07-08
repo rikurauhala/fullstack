@@ -5,7 +5,7 @@ const Blog = ({ blog, handleDelete, handleLike }) => {
 
   if (!visible) {
     return (
-      <div>
+      <tr className='blogs'>
         <td>
           <button onClick={() => setVisible(true)}>
             + View
@@ -17,12 +17,12 @@ const Blog = ({ blog, handleDelete, handleLike }) => {
         <td>
           {blog.author}
         </td>
-      </div>
+      </tr>
     )
   }
 
   return (
-    <div>
+    <tr className='blogsFull'>
       <td>
         <button onClick={() => setVisible(false)}>
           - Hide
@@ -48,7 +48,7 @@ const Blog = ({ blog, handleDelete, handleLike }) => {
           Delete
         </button>
       </td>
-    </div>
+    </tr>
   )
 }
 

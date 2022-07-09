@@ -1,17 +1,24 @@
 import React from 'react'
 import '@testing-library/jest-dom/extend-expect'
-import { render, screen } from '@testing-library/react'
+import { render } from '@testing-library/react'
 import Blog from './Blog'
 
-test('renders content', () => {
+test('Correct elements are rendered by default', () => {
+  const title = 'Blog title'
+  const author = 'Blogger'
+  const url = 'www.example.com'
+  const likes = 99
   const blog = {
-    title: 'Blog title',
-    author: 'Blogger',
-    url: 'www.example.com'
+    title: title,
+    author: author,
+    url: url,
+    likes: likes
   }
 
-  render(<Blog blog={blog} />)
+  const { container } = render(<Blog blog={blog}/>)
 
-  const element = screen.getByText('Blog title')
-  expect(element).toBeDefined()
+  expect(container).toHaveTextContent(title)
+  expect(container).toHaveTextContent(author)
+  expect(container).not.toHaveTextContent(url)
+  expect(container).not.toHaveTextContent(likes)
 })

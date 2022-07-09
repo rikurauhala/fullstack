@@ -8,7 +8,7 @@ const Blog = ({ blog, handleDelete, handleLike }) => {
       <tr className='blogs'>
         <td>
           <button onClick={() => setVisible(true)}>
-            + View
+            View
           </button>
         </td>
         <td>
@@ -25,7 +25,7 @@ const Blog = ({ blog, handleDelete, handleLike }) => {
     <tr className='blogsFull'>
       <td>
         <button onClick={() => setVisible(false)}>
-          - Hide
+          Hide
         </button>
       </td>
       <td>

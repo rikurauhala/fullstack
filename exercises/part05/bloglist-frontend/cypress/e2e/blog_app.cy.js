@@ -2,6 +2,12 @@ const frontend = 'http://localhost:3000'
 const resetUrl = `${frontend}/api/testing/reset`
 const usersUrl = `${frontend}/api/users`
 
+const blog = {
+  title: 'Title',
+  author: 'Author',
+  url: 'www.example.com'
+}
+
 const user = {
   name: 'User',
   username: 'User',
@@ -40,6 +46,24 @@ describe('Blog app', function() {
       cy.get('#login-button').click()
       cy.contains('Failed to log in!')
       cy.contains('Login')
+    })
+  })
+
+  describe('After logging in', function() {
+    beforeEach(function() {
+      cy.login({ username: user.username, password: user.password })
+    })
+
+    it('a new blog can be created', function() {
+      cy.contains('Create a new blog')
+      cy.get('#button').click()
+      cy.get('#title').type(blog.title)
+      cy.get('#author').type(blog.author)
+      cy.get('#url').type(blog.url)
+      cy.get('#create-button').click()
+      cy.contains('New blog created!')
+      cy.contains(blog.title)
+      cy.contains(blog.author)
     })
   })
 })

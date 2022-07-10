@@ -22,7 +22,7 @@ const App = () => {
     blogService.getAll().then(blogs =>
       setBlogs(blogs)
     )
-  })
+  }, [])
 
   useEffect(() => {
     const userJSON = window.localStorage.getItem('user')
@@ -87,11 +87,12 @@ const App = () => {
   const createBlog = async (newBlog) => {
     blogFormRef.current.toggleVisibility()
     try {
-      await blogService.create(newBlog)
+      const addedBlog = await blogService.create(newBlog)
       setMessage(
         'success',
         'New blog created!'
       )
+      setBlogs(blogs.concat(addedBlog))
     } catch (exception) {
       console.error(exception)
       setMessage(

@@ -11,6 +11,7 @@ const LoginForm = ({ handleLogin, username, setUsername, password, setPassword }
             </td>
             <td>
               <input
+                id="username"
                 name="Username"
                 onChange={({ target }) => setUsername(target.value)}
                 placeholder='Username'
@@ -25,6 +26,7 @@ const LoginForm = ({ handleLogin, username, setUsername, password, setPassword }
             </td>
             <td>
               <input
+                id="password"
                 name="Password"
                 onChange={({ target }) => setPassword(target.value)}
                 placeholder='Password'
@@ -33,7 +35,9 @@ const LoginForm = ({ handleLogin, username, setUsername, password, setPassword }
               />
             </td>
             <td>
-              <button type="submit">Log in</button>
+              <button id="login-button" type="submit">
+                Log in
+              </button>
             </td>
           </tr>
         </tbody>

@@ -107,6 +107,7 @@ const App = () => {
       const answer = window.confirm(`Are you sure you want to delete blog "${blog.title}"?`)
       if (answer) {
         await blogService.remove(blog.id)
+        setBlogs(blogs.filter(currentBlog => currentBlog.id !== blog.id))
         setMessage(
           'success',
           `Deleted blog ${blog.title}!`
@@ -124,6 +125,7 @@ const App = () => {
   const handleLike = async (blog) => {
     try {
       await blogService.update(blog.id, blog)
+      blogService.getAll().then(blogs => setBlogs(blogs))
       setMessage(
         'success',
         `Like added to blog ${blog.title}!`

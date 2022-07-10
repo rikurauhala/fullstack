@@ -7,7 +7,7 @@ const Blog = ({ blog, handleDelete, handleLike }) => {
     return (
       <tr className='blogs'>
         <td>
-          <button onClick={() => setVisible(true)}>
+          <button id="view-button" onClick={() => setVisible(true)}>
             View
           </button>
         </td>
@@ -41,7 +41,7 @@ const Blog = ({ blog, handleDelete, handleLike }) => {
         {blog.likes} {blog.likes === 1 ? 'like' : 'likes'}
       </td>
       <td>
-        <button onClick={handleLike}>
+        <button id="like-button" onClick={handleLike}>
           Like
         </button>
         <button onClick={handleDelete}>

@@ -65,5 +65,23 @@ describe('Blog app', function() {
       cy.contains(blog.title)
       cy.contains(blog.author)
     })
+
+    describe('and a blog has been created', function() {
+      beforeEach(function() {
+        cy.createBlog({
+          title: blog.title,
+          author: blog.author,
+          url: blog.url
+        })
+      })
+
+      it('a blog can be liked', function() {
+        cy.get('#view-button').click()
+        cy.contains('0 likes')
+        cy.get('#like-button').click()
+        cy.contains(`Like added to blog ${blog.title}!`)
+        cy.contains('1 like')
+      })
+    })
   })
 })

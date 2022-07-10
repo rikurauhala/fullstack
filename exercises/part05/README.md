@@ -4,11 +4,11 @@ This directory contains the exercise files for part 5.
 
 ## Hours
 
-Time spent: `15 hours`
+Time spent: `19 hours`
 
 ## Exercises
 
-Exercises completed: `16 / 22`
+Exercises completed: `22 / 22`
 
 ### Exercise 5.1
 
@@ -73,3 +73,27 @@ See the relevant state of the application [here](https://github.com/rikurauhala/
 ### Exercise 5.16
 
 See the relevant state of the application [here](https://github.com/rikurauhala/fullstack/tree/57ed38d994b221a84ecfe4a6b78c56c83885adac/exercises/part05/bloglist-frontend).
+
+### Exercise 5.17
+
+See the relevant state of the application [here](https://github.com/rikurauhala/fullstack/tree/2d315547d262bbbb2d51b038ee4ee67101001218/exercises/part05/bloglist-frontend).
+
+### Exercise 5.18
+
+See the relevant state of the application [here](https://github.com/rikurauhala/fullstack/tree/6fe7379a124b759a7944e136d84c6c455a0a404d/exercises/part05/bloglist-frontend).
+
+### Exercise 5.19
+
+See the relevant state of the application [here](https://github.com/rikurauhala/fullstack/tree/f206bb432f4c923e70abcce934bfcfc97ba2fe94/exercises/part05/bloglist-frontend).
+
+### Exercise 5.20
+
+See the relevant state of the application [here](https://github.com/rikurauhala/fullstack/tree/5ca2d406579799f86e3282348532ced66863ad10/exercises/part05/bloglist-frontend).
+
+### Exercise 5.21
+
+See the relevant state of the application [here](https://github.com/rikurauhala/fullstack/tree/63b3480132e050b6b43c388886dd94f2600c0150/exercises/part05/bloglist-frontend).
+
+### Exercise 5.22
+
+See the final state of the application [here](https://github.com/rikurauhala/fullstack/tree/main/exercises/part05/bloglist-frontend).

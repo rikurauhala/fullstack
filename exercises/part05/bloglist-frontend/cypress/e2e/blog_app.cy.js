@@ -82,6 +82,15 @@ describe('Blog app', function() {
         cy.contains(`Like added to blog ${blog.title}!`)
         cy.contains('1 like')
       })
+
+      it('a blog can be deleted', function() {
+        cy.get('#view-button').click()
+        cy.contains(blog.title)
+        cy.contains(blog.author)
+        cy.contains(blog.url)
+        cy.get('#delete-button').click()
+        cy.contains(`Deleted blog ${blog.title}!`)
+      })
     })
   })
 })

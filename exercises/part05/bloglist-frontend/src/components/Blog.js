@@ -44,7 +44,7 @@ const Blog = ({ blog, handleDelete, handleLike }) => {
         <button id="like-button" onClick={handleLike}>
           Like
         </button>
-        <button onClick={handleDelete}>
+        <button id="delete-button" onClick={handleDelete}>
           Delete
         </button>
       </td>

@@ -5,7 +5,8 @@ const usersUrl = `${frontend}/api/users`
 const blog = {
   title: 'Title',
   author: 'Author',
-  url: 'www.example.com'
+  url: 'www.example.com',
+  likes: 0
 }
 
 const user = {
@@ -90,6 +91,41 @@ describe('Blog app', function() {
         cy.contains(blog.url)
         cy.get('#delete-button').click()
         cy.contains(`Deleted blog ${blog.title}!`)
+      })
+    })
+
+    describe('and multiple blogs have been created', function() {
+      beforeEach(function() {
+        cy.createBlog({
+          title: 'Blog 1',
+          author: 'Author 1',
+          url: 'www.example1.com',
+          likes: 10
+        })
+        cy.createBlog({
+          title: 'Blog 2',
+          author: 'Author 2',
+          url: 'www.example2.com',
+          likes: 99
+        })
+        cy.createBlog({
+          title: 'Blog 3',
+          author: 'Author 3',
+          url: 'www.example3.com',
+          likes: 0
+        })
+      })
+
+      it('blogs are sorted by likes', function() {
+        cy.get('#view-button').click()
+        cy.get('.blogsFull').eq(0).should('contain', 'Blog 2')
+        cy.get('.blogsFull').eq(0).should('contain', '99 likes')
+        cy.get('#view-button').click()
+        cy.get('.blogsFull').eq(1).should('contain', 'Blog 1')
+        cy.get('.blogsFull').eq(1).should('contain', '10 likes')
+        cy.get('#view-button').click()
+        cy.get('.blogsFull').eq(2).should('contain', 'Blog 3')
+        cy.get('.blogsFull').eq(2).should('contain', '0 likes')
       })
     })
   })

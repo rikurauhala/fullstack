@@ -30,7 +30,7 @@ fi
 mkdir bloglist-backend
 
 # Copy the contents of the backend from the part04 directory
-cp -r ../part04/blog-list/* bloglist-backend
+cp -r ../part04/bloglist-backend/* bloglist-backend
 
 # Print a relevant message to indicate successful operation
 echo "Backend copied!"

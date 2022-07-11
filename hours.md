@@ -116,3 +116,15 @@ Testing React apps
 | 2022-07-09 |     3 | completing exercises 5.13 to 5.16                                          |
 | 2022-07-10 |     4 | reading the material, completing exercises 5.17 to 5.22                    |
 |      total |    19 |                                                                            |
+
+## Part 6
+
+State management with Redux
+
+[Material](https://fullstackopen.com/en/part6) |
+[Submissions](https://github.com/rikurauhala/fullstack/tree/main/exercises/part06)
+
+| date       | hours | description                                                                |
+| ---------: | ----: | :------------------------------------------------------------------------- |
+| 2022-07-11 |     1 | reading the material                                                       |
+|      total |     1 |                                                                            |

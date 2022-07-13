@@ -4,11 +4,11 @@ This directory contains the exercise files for part 6.
 
 ## Hours
 
-Time spent: `4 hours`
+Time spent: `7 hours`
 
 ## Exercises
 
-Exercises completed: `8 / 21`
+Exercises completed: `12 / 21`
 
 ### Exercise 6.1
 
@@ -41,3 +41,19 @@ See the relevant state of the application [here](https://github.com/rikurauhala/
 ### Exercise 6.8
 
 See the relevant state of the application [here](https://github.com/rikurauhala/fullstack/tree/21f0675792e797b1925243bdde79df1f969dd16f/exercises/part06/redux-anecdotes).
+
+### Exercise 6.9
+
+See the relevant state of the application [here](https://github.com/rikurauhala/fullstack/tree/3d94571351f542d50db320bdfd4f32990ed80bc7/exercises/part06/redux-anecdotes).
+
+### Exercise 6.10
+
+See the relevant state of the application [here](https://github.com/rikurauhala/fullstack/tree/ba2d8aa1fe18c640aa099250157c3aac3408a894/exercises/part06/redux-anecdotes).
+
+### Exercise 6.11
+
+See the relevant state of the application [here](https://github.com/rikurauhala/fullstack/tree/cfc8a67817dbed083285506045c030ebcff6558c/exercises/part06/redux-anecdotes).
+
+### Exercise 6.12*
+
+See the relevant state of the application [here](https://github.com/rikurauhala/fullstack/tree/1b9bbe5dbcdd009741f25d5d1a947372b550b6b9/exercises/part06/redux-anecdotes).

@@ -127,5 +127,6 @@ State management with Redux
 | date       | hours | description                                                                |
 | ---------: | ----: | :------------------------------------------------------------------------- |
 | 2022-07-11 |     2 | reading the material, completing exercises 6.1 and 6.2                     |
-| 2022-07-12 |     2 | reading the material, completing exercises 6.3 and 6.8                     |
-|      total |     4 |                                                                            |
+| 2022-07-12 |     2 | reading the material, completing exercises 6.3 to 6.8                      |
+| 2022-07-13 |     3 | completing exercises 6.9 to 6.12*                                          |
+|      total |     7 |                                                                            |

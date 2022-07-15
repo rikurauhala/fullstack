@@ -1,3 +1,5 @@
+import anecdoteService from '../services/anecdotes'
+
 const getId = () => (100000 * Math.random()).toFixed(0)
 
 const asObject = (anecdote) => {
@@ -22,12 +24,20 @@ export const voteAnecdote = (id) => {
   }
 }
 
-export const replaceAnecdotes = (anecdotes) => {
+export const setAnecdotes = (anecdotes) => {
   return {
-    type: 'REPLACE',
+    type: 'INITIALIZE',
     data: anecdotes
   }
 }
+
+export const initializeAnecdotes = () => {
+  return async dispatch => {
+    const anecdotes = await anecdoteService.getAll()
+    dispatch(setAnecdotes(anecdotes))
+  }
+}
+
 
 const reducer = (state = [], action) => {
   switch(action.type) {
@@ -44,7 +54,7 @@ const reducer = (state = [], action) => {
       const updatedState = state.map(anecdote => anecdote.id === id ? updatedAnecdote : anecdote)
       const sortedState = updatedState.sort((a, b) => b.votes - a.votes)
       return sortedState
-    case 'REPLACE':
+    case 'INITIALIZE':
       return action.data
     default:
       return state

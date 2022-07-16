@@ -131,4 +131,5 @@ State management with Redux
 | 2022-07-13 |     3 | completing exercises 6.9 to 6.12*                                          |
 | 2022-07-14 |     2 | completing exercises 6.13 and 6.14                                         |
 | 2022-07-15 |     3 | reading the material, completing exercises 6.15 to 6.18                    |
-|      total |    12 |                                                                            |
+| 2022-07-16 |     2 | reading the material, completing exercises 6.19 to 6.21                    |
+|      total |    14 |                                                                            |

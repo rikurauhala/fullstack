@@ -1,15 +1,10 @@
-import { useDispatch } from 'react-redux'
+import { connect } from 'react-redux'
+import { setFilter } from '../reducers/filterReducer'
 
-const SearchFilter = () => {
-  const dispatch = useDispatch()
-
+const SearchFilter = (props) => {
   const handleChange = (event) => {
     event.preventDefault()
-    const query = event.target.value
-    dispatch({
-      type: 'filter/setFilter',
-      payload: query
-    })
+    props.setFilter(event.target.value)
   }
 
   return (
@@ -23,4 +18,6 @@ const SearchFilter = () => {
   )
 }
   
-export default SearchFilter
+const mapDispatchToProps = { setFilter }
+const ConnectedSearchFilter = connect(null, mapDispatchToProps)(SearchFilter)
+export default ConnectedSearchFilter

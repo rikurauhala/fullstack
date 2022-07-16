@@ -1,16 +1,15 @@
 import { useState } from 'react'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 
 const Menu = () => {
-  const padding = {
-    paddingRight: 5
-  }
+  const padding = { paddingRight: 5 }
   return (
     <div>
-      <a href='#' style={padding}>Anecdotes</a>
+      <a href='/' style={padding}>Anecdotes</a>
       <span>| </span>
-      <a href='#' style={padding}>Create new</a>
+      <a href='/create' style={padding}>Create new</a>
       <span>| </span>
-      <a href='#' style={padding}>About</a>
+      <a href='/about' style={padding}>About</a>
     </div>
   )
 }
@@ -53,9 +52,8 @@ const CreateNew = (props) => {
   const [author, setAuthor] = useState('')
   const [info, setInfo] = useState('')
 
-
-  const handleSubmit = (e) => {
-    e.preventDefault()
+  const handleSubmit = (event) => {
+    event.preventDefault()
     props.addNew({
       content,
       author,

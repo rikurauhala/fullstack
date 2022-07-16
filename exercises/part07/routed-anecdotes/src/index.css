@@ -5,3 +5,17 @@ body {
   margin: auto;
   max-width: 95%;
 }
+
+a {
+  white-space: nowrap;
+}
+
+a:link, a:visited {
+  color: #8bb4f7;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #8bb4f7;
+  text-decoration: underline;
+}

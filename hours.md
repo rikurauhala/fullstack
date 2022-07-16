@@ -133,3 +133,15 @@ State management with Redux
 | 2022-07-15 |     3 | reading the material, completing exercises 6.15 to 6.18                    |
 | 2022-07-16 |     2 | reading the material, completing exercises 6.19 to 6.21                    |
 |      total |    14 |                                                                            |
+
+## Part 7
+
+React router, custom hooks, styling app with CSS and webpack
+
+[Material](https://fullstackopen.com/en/part7) |
+[Submissions](https://github.com/rikurauhala/fullstack/tree/main/exercises/part07)
+
+| date       | hours | description                                                                |
+| ---------: | ----: | :------------------------------------------------------------------------- |
+| 2022-07-16 |     0 |                                                                            |
+|      total |     0 |                                                                            |

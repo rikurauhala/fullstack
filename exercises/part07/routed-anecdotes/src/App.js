@@ -5,11 +5,11 @@ const Menu = () => {
   const padding = { paddingRight: 5 }
   return (
     <div>
-      <a href='/' style={padding}>Anecdotes</a>
+      <Link style={padding} to="/">Anecdotes</Link>
       <span>| </span>
-      <a href='/create' style={padding}>Create new</a>
+      <Link style={padding} to="/create">Create new</Link>
       <span>| </span>
-      <a href='/about' style={padding}>About</a>
+      <Link style={padding} to="/about">About</Link>
     </div>
   )
 }
@@ -160,14 +160,16 @@ const App = () => {
   }
 
   return (
-    <div>
+    <Router>
       <h1>Software anecdotes</h1>
       <Menu />
-      <AnecdoteList anecdotes={anecdotes} />
-      <About />
-      <CreateNew addNew={addNew} />
-      <Footer />
-    </div>
+      <Routes>
+        <Route path="/" element={<AnecdoteList anecdotes={anecdotes} />} />
+        <Route path="/create" element={<CreateNew addNew={addNew} />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+      <Footer />      
+    </Router>
   )
 }
 

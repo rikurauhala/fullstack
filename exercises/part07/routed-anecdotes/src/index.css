@@ -19,3 +19,7 @@ a:hover {
   color: #8bb4f7;
   text-decoration: underline;
 }
+
+td {
+  padding: 3px;
+}

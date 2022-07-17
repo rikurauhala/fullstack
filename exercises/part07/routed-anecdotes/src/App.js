@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link, Route, Routes, useMatch, useNavigate } from 'react-router-dom'
+import { useField } from './hooks'
 
 const Menu = () => {
   const padding = { paddingRight: 5 }
@@ -80,16 +81,16 @@ const Footer = () => (
 )
 
 const CreateNew = (props) => {
-  const [content, setContent] = useState('')
-  const [author, setAuthor] = useState('')
-  const [info, setInfo] = useState('')
+  const content = useField('text')
+  const author = useField('text')
+  const info = useField('text')
 
   const handleSubmit = (event) => {
     event.preventDefault()
     props.addNew({
-      content,
-      author,
-      info,
+      content: content.value,
+      author: author.value,
+      info: info.value,
       votes: 0
     })
   }
@@ -105,12 +106,7 @@ const CreateNew = (props) => {
                 Content
               </td>
               <td>
-                <input
-                  name='content'
-                  onChange={(e) => setContent(e.target.value)}
-                  placeholder='Content'
-                  value={content}
-                />
+                <input {...content} />
               </td>
             </tr>
             <tr>
@@ -118,12 +114,7 @@ const CreateNew = (props) => {
                 Author
               </td>
               <td>
-                <input
-                  name='author'
-                  onChange={(e) => setAuthor(e.target.value)}
-                  placeholder='Author'
-                  value={author}
-                />
+                <input {...author} />
               </td>
             </tr>
             <tr>
@@ -131,12 +122,7 @@ const CreateNew = (props) => {
                 URL
               </td>
               <td>
-                <input
-                  name='info'
-                  onChange={(e)=> setInfo(e.target.value)}
-                  placeholder='Url for more information'
-                  value={info}
-                />
+                <input {...info} />
               </td>
               <td>
                 <button>
@@ -182,6 +168,7 @@ const App = () => {
     }, 5000)
   }
 
+  /*
   const anecdoteById = (id) => {
     anecdotes.find(a => a.id === id)
   }
@@ -196,6 +183,7 @@ const App = () => {
 
     setAnecdotes(anecdotes.map(a => a.id === id ? voted : a))
   }
+   */
 
   const match = useMatch('/anecdotes/:id')
   const anecdote = match 

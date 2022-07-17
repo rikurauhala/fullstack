@@ -1,15 +1,31 @@
 import { useState } from 'react'
-import { Link, Routes, Route, useMatch, useParams } from 'react-router-dom'
+import { Link, Route, Routes, useMatch, useNavigate } from 'react-router-dom'
 
 const Menu = () => {
   const padding = { paddingRight: 5 }
   return (
     <div>
-      <Link style={padding} to="/">Anecdotes</Link>
+      <Link style={padding} to='/'>Anecdotes</Link>
       <span>| </span>
-      <Link style={padding} to="/create">Create new</Link>
+      <Link style={padding} to='/create'>Create new</Link>
       <span>| </span>
-      <Link style={padding} to="/about">About</Link>
+      <Link style={padding} to='/about'>About</Link>
+    </div>
+  )
+}
+
+const Notification = (props) => {
+  const style = {
+    border: 'dotted',
+    borderWidth: 1,
+    color: 'green',
+    margin: '15px 0 0 0',
+    padding: '10px'
+  }
+  if (!props.notification) {return null}
+  return (
+    <div style={style}>
+      {props.notification}
     </div>
   )
 }
@@ -17,12 +33,15 @@ const Menu = () => {
 const Anecdote = ({ anecdote }) => {
   return (
     <div>
-      <h2>{anecdote.content}</h2>
+      <h3>{anecdote.content}</h3>
+      <div><em>by {anecdote.author}</em></div>
+      <br />
       <div>This anecdote has {anecdote.votes} votes.</div>
       <div>More information can be found <a href={anecdote.info}>here</a>.</div>
     </div>
   )
 }
+
 const AnecdoteList = ({ anecdotes }) => (
   <div>
     <h2>Anecdotes</h2>
@@ -53,10 +72,10 @@ const About = () => (
 )
 
 const Footer = () => (
-  <div style={{ "marginTop": "20px" }}>
+  <div style={{ 'marginTop': '20px' }}>
     Anecdote app for <a href='https://fullstackopen.com/'>Full Stack Open</a>.
     <br />
-    See <a href='https://github.com/fullstack-hy2020/routed-anecdotes/blob/master/src/App.js'>https://github.com/fullstack-hy2020/routed-anecdotes/blob/master/src/App.js</a> for the source code.
+    Source code can be found on <a href='https://github.com/fullstack-hy2020/routed-anecdotes/blob/master/src/App.js'>GitHub</a>.
   </div>
 )
 
@@ -130,7 +149,6 @@ const CreateNew = (props) => {
       </form>
     </div>
   )
-
 }
 
 const App = () => {
@@ -150,16 +168,23 @@ const App = () => {
       id: 2
     }
   ])
-
   const [notification, setNotification] = useState('')
+
+  const navigate = useNavigate()
 
   const addNew = (anecdote) => {
     anecdote.id = Math.round(Math.random() * 10000)
     setAnecdotes(anecdotes.concat(anecdote))
+    navigate('/')
+    setNotification(`A new anecdote ${anecdote.content} has been created!`)
+    setTimeout(() => {
+      setNotification('')
+    }, 5000)
   }
 
-  const anecdoteById = (id) =>
+  const anecdoteById = (id) => {
     anecdotes.find(a => a.id === id)
+  }
 
   const vote = (id) => {
     const anecdote = anecdoteById(id)
@@ -181,11 +206,12 @@ const App = () => {
     <div>
       <h1>Software anecdotes</h1>
       <Menu />
+      <Notification notification={ notification } />
       <Routes>
-        <Route path="/" element={<AnecdoteList anecdotes={anecdotes} />} />
-        <Route path="/anecdotes/:id" element={<Anecdote anecdote={anecdote} />} />
-        <Route path="/create" element={<CreateNew addNew={addNew} />} />
-        <Route path="/about" element={<About />} />
+        <Route path='/' element={<AnecdoteList anecdotes={anecdotes} />} />
+        <Route path='/anecdotes/:id' element={<Anecdote anecdote={anecdote} />} />
+        <Route path='/create' element={<CreateNew addNew={addNew} />} />
+        <Route path='/about' element={<About />} />
       </Routes>
       <Footer />
     </div>

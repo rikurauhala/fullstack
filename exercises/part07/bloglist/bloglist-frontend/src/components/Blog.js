@@ -5,38 +5,26 @@ const Blog = ({ blog, handleDelete, handleLike }) => {
 
   if (!visible) {
     return (
-      <tr className='blogs'>
+      <tr className="blogs">
         <td>
           <button id="view-button" onClick={() => setVisible(true)}>
             View
           </button>
         </td>
-        <td>
-          {blog.title}
-        </td>
-        <td>
-          {blog.author}
-        </td>
+        <td>{blog.title}</td>
+        <td>{blog.author}</td>
       </tr>
     )
   }
 
   return (
-    <tr className='blogsFull'>
+    <tr className="blogsFull">
       <td>
-        <button onClick={() => setVisible(false)}>
-          Hide
-        </button>
+        <button onClick={() => setVisible(false)}>Hide</button>
       </td>
-      <td>
-        {blog.title}
-      </td>
-      <td>
-        {blog.author}
-      </td>
-      <td>
-        {blog.url}
-      </td>
+      <td>{blog.title}</td>
+      <td>{blog.author}</td>
+      <td>{blog.url}</td>
       <td>
         {blog.likes} {blog.likes === 1 ? 'like' : 'likes'}
       </td>

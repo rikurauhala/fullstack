@@ -15,7 +15,7 @@ describe('New blog form calls the event handler with correct details', () => {
     mockHandler = jest.fn()
     const user = userEvent.setup()
 
-    render(<NewBlogForm createBlog={mockHandler}/>)
+    render(<NewBlogForm createBlog={mockHandler} />)
 
     const titleInput = screen.getByPlaceholderText('Title')
     await user.type(titleInput, title)

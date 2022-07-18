@@ -19,9 +19,7 @@ const App = () => {
   const [notificationStatus, setNotificationStatus] = useState(null)
 
   useEffect(() => {
-    blogService.getAll().then(blogs =>
-      setBlogs(blogs)
-    )
+    blogService.getAll().then((blogs) => setBlogs(blogs))
   }, [])
 
   useEffect(() => {
@@ -45,24 +43,17 @@ const App = () => {
     event.preventDefault()
     try {
       const user = await loginService.login({
-        username, password
+        username,
+        password
       })
-      window.localStorage.setItem(
-        'user', JSON.stringify(user)
-      )
+      window.localStorage.setItem('user', JSON.stringify(user))
       setPassword('')
       setUser(user)
       setUsername('')
-      setMessage(
-        'success',
-        'Welcome to Bloglist!'
-      )
+      setMessage('success', 'Welcome to Bloglist!')
     } catch (exception) {
       console.error(exception)
-      setMessage(
-        'error',
-        'Failed to log in!'
-      )
+      setMessage('error', 'Failed to log in!')
     }
   }
 
@@ -71,16 +62,10 @@ const App = () => {
     try {
       window.localStorage.removeItem('user')
       setUser(null)
-      setMessage(
-        'success',
-        'See you!'
-      )
+      setMessage('success', 'See you!')
     } catch (exception) {
       console.error(exception)
-      setMessage(
-        'error',
-        'Failed to log out!'
-      )
+      setMessage('error', 'Failed to log out!')
     }
   }
 
@@ -88,54 +73,38 @@ const App = () => {
     blogFormRef.current.toggleVisibility()
     try {
       const addedBlog = await blogService.create(newBlog)
-      setMessage(
-        'success',
-        'New blog created!'
-      )
+      setMessage('success', 'New blog created!')
       setBlogs(blogs.concat(addedBlog))
     } catch (exception) {
       console.error(exception)
-      setMessage(
-        'error',
-        'Failed to create a new blog!'
-      )
+      setMessage('error', 'Failed to create a new blog!')
     }
   }
 
   const handleDelete = async (blog) => {
     try {
-      const answer = window.confirm(`Are you sure you want to delete blog "${blog.title}"?`)
+      const answer = window.confirm(
+        `Are you sure you want to delete blog "${blog.title}"?`
+      )
       if (answer) {
         await blogService.remove(blog.id)
-        setBlogs(blogs.filter(currentBlog => currentBlog.id !== blog.id))
-        setMessage(
-          'success',
-          `Deleted blog ${blog.title}!`
-        )
+        setBlogs(blogs.filter((currentBlog) => currentBlog.id !== blog.id))
+        setMessage('success', `Deleted blog ${blog.title}!`)
       }
     } catch (exception) {
       console.error(exception)
-      setMessage(
-        'error',
-        `Failed to delete blog ${blog.title}!`
-      )
+      setMessage('error', `Failed to delete blog ${blog.title}!`)
     }
   }
 
   const handleLike = async (blog) => {
     try {
       await blogService.update(blog.id, blog)
-      blogService.getAll().then(blogs => setBlogs(blogs))
-      setMessage(
-        'success',
-        `Like added to blog ${blog.title}!`
-      )
+      blogService.getAll().then((blogs) => setBlogs(blogs))
+      setMessage('success', `Like added to blog ${blog.title}!`)
     } catch (exception) {
       console.error(exception)
-      setMessage(
-        'error',
-        `Failed to like blog ${blog.title}!`
-      )
+      setMessage('error', `Failed to like blog ${blog.title}!`)
     }
   }
 
@@ -145,37 +114,32 @@ const App = () => {
     <div>
       <h2>Bloglist</h2>
       <Notification message={notificationMessage} status={notificationStatus} />
-      {
-        user === null ?
-          <div>
-            <h3>Login</h3>
-            <LoginForm
-              handleLogin={handleLogin}
-              username={username}
-              setUsername={setUsername}
-              password={password}
-              setPassword={setPassword}
-            />
-          </div> :
-          <div>
-            <LoggedInView
-              user={user}
-              handleLogout={handleLogout}
-            />
-            <h3>Create a new blog</h3>
-            <Togglable buttonLabel='Create' ref={blogFormRef} >
-              <NewBlogForm
-                createBlog={createBlog}
-              />
-            </Togglable>
-            <h3>Blogs</h3>
-            <Blogs
-              blogs={blogs.sort((a, b) => b.likes - a.likes)}
-              handleDelete={handleDelete}
-              handleLike={handleLike}
-            />
-          </div>
-      }
+      {user === null ? (
+        <div>
+          <h3>Login</h3>
+          <LoginForm
+            handleLogin={handleLogin}
+            username={username}
+            setUsername={setUsername}
+            password={password}
+            setPassword={setPassword}
+          />
+        </div>
+      ) : (
+        <div>
+          <LoggedInView user={user} handleLogout={handleLogout} />
+          <h3>Create a new blog</h3>
+          <Togglable buttonLabel="Create" ref={blogFormRef}>
+            <NewBlogForm createBlog={createBlog} />
+          </Togglable>
+          <h3>Blogs</h3>
+          <Blogs
+            blogs={blogs.sort((a, b) => b.likes - a.likes)}
+            handleDelete={handleDelete}
+            handleLike={handleLike}
+          />
+        </div>
+      )}
     </div>
   )
 }

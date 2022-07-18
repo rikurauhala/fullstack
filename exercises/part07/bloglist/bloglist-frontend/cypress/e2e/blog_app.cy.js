@@ -15,14 +15,14 @@ const user = {
   password: 'password'
 }
 
-describe('Blog app', function() {
-  beforeEach(function() {
+describe('Blog app', function () {
+  beforeEach(function () {
     cy.request('POST', resetUrl)
     cy.request('POST', usersUrl, user)
     cy.visit(frontend)
   })
 
-  it('Login form is shown', function() {
+  it('Login form is shown', function () {
     cy.contains('Login')
     cy.contains('Username')
     cy.get('#username')
@@ -31,8 +31,8 @@ describe('Blog app', function() {
     cy.contains('Log in')
   })
 
-  describe('Login', function() {
-    it('succeeds with correct credentials', function() {
+  describe('Login', function () {
+    it('succeeds with correct credentials', function () {
       cy.get('#username').type(user.username)
       cy.get('#password').type(user.password)
       cy.get('#login-button').click()
@@ -41,7 +41,7 @@ describe('Blog app', function() {
       cy.contains('Log out')
     })
 
-    it('fails with wrong credentials', function() {
+    it('fails with wrong credentials', function () {
       cy.get('#username').type(user.username)
       cy.get('#password').type('wrong')
       cy.get('#login-button').click()
@@ -50,12 +50,12 @@ describe('Blog app', function() {
     })
   })
 
-  describe('After logging in', function() {
-    beforeEach(function() {
+  describe('After logging in', function () {
+    beforeEach(function () {
       cy.login({ username: user.username, password: user.password })
     })
 
-    it('a new blog can be created', function() {
+    it('a new blog can be created', function () {
       cy.contains('Create a new blog')
       cy.get('#button').click()
       cy.get('#title').type(blog.title)
@@ -67,8 +67,8 @@ describe('Blog app', function() {
       cy.contains(blog.author)
     })
 
-    describe('and a blog has been created', function() {
-      beforeEach(function() {
+    describe('and a blog has been created', function () {
+      beforeEach(function () {
         cy.createBlog({
           title: blog.title,
           author: blog.author,
@@ -76,7 +76,7 @@ describe('Blog app', function() {
         })
       })
 
-      it('a blog can be liked', function() {
+      it('a blog can be liked', function () {
         cy.get('#view-button').click()
         cy.contains('0 likes')
         cy.get('#like-button').click()
@@ -84,7 +84,7 @@ describe('Blog app', function() {
         cy.contains('1 like')
       })
 
-      it('a blog can be deleted', function() {
+      it('a blog can be deleted', function () {
         cy.get('#view-button').click()
         cy.contains(blog.title)
         cy.contains(blog.author)
@@ -94,8 +94,8 @@ describe('Blog app', function() {
       })
     })
 
-    describe('and multiple blogs have been created', function() {
-      beforeEach(function() {
+    describe('and multiple blogs have been created', function () {
+      beforeEach(function () {
         cy.createBlog({
           title: 'Blog 1',
           author: 'Author 1',
@@ -116,7 +116,7 @@ describe('Blog app', function() {
         })
       })
 
-      it('blogs are sorted by likes', function() {
+      it('blogs are sorted by likes', function () {
         cy.get('#view-button').click()
         cy.get('.blogsFull').eq(0).should('contain', 'Blog 2')
         cy.get('.blogsFull').eq(0).should('contain', '99 likes')

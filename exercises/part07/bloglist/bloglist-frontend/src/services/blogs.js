@@ -11,7 +11,7 @@ const create = async (newBlog) => {
 
 const getAll = () => {
   const request = axios.get(baseUrl)
-  return request.then(response => response.data)
+  return request.then((response) => response.data)
 }
 
 const remove = async (id) => {
@@ -27,7 +27,7 @@ const setToken = (newToken) => {
 const update = (id, blog) => {
   const config = { headers: { Authorization: token } }
   const request = axios.put(`${baseUrl}/${id}`, blog, config)
-  return request.then(response => response.data)
+  return request.then((response) => response.data)
 }
 
 export default { create, getAll, remove, setToken, update }

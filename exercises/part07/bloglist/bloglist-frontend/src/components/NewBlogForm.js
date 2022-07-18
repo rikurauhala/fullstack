@@ -35,45 +35,39 @@ const NewBlogForm = ({ createBlog }) => {
       <table>
         <tbody>
           <tr>
-            <td>
-              Title
-            </td>
+            <td>Title</td>
             <td>
               <input
                 id="title"
                 name="Title"
                 onChange={handleTitleChange}
-                placeholder='Title'
+                placeholder="Title"
                 type="text"
                 value={title}
               />
             </td>
           </tr>
           <tr>
-            <td>
-              Author
-            </td>
+            <td>Author</td>
             <td>
               <input
                 id="author"
                 name="Author"
                 onChange={handleAuthorChange}
-                placeholder='Author'
+                placeholder="Author"
                 type="text"
                 value={author}
               />
             </td>
           </tr>
           <tr>
-            <td>
-              URL
-            </td>
+            <td>URL</td>
             <td>
               <input
                 id="url"
                 name="URL"
                 onChange={handleUrlChange}
-                placeholder='URL'
+                placeholder="URL"
                 type="text"
                 value={url}
               />

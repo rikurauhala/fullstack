@@ -19,7 +19,7 @@ describe('Correct elements are rendered by default', () => {
   let container
 
   beforeEach(() => {
-    container = render(<Blog blog={blog}/>).container
+    container = render(<Blog blog={blog} />).container
   })
 
   test('Title is rendered', () => {
@@ -41,7 +41,7 @@ describe('Correct elements are rendered by default', () => {
 
 describe('Correct elements are rendered after clicking the View button', () => {
   beforeEach(async () => {
-    render(<Blog blog={blog}/>)
+    render(<Blog blog={blog} />)
     const button = screen.getByText('View')
     const user = userEvent.setup()
     await user.click(button)
@@ -66,7 +66,7 @@ describe('Correct elements are rendered after clicking the View button', () => {
 
 test('Clicking the like button twice calls the event handler twice', async () => {
   const mockHandler = jest.fn()
-  render(<Blog blog={blog} handleLike={mockHandler}/>)
+  render(<Blog blog={blog} handleLike={mockHandler} />)
 
   const user = userEvent.setup()
 

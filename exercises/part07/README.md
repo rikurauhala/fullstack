@@ -41,3 +41,59 @@ See the final state of the application [here](https://github.com/rikurauhala/ful
 ### Exercise 7.8
 
 See the final state of the application [here](https://github.com/rikurauhala/fullstack/tree/main/exercises/part07/ultimate-hooks).
+
+<!-- 
+
+### Exercise 7.9
+
+See the relevant state of the application [here]().
+
+### Exercise 7.10
+
+See the relevant state of the application [here]().
+
+### Exercise 7.11
+
+See the relevant state of the application [here]().
+
+### Exercise 7.12
+
+See the relevant state of the application [here]().
+
+### Exercise 7.13
+
+See the relevant state of the application [here]().
+
+### Exercise 7.14
+
+See the relevant state of the application [here]().
+
+### Exercise 7.15
+
+See the relevant state of the application [here]().
+
+### Exercise 7.16
+
+See the relevant state of the application [here]().
+
+### Exercise 7.17
+
+See the relevant state of the application [here]().
+
+### Exercise 7.18
+
+See the relevant state of the application [here]().
+
+### Exercise 7.19
+
+See the relevant state of the application [here]().
+
+### Exercise 7.20
+
+See the relevant state of the application [here]().
+
+### Exercise 7.21
+
+See the relevant state of the application [here]().
+
+-->

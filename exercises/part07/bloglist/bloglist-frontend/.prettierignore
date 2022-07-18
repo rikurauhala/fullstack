@@ -1,0 +1,8 @@
+build
+node_modules
+
+.eslintignore
+.eslintrc.js
+.gitignore
+
+*.sh

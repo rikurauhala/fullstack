@@ -4,11 +4,11 @@ This directory contains the exercise files for part 7.
 
 ## Hours
 
-Time spent: `5 hour`
+Time spent: `7 hour`
 
 ## Exercises
 
-Exercises completed: `6 / 21`
+Exercises completed: `8 / 21`
 
 ### Exercise 7.1
 
@@ -32,4 +32,12 @@ See the relevant state of the application [here](https://github.com/rikurauhala/
 
 ### Exercise 7.6
 
-See the relevant state of the application [here](https://github.com/rikurauhala/fullstack/tree/5b4335fd64de0dd6f0c212f9519d9a6a68b0658a/exercises/part07/routed-anecdotes).
+See the final of the application [here](https://github.com/rikurauhala/fullstack/tree/main/exercises/part07/routed-anecdotes).
+
+### Exercise 7.7
+
+See the final state of the application [here](https://github.com/rikurauhala/fullstack/tree/main/exercises/part07/country-hook).
+
+### Exercise 7.8
+
+See the final state of the application [here](https://github.com/rikurauhala/fullstack/tree/main/exercises/part07/ultimate-hooks).

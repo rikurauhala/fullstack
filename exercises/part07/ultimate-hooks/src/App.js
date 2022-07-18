@@ -18,10 +18,20 @@ const useField = (type) => {
 const useResource = (baseUrl) => {
   const [resources, setResources] = useState([])
 
-  // ...
+  useEffect(() => {
+    axios
+      .get(baseUrl)
+      .then(response => {
+        setResources(response.data)
+      })
+  }, [baseUrl])
 
   const create = (resource) => {
-    // ...
+    axios
+      .post(baseUrl, resource)
+      .then(response => {
+        setResources(resources.concat(response.data))
+      })
   }
 
   const service = {
@@ -53,20 +63,24 @@ const App = () => {
 
   return (
     <div>
-      <h2>notes</h2>
+      <h2>Notes</h2>
       <form onSubmit={handleNoteSubmit}>
-        <input {...content} />
+        <input {...content} placeholder='Content' />
         <button>create</button>
       </form>
-      {notes.map(n => <p key={n.id}>{n.content}</p>)}
+      <ul>
+        {notes.map(n => <li key={n.id}>{n.content}</li>)}
+      </ul>
 
-      <h2>persons</h2>
+      <h2>Persons</h2>
       <form onSubmit={handlePersonSubmit}>
-        name <input {...name} /> <br/>
-        number <input {...number} />
+        <input {...name} placeholder='Name' /> <br/>
+        <input {...number} placeholder='Number' />
         <button>create</button>
       </form>
-      {persons.map(n => <p key={n.id}>{n.name} {n.number}</p>)}
+      <ul>
+        {persons.map(n => <li key={n.id}>{n.name} {n.number}</li>)}
+      </ul>
     </div>
   )
 }

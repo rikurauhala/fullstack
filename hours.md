@@ -145,5 +145,5 @@ React router, custom hooks, styling app with CSS and webpack
 | ---------: | ----: | :------------------------------------------------------------------------- |
 | 2022-07-16 |     1 | reading the material, working on exercise 7.1                              |
 | 2022-07-17 |     4 | reading the material, completing exercises 7.1 to 7.6                      |
-| 2022-07-18 |     2 | reading the material, completing exercises 7.7 and 7.8                     |
-|      total |     7 |                                                                            |
+| 2022-07-18 |     4 | reading the material, completing exercises 7.7 and 7.9                     |
+|      total |     9 |                                                                            |

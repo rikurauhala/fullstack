@@ -4,11 +4,11 @@ This directory contains the exercise files for part 7.
 
 ## Hours
 
-Time spent: `7 hour`
+Time spent: `9 hour`
 
 ## Exercises
 
-Exercises completed: `8 / 21`
+Exercises completed: `9 / 21`
 
 ### Exercise 7.1
 
@@ -42,11 +42,11 @@ See the final state of the application [here](https://github.com/rikurauhala/ful
 
 See the final state of the application [here](https://github.com/rikurauhala/fullstack/tree/main/exercises/part07/ultimate-hooks).
 
-<!-- 
-
 ### Exercise 7.9
 
-See the relevant state of the application [here]().
+See the relevant state of the application [here](https://github.com/rikurauhala/fullstack/tree/2b131bab040bf2292e92e16e357f626164e3aaba/exercises/part07/bloglist).
+
+<!-- 
 
 ### Exercise 7.10
 

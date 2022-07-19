@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import { useDispatch } from 'react-redux'
 
 import Blogs from './components/Blogs'
 import LoggedInView from './components/LoggedInView'
@@ -6,6 +7,8 @@ import LoginForm from './components/LoginForm'
 import Notification from './components/Notification'
 import NewBlogForm from './components/NewBlogForm'
 import Togglable from './components/Togglable'
+
+import { setNotification } from './reducers/notificationReducer'
 
 import blogService from './services/blogs'
 import loginService from './services/login'
@@ -15,8 +18,8 @@ const App = () => {
   const [password, setPassword] = useState('')
   const [user, setUser] = useState(null)
   const [username, setUsername] = useState('')
-  const [notificationMessage, setNotificationMessage] = useState(null)
-  const [notificationStatus, setNotificationStatus] = useState(null)
+
+  const dispatch = useDispatch()
 
   useEffect(() => {
     blogService.getAll().then((blogs) => setBlogs(blogs))
@@ -31,14 +34,6 @@ const App = () => {
     }
   }, [])
 
-  const setMessage = (status, message) => {
-    setNotificationMessage(message)
-    setNotificationStatus(status)
-    setTimeout(() => {
-      setNotificationMessage(null)
-    }, 5000)
-  }
-
   const handleLogin = async (event) => {
     event.preventDefault()
     try {
@@ -50,10 +45,9 @@ const App = () => {
       setPassword('')
       setUser(user)
       setUsername('')
-      setMessage('success', 'Welcome to Bloglist!')
+      dispatch(setNotification('Welcome to Bloglist!'))
     } catch (exception) {
-      console.error(exception)
-      setMessage('error', 'Failed to log in!')
+      dispatch(setNotification('Failed to log in!'))
     }
   }
 
@@ -62,10 +56,10 @@ const App = () => {
     try {
       window.localStorage.removeItem('user')
       setUser(null)
-      setMessage('success', 'See you!')
+      dispatch(setNotification('See you!'))
     } catch (exception) {
       console.error(exception)
-      setMessage('error', 'Failed to log out!')
+      dispatch(setNotification('Failed to log out!'))
     }
   }
 
@@ -73,11 +67,11 @@ const App = () => {
     blogFormRef.current.toggleVisibility()
     try {
       const addedBlog = await blogService.create(newBlog)
-      setMessage('success', 'New blog created!')
+      dispatch(setNotification('New blog created!'))
       setBlogs(blogs.concat(addedBlog))
     } catch (exception) {
       console.error(exception)
-      setMessage('error', 'Failed to create a new blog!')
+      dispatch(setNotification('Failed to create a new blog!'))
     }
   }
 
@@ -89,11 +83,11 @@ const App = () => {
       if (answer) {
         await blogService.remove(blog.id)
         setBlogs(blogs.filter((currentBlog) => currentBlog.id !== blog.id))
-        setMessage('success', `Deleted blog ${blog.title}!`)
+        dispatch(setNotification(`Deleted blog ${blog.title}!`))
       }
     } catch (exception) {
       console.error(exception)
-      setMessage('error', `Failed to delete blog ${blog.title}!`)
+      dispatch(setNotification(`Failed to delete blog ${blog.title}!`))
     }
   }
 
@@ -101,10 +95,10 @@ const App = () => {
     try {
       await blogService.update(blog.id, blog)
       blogService.getAll().then((blogs) => setBlogs(blogs))
-      setMessage('success', `Like added to blog ${blog.title}!`)
+      dispatch(setNotification(`Like added to blog ${blog.title}!`))
     } catch (exception) {
       console.error(exception)
-      setMessage('error', `Failed to like blog ${blog.title}!`)
+      dispatch(setNotification(`Failed to like blog ${blog.title}!`))
     }
   }
 
@@ -113,7 +107,7 @@ const App = () => {
   return (
     <div>
       <h2>Bloglist</h2>
-      <Notification message={notificationMessage} status={notificationStatus} />
+      <Notification />
       {user === null ? (
         <div>
           <h3>Login</h3>

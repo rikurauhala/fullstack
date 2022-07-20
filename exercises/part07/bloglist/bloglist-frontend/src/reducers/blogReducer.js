@@ -29,4 +29,5 @@ export const initializeBlogs = () => {
 }
 
 export const { appendBlog, setBlogs } = blogSlice.actions
+
 export default blogSlice.reducer

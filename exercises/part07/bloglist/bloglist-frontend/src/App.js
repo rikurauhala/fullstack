@@ -8,7 +8,7 @@ import Notification from './components/Notification'
 import NewBlogForm from './components/NewBlogForm'
 import Togglable from './components/Togglable'
 
-import { createBlog, initializeBlogs } from './reducers/blogReducer'
+import { createBlog, initializeBlogs, likeBlog } from './reducers/blogReducer'
 import { setNotification } from './reducers/notificationReducer'
 
 import blogService from './services/blogs'
@@ -90,18 +90,17 @@ const App = () => {
       dispatch(setNotification(`Failed to delete blog ${blog.title}!`))
     }
   }
+  */
 
   const handleLike = async (blog) => {
     try {
-      await blogService.update(blog.id, blog)
-      blogService.getAll().then((blogs) => setBlogs(blogs))
+      dispatch(likeBlog(blog))
       dispatch(setNotification(`Like added to blog ${blog.title}!`))
     } catch (exception) {
       console.error(exception)
       dispatch(setNotification(`Failed to like blog ${blog.title}!`))
     }
   }
-  */
 
   const blogFormRef = useRef()
 
@@ -128,7 +127,7 @@ const App = () => {
             <NewBlogForm createNewBlog={createNewBlog} />
           </Togglable>
           <h3>Blogs</h3>
-          <Blogs />
+          <Blogs handleLike={handleLike} />
         </div>
       )}
     </div>

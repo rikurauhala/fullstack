@@ -2,7 +2,7 @@ import { useSelector } from 'react-redux'
 
 import Blog from './Blog'
 
-const Blogs = () => {
+const Blogs = ({ handleLike }) => {
   const blogs = useSelector(({ blogs }) => {
     return blogs
   })
@@ -14,6 +14,7 @@ const Blogs = () => {
           <Blog
             key={blog.id}
             blog={blog}
+            handleLike={() => handleLike(blog)}
           />
         ))}
       </tbody>

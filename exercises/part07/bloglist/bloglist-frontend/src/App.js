@@ -8,13 +8,13 @@ import Notification from './components/Notification'
 import NewBlogForm from './components/NewBlogForm'
 import Togglable from './components/Togglable'
 
+import { initializeBlogs } from './reducers/blogReducer'
 import { setNotification } from './reducers/notificationReducer'
 
 import blogService from './services/blogs'
 import loginService from './services/login'
 
 const App = () => {
-  const [blogs, setBlogs] = useState([])
   const [password, setPassword] = useState('')
   const [user, setUser] = useState(null)
   const [username, setUsername] = useState('')
@@ -22,8 +22,8 @@ const App = () => {
   const dispatch = useDispatch()
 
   useEffect(() => {
-    blogService.getAll().then((blogs) => setBlogs(blogs))
-  }, [])
+    dispatch(initializeBlogs())
+  }, [dispatch])
 
   useEffect(() => {
     const userJSON = window.localStorage.getItem('user')
@@ -63,6 +63,7 @@ const App = () => {
     }
   }
 
+  /*
   const createBlog = async (newBlog) => {
     blogFormRef.current.toggleVisibility()
     try {
@@ -101,6 +102,7 @@ const App = () => {
       dispatch(setNotification(`Failed to like blog ${blog.title}!`))
     }
   }
+  */
 
   const blogFormRef = useRef()
 
@@ -124,14 +126,10 @@ const App = () => {
           <LoggedInView user={user} handleLogout={handleLogout} />
           <h3>Create a new blog</h3>
           <Togglable buttonLabel="Create" ref={blogFormRef}>
-            <NewBlogForm createBlog={createBlog} />
+            <NewBlogForm />
           </Togglable>
           <h3>Blogs</h3>
-          <Blogs
-            blogs={blogs.sort((a, b) => b.likes - a.likes)}
-            handleDelete={handleDelete}
-            handleLike={handleLike}
-          />
+          <Blogs />
         </div>
       )}
     </div>

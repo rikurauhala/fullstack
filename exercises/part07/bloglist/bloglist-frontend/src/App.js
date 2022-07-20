@@ -8,7 +8,7 @@ import Notification from './components/Notification'
 import NewBlogForm from './components/NewBlogForm'
 import Togglable from './components/Togglable'
 
-import { initializeBlogs } from './reducers/blogReducer'
+import { createBlog, initializeBlogs } from './reducers/blogReducer'
 import { setNotification } from './reducers/notificationReducer'
 
 import blogService from './services/blogs'
@@ -63,19 +63,18 @@ const App = () => {
     }
   }
 
-  /*
-  const createBlog = async (newBlog) => {
+  const createNewBlog = async (newBlog) => {
     blogFormRef.current.toggleVisibility()
     try {
-      const addedBlog = await blogService.create(newBlog)
+      dispatch(createBlog(newBlog))
       dispatch(setNotification('New blog created!'))
-      setBlogs(blogs.concat(addedBlog))
     } catch (exception) {
       console.error(exception)
       dispatch(setNotification('Failed to create a new blog!'))
     }
   }
 
+  /*
   const handleDelete = async (blog) => {
     try {
       const answer = window.confirm(
@@ -126,7 +125,7 @@ const App = () => {
           <LoggedInView user={user} handleLogout={handleLogout} />
           <h3>Create a new blog</h3>
           <Togglable buttonLabel="Create" ref={blogFormRef}>
-            <NewBlogForm />
+            <NewBlogForm createNewBlog={createNewBlog} />
           </Togglable>
           <h3>Blogs</h3>
           <Blogs />

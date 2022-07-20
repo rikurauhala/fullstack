@@ -4,11 +4,11 @@ This directory contains the exercise files for part 7.
 
 ## Hours
 
-Time spent: `11 hour`
+Time spent: `14 hour`
 
 ## Exercises
 
-Exercises completed: `10 / 21`
+Exercises completed: `12 / 21`
 
 ### Exercise 7.1
 
@@ -50,15 +50,15 @@ See the relevant state of the application [here](https://github.com/rikurauhala/
 
 See the relevant state of the application [here](https://github.com/rikurauhala/fullstack/tree/78b4e1ec3b43b9c6ef8c68c26db97ecea14c01d6/exercises/part07/bloglist).
 
-<!-- 
-
 ### Exercise 7.11
 
-See the relevant state of the application [here]().
+See the relevant state of the application [here](https://github.com/rikurauhala/fullstack/tree/36cb793d94fa3314ee79364dd996971ef07d73a2/exercises/part07/bloglist).
 
 ### Exercise 7.12
 
-See the relevant state of the application [here]().
+See the relevant state of the application [here](https://github.com/rikurauhala/fullstack/tree/42b4fc3adc0225eae51f95cb6b35454d4b141991/exercises/part07/bloglist).
+
+<!--
 
 ### Exercise 7.13
 

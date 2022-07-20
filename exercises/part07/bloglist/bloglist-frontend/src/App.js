@@ -8,7 +8,7 @@ import Notification from './components/Notification'
 import NewBlogForm from './components/NewBlogForm'
 import Togglable from './components/Togglable'
 
-import { createBlog, initializeBlogs, likeBlog } from './reducers/blogReducer'
+import { createBlog, deleteBlog, initializeBlogs, likeBlog } from './reducers/blogReducer'
 import { setNotification } from './reducers/notificationReducer'
 
 import blogService from './services/blogs'
@@ -74,15 +74,11 @@ const App = () => {
     }
   }
 
-  /*
   const handleDelete = async (blog) => {
     try {
-      const answer = window.confirm(
-        `Are you sure you want to delete blog "${blog.title}"?`
-      )
+      const answer = window.confirm(`Are you sure you want to delete blog "${blog.title}"?`)
       if (answer) {
-        await blogService.remove(blog.id)
-        setBlogs(blogs.filter((currentBlog) => currentBlog.id !== blog.id))
+        dispatch(deleteBlog(blog.id))
         dispatch(setNotification(`Deleted blog ${blog.title}!`))
       }
     } catch (exception) {
@@ -90,7 +86,6 @@ const App = () => {
       dispatch(setNotification(`Failed to delete blog ${blog.title}!`))
     }
   }
-  */
 
   const handleLike = async (blog) => {
     try {
@@ -127,7 +122,10 @@ const App = () => {
             <NewBlogForm createNewBlog={createNewBlog} />
           </Togglable>
           <h3>Blogs</h3>
-          <Blogs handleLike={handleLike} />
+          <Blogs
+            handleLike={handleLike}
+            handleDelete={handleDelete}
+          />
         </div>
       )}
     </div>

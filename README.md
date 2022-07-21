@@ -18,4 +18,14 @@ My submissions for the course [Full stack open](https://fullstackopen.com/en/).
 
 ## Certificate
 
-![Certificate](documentation/certificate.png)
+<details>
+  <summary>View certificate</summary>
+  <a href="https://studies.cs.helsinki.fi/stats/api/certificate/fullstackopen/en/564f7650e5ad1c5e13296980fd45305d">
+    <img
+      alt="Certificate"
+      title="Certificate"
+      src="documentation/certificate.png"
+    />
+  </a>
+</details> 
+

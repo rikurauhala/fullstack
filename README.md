@@ -15,3 +15,7 @@ My submissions for the course [Full stack open](https://fullstackopen.com/en/).
 | [part 6](exercises/part06) | [14](hours.md#part-6) |  21 /  21 |
 | [part 7](exercises/part07) | [14](hours.md#part-7) |  12 /  21 |
 |                      total |                   135 | 140 / 149 |
+
+## Certificate
+
+![Certificate](documentation/certificate.png)

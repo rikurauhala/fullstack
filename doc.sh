@@ -26,13 +26,13 @@ echo -e "${COLOR}> ${DIR}${ENDCOLOR}"
 echo ""
 
 # Open the hour tracking document
-code hours.md
+code documentation/hours.md
 
 # Open README.md
 code README.md
 
-# Open part 7 documentation
-code exercises/part07/README.md
+# Open part 8 documentation
+code exercises/part08/README.md
 
 # List the contents of the directory
 ls -l --color=always

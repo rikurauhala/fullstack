@@ -149,3 +149,15 @@ React router, custom hooks, styling app with CSS and webpack
 | 2022-07-19 |     2 | completing exercise 7.10, working on exercise 7.11                         |
 | 2022-07-20 |     3 | completing exercises 7.11 and 7.12                                         |
 |      total |    14 |                                                                            |
+
+## Part 8
+
+GraphQL
+
+[Material](https://fullstackopen.com/en/part8) |
+[Submissions](https://github.com/rikurauhala/fullstack/tree/main/exercises/part08)
+
+| date       | hours | description                                                                |
+| ---------: | ----: | :------------------------------------------------------------------------- |
+| 2022-07-22 |     0 |                                                                            |
+|      total |     0 |                                                                            |

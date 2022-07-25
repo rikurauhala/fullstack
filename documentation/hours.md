@@ -159,5 +159,17 @@ GraphQL
 
 | date       | hours | description                                                                |
 | ---------: | ----: | :------------------------------------------------------------------------- |
-| 2022-07-22 |     0 |                                                                            |
+| YYYY-MM-DD |     0 |                                                                            |
+|      total |     0 |                                                                            |
+
+## Part 9
+
+TypeScript
+
+[Material](https://fullstackopen.com/en/part9) |
+[Submissions](https://github.com/rikurauhala/fullstack/tree/main/exercises/part09)
+
+| date       | hours | description                                                                |
+| ---------: | ----: | :------------------------------------------------------------------------- |
+| YYYY-MM-DD |     0 |                                                                            |
 |      total |     0 |                                                                            |

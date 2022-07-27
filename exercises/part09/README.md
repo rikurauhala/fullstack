@@ -4,21 +4,21 @@ This directory contains the exercise files for part 9.
 
 ## Hours
 
-Time spent: `2 hours`
+Time spent: `3 hours`
 
 ## Exercises
 
-Exercises completed: `1 / 27`
+Exercises completed: `2 / 27`
 
 ### Exercise 9.1
 
 See the relevant state of the application [here](https://github.com/rikurauhala/fullstack/tree/a9ef932986746549abedaff55378e38c0bd95a7f/exercises/part09/project).
 
-<!--
-
 ### Exercise 9.2
 
-See the relevant state of the application [here]().
+See the relevant state of the application [here](https://github.com/rikurauhala/fullstack/tree/e4670f963a9756939cbd25b97807a41a277bfaf6/exercises/part09/project).
+
+<!--
 
 ### Exercise 9.3
 

@@ -172,5 +172,5 @@ TypeScript
 | date       | hours | description                                                                |
 | ---------: | ----: | :------------------------------------------------------------------------- |
 | 2022-07-26 |     1 | reading the material, setting up the initial project                       |
-| 2022-07-27 |     1 | reading the material, completing exercise 9.1                              |
-|      total |     2 |                                                                            |
+| 2022-07-27 |     2 | reading the material, completing exercises 9.1 and 9.2                     |
+|      total |     3 |                                                                            |

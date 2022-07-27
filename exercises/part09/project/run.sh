@@ -4,4 +4,4 @@
 clear
 
 # Run the program
-npm run ts-node -- bmiCalculator.ts
+npm run calculateExercises

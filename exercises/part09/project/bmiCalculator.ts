@@ -1,4 +1,4 @@
-const calculateBmi = (height: number, weight: number): string => {
+export const calculateBmi = (height: number, weight: number): string => {
   const bmi = Math.round(weight / ( height / 100 ) ** 2 * 10) / 10
 
   var description = ''
@@ -38,14 +38,16 @@ const parseArguments = (args: Array<string>) => {
   }
 }
 
-try {
-  const { height, weight } = parseArguments(process.argv)
-  const bmi = calculateBmi(height, weight)
-  console.log(bmi)
-} catch (error: unknown) {
-  let errorMessage = 'Something bad happened.'
-  if (error instanceof Error) {
-    errorMessage += ' Error: ' + error.message
+if (require.main === module) {
+  try {
+    const { height, weight } = parseArguments(process.argv)
+    const bmi = calculateBmi(height, weight)
+    console.log(bmi)
+  } catch (error: unknown) {
+    let errorMessage = 'Something bad happened.'
+    if (error instanceof Error) {
+      errorMessage += ' Error: ' + error.message
+    }
+    console.log(errorMessage)
   }
-  console.log(errorMessage)
 }

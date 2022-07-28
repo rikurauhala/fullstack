@@ -43,7 +43,36 @@ const calculateExercises = (hours: Array<number>, target: number): Result => {
   return result
 }
 
-const hours = [3, 0, 2, 4.5, 0, 3, 1]
-const target = 2
-const result = calculateExercises(hours, target)
-console.log(result)
+interface ParsedArguments {
+  target: number,
+  hours: Array<number>
+}
+
+const parse = (args: Array<string>): ParsedArguments => {
+  if (args.length < 4) throw new Error('Not enough arguments!')
+
+  const target = Number(args[2])
+  const hours = args.slice(3).map(hour => Number(hour))
+  const containsNaN = hours.filter(hour => !isNaN(hour)).length !== hours.length
+
+  if (!isNaN(target) && !containsNaN) {
+    return {
+      target,
+      hours
+    }
+  } else {
+    throw new Error('Provided values were not numbers!')
+  }
+}
+
+try {
+  const { target, hours } = parse(process.argv)
+  const exercises = calculateExercises(hours, target)
+  console.log(exercises)
+} catch (error: unknown) {
+  let errorMessage = 'Something bad happened.'
+  if (error instanceof Error) {
+    errorMessage += ' Error: ' + error.message
+  }
+  console.log(errorMessage)
+}

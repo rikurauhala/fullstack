@@ -173,5 +173,5 @@ TypeScript
 | ---------: | ----: | :------------------------------------------------------------------------- |
 | 2022-07-26 |     1 | reading the material, setting up the initial project                       |
 | 2022-07-27 |     2 | reading the material, completing exercises 9.1 and 9.2                     |
-| 2022-07-28 |     2 | reading the material, completing exercises 9.3 to 9.5                      |
-|      total |     5 |                                                                            |
+| 2022-07-28 |     3 | reading the material, completing exercises 9.3 to 9.6                      |
+|      total |     6 |                                                                            |

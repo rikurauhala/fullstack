@@ -8,7 +8,7 @@ interface Result {
   average: number
 }
 
-const calculateExercises = (hours: Array<number>, target: number): Result => {
+export const calculateExercises = (hours: Array<number>, target: number): Result => {
   const total = hours.reduce((total, hours) => total + hours, 0);
 
   const periodLength = hours.length;
@@ -65,14 +65,16 @@ const parse = (args: Array<string>): ParsedArguments => {
   }
 };
 
-try {
-  const { target, hours } = parse(process.argv);
-  const exercises = calculateExercises(hours, target);
-  console.log(exercises);
-} catch (error: unknown) {
-  let errorMessage = 'Something bad happened.';
-  if (error instanceof Error) {
-    errorMessage += ' Error: ' + error.message;
+if (require.main === module) {
+  try {
+    const { target, hours } = parse(process.argv);
+    const exercises = calculateExercises(hours, target);
+    console.log(exercises);
+  } catch (error: unknown) {
+    let errorMessage = 'Something bad happened.';
+    if (error instanceof Error) {
+      errorMessage += ' Error: ' + error.message;
+    }
+    console.log(errorMessage);
   }
-  console.log(errorMessage);
 }

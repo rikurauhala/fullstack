@@ -1,40 +1,6 @@
-const Header = ({ courseName }: { courseName: string }): JSX.Element => {
-  return (
-    <h1>{courseName}</h1>
-  )
-}
-
-interface Part {
-  name: string,
-  exerciseCount: number
-}
-
-const Content = ({ courseParts }: { courseParts: Array<Part> }): JSX.Element => {
-  return (
-    <div>
-      <p>
-        {courseParts[0].name} {courseParts[0].exerciseCount}
-      </p>
-      <p>
-        {courseParts[1].name} {courseParts[1].exerciseCount}
-      </p>
-      <p>
-        {courseParts[2].name} {courseParts[2].exerciseCount}
-      </p>
-    </div>
-  )
-}
-
-const Total = ({ courseParts }: { courseParts: Array<Part> }): JSX.Element => {
-  return (
-    <div>
-      <p>
-        Number of exercises{" "}
-        {courseParts.reduce((carry, part) => carry + part.exerciseCount, 0)}
-      </p>
-    </div>
-  )
-}
+import Header from './components/Header';
+import Content from './components/Content';
+import Total from './components/Total';
 
 const App = () => {
   const courseName = "Half Stack application development";

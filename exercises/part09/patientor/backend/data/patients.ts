@@ -41,6 +41,6 @@ const patients: Array<Patient> = [
     "gender": "male",
     "occupation": "Digital evangelist"
   }
-]
+];
 
 export default patients;

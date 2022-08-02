@@ -9,6 +9,15 @@ router.get('/', (_req, res) => {
   res.send(patients);
 });
 
+router.get('/:id', (req, res) => {
+  const patient = patientService.findById(req.params.id);
+  if (patient) {
+    res.json(patient);
+  } else {
+    res.status(404).send('Not found');
+  }
+});
+
 router.post('/', (req, res) => {
   try {
     const newPatient = toNewPatient(req.body);

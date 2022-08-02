@@ -4,11 +4,11 @@ This directory contains the exercise files for part 9.
 
 ## Hours
 
-Time spent: `15 hours`
+Time spent: `17 hours`
 
 ## Exercises
 
-Exercises completed: `15 / 27`
+Exercises completed: `16 / 27`
 
 ### Exercise 9.1
 
@@ -70,11 +70,11 @@ See the relevant state of the application [here](https://github.com/rikurauhala/
 
 See the final state of the application [here](https://github.com/rikurauhala/fullstack/tree/main/exercises/part09/course-information).
 
-<!--
-
 ### Exercise 9.16
 
-See the relevant state of the application [here]().
+See the relevant state of the application [here](https://github.com/rikurauhala/fullstack/tree/694d0e4d16058f19944fc4db60860ef74dc89a13/exercises/part09/patientor).
+
+<!--
 
 ### Exercise 9.17
 

@@ -1,28 +1,30 @@
-export interface Part {
-  name: string,
-  exerciseCount: number
-}
-
-interface CoursePartBase {
+interface PartBase {
   name: string;
   exerciseCount: number;
   type: string;
 }
 
-interface CourseNormalPart extends CoursePartBase {
-  type: "normal";
+interface PartWithDescription extends PartBase {
   description: string;
 }
 
-interface CourseProjectPart extends CoursePartBase {
+interface NormalPart extends PartWithDescription {
+  type: "normal";
+}
+
+interface ProjectPart extends PartBase {
   type: "groupProject";
   groupProjectCount: number;
 }
 
-interface CourseSubmissionPart extends CoursePartBase {
+interface SubmissionPart extends PartWithDescription {
   type: "submission";
-  description: string;
   exerciseSubmissionLink: string;
 }
 
-export type CoursePart = CourseNormalPart | CourseProjectPart | CourseSubmissionPart;
+interface RequirementsPart extends PartWithDescription {
+  type: "special";
+  requirements: Array<string>;
+}
+
+export type CoursePart = NormalPart | ProjectPart | SubmissionPart | RequirementsPart;

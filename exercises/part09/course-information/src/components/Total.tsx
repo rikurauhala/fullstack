@@ -1,10 +1,10 @@
-import { Part } from '../types';
+import { CoursePart } from '../types';
 
-const Total = ({ courseParts }: { courseParts: Array<Part> }): JSX.Element => {
+const Total = ({ courseParts }: { courseParts: Array<CoursePart> }): JSX.Element => {
   return (
     <div>
       <p>
-        Number of exercises{" "}
+        Number of exercises:{" "}
         {courseParts.reduce((carry, part) => carry + part.exerciseCount, 0)}
       </p>
     </div>

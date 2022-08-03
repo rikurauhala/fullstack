@@ -179,5 +179,5 @@ TypeScript
 | 2022-07-31 |     4 | completing exercises 9.11 to 9.14                                          |
 | 2022-08-01 |     1 | reading the material, working on exercise 9.15                             |
 | 2022-08-02 |     3 | reading the material, completing exercises 9.15 and 9.16                   |
-| 2022-08-03 |     1 | reading the material, working on exercise 9.17                             |
-|      total |    18 |                                                                            |
+| 2022-08-03 |     2 | reading the material, working on exercise 9.17                             |
+|      total |    19 |                                                                            |

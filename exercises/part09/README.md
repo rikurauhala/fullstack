@@ -4,11 +4,11 @@ This directory contains the exercise files for part 9.
 
 ## Hours
 
-Time spent: `19 hours`
+Time spent: `22 hours`
 
 ## Exercises
 
-Exercises completed: `16 / 27`
+Exercises completed: `20 / 27`
 
 ### Exercise 9.1
 
@@ -74,23 +74,23 @@ See the final state of the application [here](https://github.com/rikurauhala/ful
 
 See the relevant state of the application [here](https://github.com/rikurauhala/fullstack/tree/694d0e4d16058f19944fc4db60860ef74dc89a13/exercises/part09/patientor).
 
-<!--
-
 ### Exercise 9.17
 
-See the relevant state of the application [here]().
+See the relevant state of the application [here](https://github.com/rikurauhala/fullstack/tree/93cbac31fe7889e129dc00bc9f3bd6740ab7fab0/exercises/part09/patientor).
 
 ### Exercise 9.18
 
-See the relevant state of the application [here]().
+See the relevant state of the application [here](https://github.com/rikurauhala/fullstack/tree/5e928c69479dbc24ecb0ae9bd7dedb74b68c843c/exercises/part09/patientor).
 
 ### Exercise 9.19
 
-See the relevant state of the application [here]().
+See the relevant state of the application [here](https://github.com/rikurauhala/fullstack/tree/f0e5de27049956103ceb1c9b69c13783ac25d2bf/exercises/part09/patientor).
 
 ### Exercise 9.20
 
-See the relevant state of the application [here]().
+See the relevant state of the application [here](https://github.com/rikurauhala/fullstack/tree/8d823d69e6b24183e075c912c5393e71810bdb2d/exercises/part09/patientor).
+
+<!--
 
 ### Exercise 9.21
 

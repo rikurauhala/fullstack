@@ -28,5 +28,5 @@ My submissions for the course [Full stack open](https://fullstackopen.com/en/).
 | [6](exercises/part06) | [14](documentation/hours.md#part-6) |  21 /  21 |      ✓ |
 | [7](exercises/part07) | [14](documentation/hours.md#part-7) |  12 /  21 |      ✓ |
 | [8](exercises/part08) |  [0](documentation/hours.md#part-8) |   0 /  26 |        |
-| [9](exercises/part09) | [19](documentation/hours.md#part-9) |  16 /  27 |        |
-|                 total |                                 154 | 156 / 202 |        |
+| [9](exercises/part09) | [22](documentation/hours.md#part-9) |  20 /  27 |        |
+|                 total |                                 157 | 160 / 202 |        |

@@ -1,17 +1,10 @@
 import { useEffect } from "react";
 import axios from "axios";
 import { useParams } from 'react-router-dom';
-//import { Box, Table, Button, TableHead, Typography } from "@material-ui/core";
 
-//import { PatientFormValues } from "../AddPatientModal/AddPatientForm";
-//import AddPatientModal from "../AddPatientModal";
 import { PatientWithEntries } from "../types";
 import { apiBaseUrl } from "../constants";
-//import HealthRatingBar from "../components/HealthRatingBar";
 import { useStateValue } from "../state";
-//import { TableCell } from "@material-ui/core";
-//import { TableRow } from "@material-ui/core";
-//import { TableBody } from "@material-ui/core";
 
 const PatientPage = () => {
   const [{ selectedPatient }, dispatch] = useStateValue();
@@ -33,7 +26,10 @@ const PatientPage = () => {
 
   return (
     <div>
-     <h3>{selectedPatient.name}</h3>
+      <h3>{selectedPatient.name}</h3>
+      <p>gender: {selectedPatient.gender}</p>
+      <p>ssn: {selectedPatient.ssn}</p>
+      <p>occupation: {selectedPatient.occupation}</p>
     </div>
   );
 };

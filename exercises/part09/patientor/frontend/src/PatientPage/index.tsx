@@ -27,13 +27,13 @@ const PatientPage = () => {
 
   return (
     <div>
-      <h3>{selectedPatient.name}</h3>
+      <h2>{selectedPatient.name}</h2>
       <p>gender: {selectedPatient.gender}</p>
       <p>ssn: {selectedPatient.ssn}</p>
       <p>occupation: {selectedPatient.occupation}</p>
       {(selectedPatient.entries.length > 0 && Object.keys(diagnoses).length > 0) &&
         <div>
-          <h2>Entries</h2>
+          <h3>Entries</h3>
           {selectedPatient.entries.map((entry: Entry) => (
             <EntryDetails key={entry.id} entry={entry} />
           ))}

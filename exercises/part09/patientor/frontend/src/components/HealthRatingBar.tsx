@@ -2,6 +2,7 @@ import React from "react";
 import { Rating } from "@material-ui/lab";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import { withStyles } from "@material-ui/core";
+import { HEALTHBAR_TEXTS } from "../constants";
 
 type BarProps = {
   rating: number;
@@ -16,13 +17,6 @@ const StyledRating = withStyles({
     color: "#ff3d47",
   },
 })(Rating);
-
-const HEALTHBAR_TEXTS = [
-  "The patient is in great shape",
-  "The patient has a low risk of getting sick",
-  "The patient has a high risk of getting sick",
-  "The patient has a diagnosed condition",
-];
 
 const HealthRatingBar = ({ rating, showText }: BarProps) => {
   return (

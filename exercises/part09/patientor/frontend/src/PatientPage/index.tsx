@@ -7,7 +7,7 @@ import { apiBaseUrl } from "../constants";
 import { getPatientWithEntries, useStateValue } from "../state";
 
 const PatientPage = () => {
-  const [{ selectedPatient }, dispatch] = useStateValue();
+  const [{ diagnoses, selectedPatient }, dispatch] = useStateValue();
   const { id } = useParams<{ id: string }>();
 
   useEffect(() => {
@@ -30,17 +30,21 @@ const PatientPage = () => {
       <p>gender: {selectedPatient.gender}</p>
       <p>ssn: {selectedPatient.ssn}</p>
       <p>occupation: {selectedPatient.occupation}</p>
-      {selectedPatient.entries.length > 0 && <h2>Entries</h2>}
-      {selectedPatient.entries.map((entry: Entry) => (
-        <div key={entry.id}>
-          {entry.date} <i>{entry.description}</i>
-          <ul>
-            {entry.diagnosisCodes?.map((diagnosis: string) => (
-              <li key={diagnosis}>{diagnosis}</li>
-            ))}
-          </ul>
+      {(selectedPatient.entries.length > 0 && Object.keys(diagnoses).length > 0) &&
+        <div>
+          <h2>Entries</h2>
+          {selectedPatient.entries.map((entry: Entry) => (
+            <div key={entry.id}>
+              {entry.date} <i>{entry.description}</i>
+              <ul>
+                {entry.diagnosisCodes?.map((diagnosis: string) => (
+                  <li key={diagnosis}>{diagnosis} {diagnoses[diagnosis].name}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
-      ))}
+      }
     </div>
   );
 };

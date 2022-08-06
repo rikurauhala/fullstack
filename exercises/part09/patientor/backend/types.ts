@@ -67,10 +67,10 @@ export enum Gender {
 }
 
 export type Fields = {
-  name: unknown
-  dateOfBirth: unknown
-  ssn: unknown
-  gender: unknown
+  name: unknown;
+  dateOfBirth: unknown;
+  ssn: unknown;
+  gender: unknown;
   occupation: unknown;
 };
 

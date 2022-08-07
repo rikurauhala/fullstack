@@ -45,7 +45,8 @@ const parseGender = (gender: unknown): Gender => {
   return gender;
 };
 
-const toNewPatient = ({ name, dateOfBirth, ssn, gender, occupation }: Fields): NewPatient => {
+export const toNewPatient = (props: Fields): NewPatient => {
+  const { name, dateOfBirth, ssn, gender, occupation } = props;
   const newPatient: NewPatient = {
     name: parseName(name),
     dateOfBirth: parseDate(dateOfBirth),
@@ -56,5 +57,3 @@ const toNewPatient = ({ name, dateOfBirth, ssn, gender, occupation }: Fields): N
   };
   return newPatient;
 };
-
-export default toNewPatient;

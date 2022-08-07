@@ -1,7 +1,6 @@
 import express from 'express';
 import patientService from '../services/patientService';
-import { NewEntry } from '../types';
-import toNewPatient from '../utils';
+import { toNewPatient } from '../utils';
 
 const router = express.Router();
 
@@ -26,8 +25,7 @@ router.post('/:id/entries', (req, res) => {
     res.status(404).send('Patient not found');
   } else {
     try {
-      //const newEntry = toNewEntry(req.body);
-      const newEntry: NewEntry = req.body;
+      const newEntry = toNewEntry(req.body);
       const updatedPatient = patientService.addEntry(patient, newEntry);
       res.json(updatedPatient);
     } catch (error: unknown) {

@@ -20,7 +20,7 @@ export enum Gender {
   Other = 'other'
 }
 
-export type Fields = {
+export type PatientFields = {
   name: unknown;
   dateOfBirth: unknown;
   ssn: unknown;
@@ -34,9 +34,15 @@ export type NonSensitivePatient = Omit<Patient, 'ssn' | 'entries'>[];
 
 export type PublicPatient = Omit<Patient, 'ssn' | 'entries'>;
 
+export enum EntryType {
+  Hospital = 'Hospital',
+  OccupationalHealthcare = 'OccupationalHealthcare',
+  HealthCheck = 'HealthCheck',
+}
+
 interface BaseEntry {
   id: string;
-  type: string,
+  type: EntryType,
   description: string;
   date: string;
   specialist: string;
@@ -50,36 +56,35 @@ export enum HealthCheckRating {
   'CriticalRisk' = 3
 }
 
-interface Discharge {
+export interface Discharge {
   date: string;
   criteria: string;
 }
 
 interface HospitalEntry extends BaseEntry {
-  type: 'Hospital';
+  type: EntryType.Hospital;
   discharge: Discharge;
 }
 
-interface SickLeave {
+export interface SickLeave {
   startDate: string;
   endDate: string;
 }
 
 interface OccupationalHealthcareEntry extends BaseEntry {
-  type: 'OccupationalHealthcare';
+  type: EntryType.OccupationalHealthcare;
   employerName: string;
   sickLeave?: SickLeave;
 }
 
 interface HealthCheckEntry extends BaseEntry {
-  type: 'HealthCheck';
+  type: EntryType.HealthCheck;
   healthCheckRating: HealthCheckRating;
 }
 
-export type Entry =
-  | HospitalEntry
-  | OccupationalHealthcareEntry
-  | HealthCheckEntry
+export type Entry = HospitalEntry | OccupationalHealthcareEntry | HealthCheckEntry;
+
+export type NewBaseEntry = Omit<BaseEntry, 'id'>;
 
 export type NewHospitalEntry = Omit<HospitalEntry, 'id'>;
 
@@ -87,7 +92,24 @@ export type NewOccupationalHealthcareEntry = Omit<OccupationalHealthcareEntry, '
 
 export type NewHealthCheckEntry = Omit<HealthCheckEntry, 'id'>;
 
-export type NewEntry =
-  | NewHospitalEntry
-  | NewOccupationalHealthcareEntry
-  | NewHealthCheckEntry
+export type NewEntry = NewHospitalEntry | NewOccupationalHealthcareEntry | NewHealthCheckEntry;
+
+export type BaseEntryFields = {
+  type: unknown,
+  description: unknown;
+  date: unknown;
+  specialist: unknown;
+  diagnosisCodes?: unknown;
+};
+
+export type EntryFields = {
+  type: unknown,
+  description: unknown;
+  date: unknown;
+  specialist: unknown;
+  diagnosisCodes?: unknown;
+  discharge?: unknown;
+  employerName?: unknown;
+  sickLeave?: unknown;
+  healthCheckRating?: unknown;
+};

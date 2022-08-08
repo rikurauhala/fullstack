@@ -1,7 +1,7 @@
-import React, { createContext, useContext, useReducer } from "react";
-import { Diagnosis, Patient, PatientWithEntries, Gender } from "../types";
+import React, { createContext, useContext, useReducer } from 'react';
+import { Diagnosis, Patient, PatientWithEntries, Gender } from '../types';
 
-import { Action } from "./reducer";
+import { Action } from './reducer';
 
 export type State = {
   patients: { [id: string]: Patient };
@@ -12,13 +12,13 @@ export type State = {
 const initialState: State = {
   patients: {},
   selectedPatient: {
-    name: "",
-    dateOfBirth: "",
-    ssn: "",
+    name: '',
+    dateOfBirth: '',
+    ssn: '',
     gender: Gender.Other,
-    occupation: "",
+    occupation: '',
     entries: [ ],
-    id: ""
+    id: ''
   },
   diagnoses: {}
 };

@@ -2,7 +2,9 @@
 
 My submissions for the course [Full stack open](https://fullstackopen.com/en/).
 
-## Certificate
+## Certificates
+
+### Parts 0-7
 
 <details>
   <summary>View certificate</summary>
@@ -10,7 +12,20 @@ My submissions for the course [Full stack open](https://fullstackopen.com/en/).
     <img
       alt="Certificate"
       title="Certificate"
-      src="documentation/certificate.png"
+      src="documentation/certificate-fullstack.png"
+    />
+  </a>
+</details> 
+
+### Part 9
+
+<details>
+  <summary>View certificate</summary>
+  <a href="https://studies.cs.helsinki.fi/stats/api/certificate/fs-typescript/en/cc8f454c092b2bd1ce6903c160a34175">
+    <img
+      alt="Certificate"
+      title="Certificate"
+      src="documentation/certificate-typescript.png"
     />
   </a>
 </details> 

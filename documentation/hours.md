@@ -184,4 +184,5 @@ TypeScript
 | 2022-08-05 |     2 | completing exercises 9.21 and 9.22                                         |
 | 2022-08-06 |     1 | reading the material, working on exercise 9.23                             |
 | 2022-08-07 |     5 | reading the material, completing exercise 9.23                             |
-|      total |    30 |                                                                            |
+| 2022-08-09 |     4 | reading the material, completing exercise 9.24                             |
+|      total |    34 |                                                                            |

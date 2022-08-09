@@ -1,6 +1,6 @@
 import { HEALTHBAR_TEXTS } from '../constants';
 import { useStateValue } from '../state';
-import { Entry } from '../types';
+import { Entry, EntryType } from '../types';
 import { assertNever } from '../utils';
 
 const EntryDetails = ({ entry }: { entry: Entry }): JSX.Element => {
@@ -8,7 +8,7 @@ const EntryDetails = ({ entry }: { entry: Entry }): JSX.Element => {
   const style = { 'paddingTop': '10px' };
 
   switch (entry.type) {
-    case 'Hospital':
+    case EntryType.Hospital:
       return (
         <div style={style}>
           {entry.date} | Hospital
@@ -30,7 +30,7 @@ const EntryDetails = ({ entry }: { entry: Entry }): JSX.Element => {
           Discharged on {entry.discharge.date} for reason: {entry.discharge.criteria}
         </div>
       );
-    case 'OccupationalHealthcare':
+    case EntryType.OccupationalHealthcare:
       return (
         <div style={style}>
           {entry.date} | Occupational healthcare | Employer: {entry.employerName}
@@ -53,7 +53,7 @@ const EntryDetails = ({ entry }: { entry: Entry }): JSX.Element => {
           }
         </div>
       );
-    case 'HealthCheck':
+    case EntryType.HealthCheck:
       return (
         <div style={style}>
           {entry.date} | Health check

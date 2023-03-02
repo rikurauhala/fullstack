@@ -189,12 +189,26 @@ TypeScript
 | 2022-08-09 |     4 | reading the material, completing exercise 9.24                             |
 |      total |    34 |                                                                            |
 
+<!--
 ## Part 10
 
 React Native
 
 [Material](https://fullstackopen.com/en/part10) |
 [Submissions](https://github.com/rikurauhala/fullstack/tree/main/exercises/part10)
+
+| date       | hours | description                                                                |
+| ---------: | ----: | :------------------------------------------------------------------------- |
+| YYYY-MM-DD |     0 |                                                                            |
+|      total |     0 |                                                                            |
+-->
+
+## Part 10
+
+CI/CD
+
+[Material](https://fullstackopen.com/en/part11) |
+<!--[Submissions](https://github.com/rikurauhala/fullstack/tree/main/exercises/part10)-->
 
 | date       | hours | description                                                                |
 | ---------: | ----: | :------------------------------------------------------------------------- |

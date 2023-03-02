@@ -208,9 +208,9 @@ React Native
 CI/CD
 
 [Material](https://fullstackopen.com/en/part11) |
-<!--[Submissions](https://github.com/rikurauhala/fullstack/tree/main/exercises/part10)-->
+[Submissions](https://github.com/rikurauhala/full-stack-open-pokedex)
 
 | date       | hours | description                                                                |
 | ---------: | ----: | :------------------------------------------------------------------------- |
-| YYYY-MM-DD |     0 |                                                                            |
-|      total |     0 |                                                                            |
+| 2023-03-02 |     2 | reading the material, completing exercises 11.2 to 11.8                    |
+|      total |     2 |                                                                            |

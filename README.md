@@ -15,7 +15,7 @@ My submissions for the course [Full stack open](https://fullstackopen.com/en/).
       src="documentation/certificate-fullstack.png"
     />
   </a>
-</details> 
+</details>
 
 ### Part 9
 
@@ -28,7 +28,7 @@ My submissions for the course [Full stack open](https://fullstackopen.com/en/).
       src="documentation/certificate-typescript.png"
     />
   </a>
-</details> 
+</details>
 
 ## Progress
 
@@ -45,5 +45,5 @@ My submissions for the course [Full stack open](https://fullstackopen.com/en/).
 |  [8](exercises/part08) |   [0](documentation/hours.md#part-8) |   0 /  26 |        |
 |  [9](exercises/part09) |  [34](documentation/hours.md#part-9) |  24 /  27 |      ✓ |
 | [10](exercises/part10) |  [0](documentation/hours.md#part-10) |   0 /  27 |        |
-| [11](exercises/part11) |  [0](documentation/hours.md#part-11) |   0 /  21 |        |
-|                  total |                                  169 | 164 / 250 |        |
+| [11](exercises/part11) |  [2](documentation/hours.md#part-11) |   7 /  21 |        |
+|                  total |                                  171 | 171 / 250 |        |

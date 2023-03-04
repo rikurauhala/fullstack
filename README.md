@@ -30,7 +30,14 @@
 
 ## About
 
-My submissions for the course [Full stack open](https://fullstackopen.com/en/).
+This repository contains my submissions for the course [Full stack open](https://fullstackopen.com/en) at the [University of Helsinki](https://www.helsinki.fi/en). I would highly recommend all developers to take this course. It is free of charge and anyone can enroll and complete the course fully remotely. Completing the whole course will take a long time and requires a lot of effort but it is absolutely worth it! Full stack open will teach you all about modern web development. See above for some of the technologies you will learn.
+
+I am not associated with the course but have contributed to the material a bit.
+
+> **Note**  
+> Even though you can find working solutions in this repository and many others on GitHub, please **do not submit other people's work as your own**. The best way to learn is to go through the learning process yourself. That includes dealing with annoying bugs and having to google obscure error messages. If you need help with the exercises, consider joining the course [Discord server](https://study.cs.helsinki.fi/discord/join/fullstack) to talk to other students!
+
+If you got interested, start your own journey into modern full stack development [here](https://fullstackopen.com/en).
 
 ## Certificates
 

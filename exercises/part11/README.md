@@ -1,11 +1,11 @@
 # Part 11
 
-This directory contains the exercise files for part 11.
+See part 11 submissions in [this repository](https://github.com/rikurauhala/full-stack-open-pokedex).
 
 ## Hours
 
-Time spent: `2 hours`
+Time spent: `9 hours`
 
 ## Exercises
 
-Exercises completed: `7 / 21`
+Exercises completed: `11 / 21`

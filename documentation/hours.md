@@ -213,5 +213,6 @@ CI/CD
 | date       | hours | description                                                                |
 | ---------: | ----: | :------------------------------------------------------------------------- |
 | 2023-03-02 |     2 | reading the material, completing exercises 11.2 to 11.8                    |
-| 2023-03-03 |     4 | reading the material, completing exercises 11.9 and 11.10                  |
-|      total |     6 |                                                                            |
+| 2023-03-04 |     4 | reading the material, completing exercises 11.9 and 11.10                  |
+| 2023-03-05 |     3 | completing exercises 11.11 and 11.12                                       |
+|      total |     9 |                                                                            |

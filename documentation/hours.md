@@ -214,5 +214,5 @@ CI/CD
 | ---------: | ----: | :------------------------------------------------------------------------- |
 | 2023-03-02 |     2 | reading the material, completing exercises 11.2 to 11.8                    |
 | 2023-03-04 |     4 | reading the material, completing exercises 11.9 and 11.10                  |
-| 2023-03-05 |     3 | completing exercises 11.11 and 11.12                                       |
-|      total |     9 |                                                                            |
+| 2023-03-05 |     5 | completing exercises 11.11 to 11.14                                        |
+|      total |    11 |                                                                            |

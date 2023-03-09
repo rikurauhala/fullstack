@@ -217,4 +217,5 @@ CI/CD
 | 2023-03-05 |     5 | completing exercises 11.11 to 11.14                                        |
 | 2023-03-07 |     1 | completing exercises 11.15 and 11.16                                       |
 | 2023-03-08 |     2 | completing exercises 11.17 to 11.19                                        |
-|      total |    14 |                                                                            |
+| 2023-03-09 |     2 | completing exercises 11.1, 11.20 and 11.21                                 |
+|      total |    16 |                                                                            |

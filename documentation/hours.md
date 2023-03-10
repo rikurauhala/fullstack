@@ -243,5 +243,5 @@ Using relational databases
 
 | date       | hours | description                                                                |
 | ---------: | ----: | :------------------------------------------------------------------------- |
-| 2023-03-10 |     4 | reading the material, completing exercises 13.1 to 13.6                    |
-|      total |     4 |                                                                            |
+| 2023-03-10 |     5 | reading the material, completing exercises 13.1 to 13.7                    |
+|      total |     5 |                                                                            |

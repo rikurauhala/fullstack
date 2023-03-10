@@ -1,11 +1,11 @@
 # Part 13
 
-No submissions yet.
+See part 13 submissions in [this repository](https://github.com/rikurauhala/fullstack-part13).
 
 ## Hours
 
-Time spent: `4 hours`
+Time spent: `5 hours`
 
 ## Exercises
 
-Exercises completed: `6 / 24`
+Exercises completed: `7 / 24`

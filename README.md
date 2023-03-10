@@ -65,5 +65,5 @@ If you got interested, start your own journey into modern full stack development
 | [10](exercises/part10) |  [0](documentation/hours.md#part-10) |   0 /  27 |        |                                                                                                                    |
 | [11](exercises/part11) | [16](documentation/hours.md#part-11) |  21 /  21 |      ✓ | [part 11](https://studies.cs.helsinki.fi/stats/api/certificate/fs-cicd/en/1e179725fcaeafa11eca728385184b93)        |
 | [12](exercises/part12) |  [0](documentation/hours.md#part-12) |   0 /  22 |        |                                                                                                                    |
-| [13](exercises/part13) |  [4](documentation/hours.md#part-13) |   6 /  24 |        |                                                                                                                    |
-|                  total |                                  189 | 191 / 296 |        |                                                                                                                    |
+| [13](exercises/part13) |  [5](documentation/hours.md#part-13) |   7 /  24 |        |                                                                                                                    |
+|                  total |                                  190 | 192 / 296 |        |                                                                                                                    |

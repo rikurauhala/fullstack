@@ -4,8 +4,8 @@ No submissions yet.
 
 ## Hours
 
-Time spent: `0 hours`
+Time spent: `4 hours`
 
 ## Exercises
 
-Exercises completed: `0 / 24`
+Exercises completed: `6 / 24`

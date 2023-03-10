@@ -31,8 +31,8 @@ code documentation/hours.md
 # Open README.md
 code README.md
 
-# Open part11 documentation
-code exercises/part11/README.md
+# Open part13 documentation
+code exercises/part13/README.md
 
 # List the contents of the directory
 ls -l --color=always

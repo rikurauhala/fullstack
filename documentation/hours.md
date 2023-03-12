@@ -245,4 +245,5 @@ Using relational databases
 | ---------: | ----: | :------------------------------------------------------------------------- |
 | 2023-03-10 |     5 | reading the material, completing exercises 13.1 to 13.7                    |
 | 2023-03-11 |     4 | reading the material, completing exercises 13.8 to 13.12                   |
-|      total |     9 |                                                                            |
+| 2023-03-12 |     3 | reading the material, completing exercises 13.13 to 13.15                  |
+|      total |    12 |                                                                            |

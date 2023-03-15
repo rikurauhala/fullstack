@@ -4,7 +4,7 @@ See part 13 submissions in [this repository](https://github.com/rikurauhala/full
 
 ## Hours
 
-Time spent: `13 hours`
+Time spent: `15 hours`
 
 ## Exercises
 

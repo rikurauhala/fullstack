@@ -250,4 +250,5 @@ Using relational databases
 | 2023-03-16 |     1 | completing exercises 13.18 and 13.19                                       |
 | 2023-03-17 |     3 | completing exercises 13.19 to 13.22                                        |
 | 2023-03-19 |     1 | completing exercise 13.23                                                  |
-|      total |    20 |                                                                            |
+| 2023-03-22 |     2 | completing exercise 13.24                                                  |
+|      total |    22 |                                                                            |

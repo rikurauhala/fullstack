@@ -48,6 +48,9 @@ I am not associated with the course but have contributed to the material a bit.
 
 If you got interested, start your own journey into modern full stack development [here](https://fullstackopen.com/en).
 
+> **Warning**  
+> Do not use the code found in this repository in production. It is not maintained and contains outdated and possibly vulnerable dependencies.
+
 ## Progress
 
 |                   part |                                hours | exercises | status | certificate                                                                                                        |

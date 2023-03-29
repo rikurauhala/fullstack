@@ -7,7 +7,7 @@ This document is used to keep track of hours that I have spent working on the co
 Fundamentals of Web apps
 
 [Material](https://fullstackopen.com/en/part0) |
-[Submissions](https://github.com/rikurauhala/fullstack/tree/main/exercises/part00)
+[Submissions](../exercises/part00)
 
 | date       | hours | description                                                                |
 | ---------: | ----: | :------------------------------------------------------------------------- |
@@ -22,7 +22,7 @@ Fundamentals of Web apps
 Introduction to React
 
 [Material](https://fullstackopen.com/en/part1) |
-[Submissions](https://github.com/rikurauhala/fullstack/tree/main/exercises/part01)
+[Submissions](../exercises/part01)
 
 | date       | hours | description                                                                |
 | ---------: | ----: | :------------------------------------------------------------------------- |
@@ -36,7 +36,7 @@ Introduction to React
 Communicating with server
 
 [Material](https://fullstackopen.com/en/part2) |
-[Submissions](https://github.com/rikurauhala/fullstack/tree/main/exercises/part02)
+[Submissions](../exercises/part02)
 
 | date       | hours | description                                                                |
 | ---------: | ----: | :------------------------------------------------------------------------- |
@@ -52,7 +52,7 @@ Communicating with server
 Programming a server with NodeJS and Express
 
 [Material](https://fullstackopen.com/en/part3) |
-[Submissions](https://github.com/rikurauhala/fullstack/tree/main/exercises/part03)
+[Submissions](../exercises/part03)
 
 | date       | hours | description                                                                |
 | ---------: | ----: | :------------------------------------------------------------------------- |
@@ -70,7 +70,7 @@ Programming a server with NodeJS and Express
 Testing Express servers, user administration
 
 [Material](https://fullstackopen.com/en/part4) |
-[Submissions](https://github.com/rikurauhala/fullstack/tree/main/exercises/part04)
+[Submissions](../exercises/part04)
 
 | date       | hours | description                                                                |
 | ---------: | ----: | :------------------------------------------------------------------------- |
@@ -103,7 +103,7 @@ Testing Express servers, user administration
 Testing React apps
 
 [Material](https://fullstackopen.com/en/part5) |
-[Submissions](https://github.com/rikurauhala/fullstack/tree/main/exercises/part05)
+[Submissions](../exercises/part05)
 
 | date       | hours | description                                                                |
 | ---------: | ----: | :------------------------------------------------------------------------- |
@@ -122,7 +122,7 @@ Testing React apps
 State management with Redux
 
 [Material](https://fullstackopen.com/en/part6) |
-[Submissions](https://github.com/rikurauhala/fullstack/tree/main/exercises/part06)
+[Submissions](../exercises/part06)
 
 | date       | hours | description                                                                |
 | ---------: | ----: | :------------------------------------------------------------------------- |
@@ -139,7 +139,7 @@ State management with Redux
 React router, custom hooks, styling app with CSS and webpack
 
 [Material](https://fullstackopen.com/en/part7) |
-[Submissions](https://github.com/rikurauhala/fullstack/tree/main/exercises/part07)
+[Submissions](../exercises/part07)
 
 | date       | hours | description                                                                |
 | ---------: | ----: | :------------------------------------------------------------------------- |
@@ -156,7 +156,7 @@ React router, custom hooks, styling app with CSS and webpack
 GraphQL
 
 [Material](https://fullstackopen.com/en/part8) |
-[Submissions](https://github.com/rikurauhala/fullstack/tree/main/exercises/part08)
+[Submissions](../exercises/part08)
 
 | date       | hours | description                                                                |
 | ---------: | ----: | :------------------------------------------------------------------------- |
@@ -169,7 +169,7 @@ GraphQL
 TypeScript
 
 [Material](https://fullstackopen.com/en/part9) |
-[Submissions](https://github.com/rikurauhala/fullstack/tree/main/exercises/part09)
+[Submissions](../exercises/part09)
 
 | date       | hours | description                                                                |
 | ---------: | ----: | :------------------------------------------------------------------------- |
@@ -195,7 +195,7 @@ TypeScript
 React Native
 
 [Material](https://fullstackopen.com/en/part10) |
-[Submissions](https://github.com/rikurauhala/fullstack/tree/main/exercises/part10)
+[Submissions](../exercises/part10)
 
 | date       | hours | description                                                                |
 | ---------: | ----: | :------------------------------------------------------------------------- |
@@ -220,26 +220,24 @@ CI/CD
 | 2023-03-09 |     2 | completing exercises 11.1, 11.20 and 11.21                                 |
 |      total |    16 |                                                                            |
 
-<!--
 ## Part 12
 
 Containers
 
-[Material](https://fullstackopen.com/en/part11) |
-[Submissions](https://github.com/rikurauhala/fullstack/tree/main/exercises/part12)
+[Material](https://fullstackopen.com/en/part12) |
+[Submissions](../exercises/part12)
 
 | date       | hours | description                                                                |
 | ---------: | ----: | :------------------------------------------------------------------------- |
-| YYYY-MM-DD |     0 |                                                                            |
-|      total |     0 |                                                                            |
--->
+| 2023-03-29 |     2 | reading the material, completing exercises 12.1 to 12.4                    |
+|      total |     2 |                                                                            |
 
 ## Part 13
 
 Using relational databases
 
 [Material](https://fullstackopen.com/en/part13) |
-[Submissions](https://github.com/rikurauhala/fullstack/tree/main/exercises/part13)
+[Submissions](../exercises/part13)
 
 | date       | hours | description                                                                |
 | ---------: | ----: | :------------------------------------------------------------------------- |

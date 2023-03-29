@@ -1,11 +1,11 @@
 # Part 12
 
-No submissions yet.
+See part 13 submissions in [this repository](https://github.com/rikurauhala/part12-containers-applications).
 
 ## Hours
 
-Time spent: `0 hours`
+Time spent: `2 hours`
 
 ## Exercises
 
-Exercises completed: `0 / 22`
+Exercises completed: `4 / 22`

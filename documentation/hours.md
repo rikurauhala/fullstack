@@ -230,7 +230,7 @@ Containers
 | date       | hours | description                                                                |
 | ---------: | ----: | :------------------------------------------------------------------------- |
 | 2023-03-29 |     2 | reading the material, completing exercises 12.1 to 12.4                    |
-| 2023-03-30 |     2 | reading the material, completing exercises 12.5 to 12.7                    |
+| 2023-03-30 |     2 | reading the material, completing exercises 12.5 to 12.8                    |
 |      total |     4 |                                                                            |
 
 ## Part 13

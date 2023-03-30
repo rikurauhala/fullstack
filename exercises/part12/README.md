@@ -8,4 +8,4 @@ Time spent: `4 hours`
 
 ## Exercises
 
-Exercises completed: `7 / 22`
+Exercises completed: `8 / 22`

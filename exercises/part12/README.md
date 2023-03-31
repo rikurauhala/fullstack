@@ -4,8 +4,8 @@ See part 13 submissions in [this repository](https://github.com/rikurauhala/part
 
 ## Hours
 
-Time spent: `7 hours`
+Time spent: `8 hours`
 
 ## Exercises
 
-Exercises completed: `13 / 22`
+Exercises completed: `14 / 22`

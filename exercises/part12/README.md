@@ -1,6 +1,6 @@
 # Part 12
 
-See part 13 submissions in [this repository](https://github.com/rikurauhala/part12-containers-applications).
+See part 12 submissions in [this repository](https://github.com/rikurauhala/part12-containers-applications). Exercises 12.21 and 12.22 [here](./bloglist).
 
 ## Hours
 

@@ -1,0 +1,20 @@
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: dev.Dockerfile
+    environment: 
+      MONGODB_URI: < url here >
+      SECRET: secret
+      TEST_MONGODB_URI: < url here >
+      PORT: 3003
+    container_name: bloglist-backend-dev
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: dev.Dockerfile
+    container_name: bloglist-frontend-dev
+    ports:
+      - 3000:3000
+    depends_on:
+      - backend

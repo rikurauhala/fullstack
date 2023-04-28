@@ -234,7 +234,8 @@ Containers
 | 2023-03-31 |     4 | reading the material, completing exercises 12.9 to 12.14                   |
 | 2023-04-01 |     1 | reading the material, completing exercise 12.15                            |
 | 2023-04-01 |     1 | reading the material, completing exercise 12.16                            |
-|      total |    10 |                                                                            |
+| 2023-04-28 |     2 | completing exercises 12.17 to 12.20                                        |
+|      total |    12 |                                                                            |
 
 ## Part 13
 

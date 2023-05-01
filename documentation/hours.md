@@ -9,7 +9,7 @@ Fundamentals of Web apps
 [Material](https://fullstackopen.com/en/part0) |
 [Submissions](../exercises/part00)
 
-| date       | hours | description                                                                |
+|       date | hours | description                                                                |
 | ---------: | ----: | :------------------------------------------------------------------------- |
 | 2022-05-18 |     1 | reading the material                                                       |
 | 2022-05-19 |     1 | reviewing the html/css tutorials, setting up the repository                |
@@ -24,7 +24,7 @@ Introduction to React
 [Material](https://fullstackopen.com/en/part1) |
 [Submissions](../exercises/part01)
 
-| date       | hours | description                                                                |
+|       date | hours | description                                                                |
 | ---------: | ----: | :------------------------------------------------------------------------- |
 | 2022-05-22 |     4 | reading the material, completing exercises 1.1 to 1.5                      |
 | 2022-05-23 |     3 | reading the material, completing exercises 1.6 and 1.7                     |
@@ -38,7 +38,7 @@ Communicating with server
 [Material](https://fullstackopen.com/en/part2) |
 [Submissions](../exercises/part02)
 
-| date       | hours | description                                                                |
+|       date | hours | description                                                                |
 | ---------: | ----: | :------------------------------------------------------------------------- |
 | 2022-05-25 |     4 | reading the material, completing exercises 2.1 to 2.5                      |
 | 2022-05-26 |     6 | reading the material, completing exercises 2.6 to 2.8                      |
@@ -54,7 +54,7 @@ Programming a server with NodeJS and Express
 [Material](https://fullstackopen.com/en/part3) |
 [Submissions](../exercises/part03)
 
-| date       | hours | description                                                                |
+|       date | hours | description                                                                |
 | ---------: | ----: | :------------------------------------------------------------------------- |
 | 2022-05-29 |     1 | reading the material                                                       |
 | 2022-05-30 |     2 | reading the material, completing exercises 3.1 and 3.2                     |
@@ -72,7 +72,7 @@ Testing Express servers, user administration
 [Material](https://fullstackopen.com/en/part4) |
 [Submissions](../exercises/part04)
 
-| date       | hours | description                                                                |
+|       date | hours | description                                                                |
 | ---------: | ----: | :------------------------------------------------------------------------- |
 | 2022-06-05 |     1 | reading the material                                                       |
 | 2022-06-06 |     1 | reading the material, completing exercise 4.1                              |
@@ -105,7 +105,7 @@ Testing React apps
 [Material](https://fullstackopen.com/en/part5) |
 [Submissions](../exercises/part05)
 
-| date       | hours | description                                                                |
+|       date | hours | description                                                                |
 | ---------: | ----: | :------------------------------------------------------------------------- |
 | 2022-07-02 |     1 | reading the material, working on exercise 5.1                              |
 | 2022-07-03 |     3 | scripting, completing exercises 5.1 and 5.2                                |
@@ -124,7 +124,7 @@ State management with Redux
 [Material](https://fullstackopen.com/en/part6) |
 [Submissions](../exercises/part06)
 
-| date       | hours | description                                                                |
+|       date | hours | description                                                                |
 | ---------: | ----: | :------------------------------------------------------------------------- |
 | 2022-07-11 |     2 | reading the material, completing exercises 6.1 and 6.2                     |
 | 2022-07-12 |     2 | reading the material, completing exercises 6.3 to 6.8                      |
@@ -141,7 +141,7 @@ React router, custom hooks, styling app with CSS and webpack
 [Material](https://fullstackopen.com/en/part7) |
 [Submissions](../exercises/part07)
 
-| date       | hours | description                                                                |
+|       date | hours | description                                                                |
 | ---------: | ----: | :------------------------------------------------------------------------- |
 | 2022-07-16 |     1 | reading the material, working on exercise 7.1                              |
 | 2022-07-17 |     4 | reading the material, completing exercises 7.1 to 7.6                      |
@@ -150,7 +150,6 @@ React router, custom hooks, styling app with CSS and webpack
 | 2022-07-20 |     3 | completing exercises 7.11 and 7.12                                         |
 |      total |    14 |                                                                            |
 
-<!--
 ## Part 8
 
 GraphQL
@@ -158,11 +157,10 @@ GraphQL
 [Material](https://fullstackopen.com/en/part8) |
 [Submissions](../exercises/part08)
 
-| date       | hours | description                                                                |
+|       date | hours | description                                                                |
 | ---------: | ----: | :------------------------------------------------------------------------- |
-| YYYY-MM-DD |     0 |                                                                            |
-|      total |     0 |                                                                            |
--->
+| 2023-05-01 |     1 | reading the material                                                       |
+|      total |     1 |                                                                            |
 
 ## Part 9
 
@@ -171,7 +169,7 @@ TypeScript
 [Material](https://fullstackopen.com/en/part9) |
 [Submissions](../exercises/part09)
 
-| date       | hours | description                                                                |
+|       date | hours | description                                                                |
 | ---------: | ----: | :------------------------------------------------------------------------- |
 | 2022-07-26 |     1 | reading the material, setting up the initial project                       |
 | 2022-07-27 |     2 | reading the material, completing exercises 9.1 and 9.2                     |
@@ -197,7 +195,7 @@ React Native
 [Material](https://fullstackopen.com/en/part10) |
 [Submissions](../exercises/part10)
 
-| date       | hours | description                                                                |
+|       date | hours | description                                                                |
 | ---------: | ----: | :------------------------------------------------------------------------- |
 | YYYY-MM-DD |     0 |                                                                            |
 |      total |     0 |                                                                            |
@@ -210,7 +208,7 @@ CI/CD
 [Material](https://fullstackopen.com/en/part11) |
 [Submissions](https://github.com/rikurauhala/full-stack-open-pokedex)
 
-| date       | hours | description                                                                |
+|       date | hours | description                                                                |
 | ---------: | ----: | :------------------------------------------------------------------------- |
 | 2023-03-02 |     2 | reading the material, completing exercises 11.2 to 11.8                    |
 | 2023-03-04 |     4 | reading the material, completing exercises 11.9 and 11.10                  |
@@ -227,7 +225,7 @@ Containers
 [Material](https://fullstackopen.com/en/part12) |
 [Submissions](../exercises/part12)
 
-| date       | hours | description                                                                |
+|       date | hours | description                                                                |
 | ---------: | ----: | :------------------------------------------------------------------------- |
 | 2023-03-29 |     2 | reading the material, completing exercises 12.1 to 12.4                    |
 | 2023-03-30 |     2 | reading the material, completing exercises 12.5 to 12.8                    |

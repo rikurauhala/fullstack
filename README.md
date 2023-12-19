@@ -43,12 +43,12 @@ This repository contains my submissions for the course [Full stack open](https:/
 
 I am not associated with the course but have contributed to the material a bit.
 
-> **Note**  
+> [!NOTE]  
 > Even though you can find working solutions in this repository and many others on GitHub, please **do not submit other people's work as your own**. The best way to learn is to go through the learning process yourself. That includes dealing with annoying bugs and having to google obscure error messages. If you need help with the exercises, consider joining the course [Discord server](https://study.cs.helsinki.fi/discord/join/fullstack) to talk to other students!
 
 If you got interested, start your own journey into modern full stack development [here](https://fullstackopen.com/en).
 
-> **Warning**  
+> [!WARNING]
 > Do not use the code found in this repository in production. It is not maintained and contains outdated and possibly vulnerable dependencies.
 
 ## Progress

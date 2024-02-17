@@ -4,15 +4,8 @@ This directory contains the exercise files for part 10.
 
 ## Hours
 
-Time spent: `x hours`
+Time spent: `6 hours`
 
 ## Exercises
 
-Exercises completed: `0 / 27`
-
-<!--
-### Exercise 10.1
-
-See the relevant state of the application [here]().
-
--->
+Exercises completed: `3 / 27`

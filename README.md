@@ -55,18 +55,18 @@ If you got interested, start your own journey into modern full stack development
 
 |                   part |                                hours | exercises | status | certificate                                                                                                        |
 | ---------------------: | -----------------------------------: | --------: | :----: | :----------------------------------------------------------------------------------------------------------------- |
-|  [0](exercises/part00) |   [4](documentation/hours.md#part-0) |   6 /   6 |      ✓ |                                                                                                                    |
-|  [1](exercises/part01) |  [11](documentation/hours.md#part-1) |  14 /  14 |      ✓ |                                                                                                                    |
-|  [2](exercises/part02) |  [26](documentation/hours.md#part-2) |  20 /  20 |      ✓ |                                                                                                                    |
-|  [3](exercises/part03) |  [19](documentation/hours.md#part-3) |  22 /  22 |      ✓ |                                                                                                                    |
-|  [4](exercises/part04) |  [28](documentation/hours.md#part-4) |  23 /  23 |      ✓ |                                                                                                                    |
-|  [5](exercises/part05) |  [19](documentation/hours.md#part-5) |  22 /  22 |      ✓ |                                                                                                                    |
-|  [6](exercises/part06) |  [14](documentation/hours.md#part-6) |  21 /  21 |      ✓ |                                                                                                                    |
-|  [7](exercises/part07) |  [14](documentation/hours.md#part-7) |  12 /  21 |      ✓ | [part 0-7](https://studies.cs.helsinki.fi/stats/api/certificate/fullstackopen/en/564f7650e5ad1c5e13296980fd45305d) |
-|  [8](exercises/part08) |   [1](documentation/hours.md#part-8) |   0 /  26 |        |                                                                                                                    |
-|  [9](exercises/part09) |  [34](documentation/hours.md#part-9) |  24 /  27 |      ✓ | [part 9](https://studies.cs.helsinki.fi/stats/api/certificate/fs-typescript/en/cc8f454c092b2bd1ce6903c160a34175)   |
-| [10](exercises/part10) |  [0](documentation/hours.md#part-10) |   0 /  27 |        |                                                                                                                    |
-| [11](exercises/part11) | [16](documentation/hours.md#part-11) |  21 /  21 |      ✓ | [part 11](https://studies.cs.helsinki.fi/stats/api/certificate/fs-cicd/en/1e179725fcaeafa11eca728385184b93)        |
-| [12](exercises/part12) | [14](documentation/hours.md#part-12) |  22 /  22 |      ✓ | [part 12](https://studies.cs.helsinki.fi/stats/api/certificate/fs-containers/en/d348ed369773162f5a6d06ec18539e9f)  |
-| [13](exercises/part13) | [22](documentation/hours.md#part-13) |  24 /  24 |      ✓ | [part 13](https://studies.cs.helsinki.fi/stats/api/certificate/fs-psql/en/c16c245065890b2694f8eb6e15822185)        |
-|                  total |                                  222 | 231 / 296 |        |                                                                                                                    |
+|  [0](exercises/part00) |   [4](documentation/hours.md#part-0) |     6 / 6 |   ✓    |                                                                                                                    |
+|  [1](exercises/part01) |  [11](documentation/hours.md#part-1) |   14 / 14 |   ✓    |                                                                                                                    |
+|  [2](exercises/part02) |  [26](documentation/hours.md#part-2) |   20 / 20 |   ✓    |                                                                                                                    |
+|  [3](exercises/part03) |  [19](documentation/hours.md#part-3) |   22 / 22 |   ✓    |                                                                                                                    |
+|  [4](exercises/part04) |  [28](documentation/hours.md#part-4) |   23 / 23 |   ✓    |                                                                                                                    |
+|  [5](exercises/part05) |  [19](documentation/hours.md#part-5) |   22 / 22 |   ✓    |                                                                                                                    |
+|  [6](exercises/part06) |  [14](documentation/hours.md#part-6) |   21 / 21 |   ✓    |                                                                                                                    |
+|  [7](exercises/part07) |  [14](documentation/hours.md#part-7) |   12 / 21 |   ✓    | [part 0-7](https://studies.cs.helsinki.fi/stats/api/certificate/fullstackopen/en/564f7650e5ad1c5e13296980fd45305d) |
+|  [8](exercises/part08) |   [1](documentation/hours.md#part-8) |    0 / 26 |        |                                                                                                                    |
+|  [9](exercises/part09) |  [34](documentation/hours.md#part-9) |   24 / 27 |   ✓    | [part 9](https://studies.cs.helsinki.fi/stats/api/certificate/fs-typescript/en/cc8f454c092b2bd1ce6903c160a34175)   |
+| [10](exercises/part10) |  [6](documentation/hours.md#part-10) |    3 / 27 |        |                                                                                                                    |
+| [11](exercises/part11) | [16](documentation/hours.md#part-11) |   21 / 21 |   ✓    | [part 11](https://studies.cs.helsinki.fi/stats/api/certificate/fs-cicd/en/1e179725fcaeafa11eca728385184b93)        |
+| [12](exercises/part12) | [14](documentation/hours.md#part-12) |   22 / 22 |   ✓    | [part 12](https://studies.cs.helsinki.fi/stats/api/certificate/fs-containers/en/d348ed369773162f5a6d06ec18539e9f)  |
+| [13](exercises/part13) | [22](documentation/hours.md#part-13) |   24 / 24 |   ✓    | [part 13](https://studies.cs.helsinki.fi/stats/api/certificate/fs-psql/en/c16c245065890b2694f8eb6e15822185)        |
+|                  total |                                  228 | 234 / 296 |        |                                                                                                                    |

@@ -8,7 +8,7 @@ const App = () => {
       <NativeRouter>
         <Main />
       </NativeRouter>
-      <StatusBar style="auto" />
+      <StatusBar style="light" />
     </>
   );
 };

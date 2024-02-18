@@ -1,12 +1,13 @@
 import Constants from 'expo-constants';
 import { StyleSheet, View } from 'react-native';
 import AppBarTab from './AppBarTab';
+import theme from '../../theme';
 
 const padding = 20;
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#24292e',
+    backgroundColor: theme.colors.appBar,
     padding: padding,
     paddingTop: Constants.statusBarHeight + padding,
   },

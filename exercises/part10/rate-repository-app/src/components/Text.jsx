@@ -8,6 +8,9 @@ const styles = StyleSheet.create({
     fontFamily: theme.fonts.main,
     fontWeight: theme.fontWeights.normal,
   },
+  colorError: {
+    color: theme.colors.error,
+  },
   colorLight: {
     color: theme.colors.light,
   },
@@ -28,6 +31,7 @@ const styles = StyleSheet.create({
 const Text = ({ color, fontSize, fontWeight, style, ...props }) => {
   const textStyle = [
     styles.text,
+    color === 'error' && styles.colorError,
     color === 'light' && styles.colorLight,
     color === 'primary' && styles.colorPrimary,
     color === 'textSecondary' && styles.colorTextSecondary,

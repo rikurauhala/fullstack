@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { LOCAL_IP } from '../config';
 
 const useRepositories = () => {
   const [repositories, setRepositories] = useState();
@@ -6,7 +7,7 @@ const useRepositories = () => {
 
   const fetchRepositories = async () => {
     setLoading(true);
-    const response = await fetch('http://192.168.1.96:5000/api/repositories');
+    const response = await fetch(`http://${LOCAL_IP}:5000/api/repositories`);
     const json = await response.json();
     setLoading(false);
     setRepositories(json);

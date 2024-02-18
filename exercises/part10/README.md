@@ -4,8 +4,8 @@ This directory contains the exercise files for part 10.
 
 ## Hours
 
-Time spent: `6 hours`
+Time spent: `11 hours`
 
 ## Exercises
 
-Exercises completed: `3 / 27`
+Exercises completed: `9 / 27`
